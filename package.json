@@ -1,5 +1,5 @@
 {
-  "name": "hhg-components",
+  "name": "@hhgtech/hhg-components",
   "version": "0.0.1",
   "main": "build/index.js",
   "module": "build/index.esm.js",
@@ -17,7 +17,11 @@
     "prepublishOnly": "npm run build"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/hhgtech/hhg-components.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/hhgtech"
   },
   "keywords": [
     "React",
@@ -28,7 +32,10 @@
     "Sass",
     "Storybook"
   ],
-  "author": "HHG",
+  "author": {
+    "name": "Pho Huynh",
+    "email": "pho.huynh@hellohealthgroup.com"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": ">=17.0.1",
