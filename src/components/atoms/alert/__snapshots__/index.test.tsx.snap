@@ -119,32 +119,30 @@ exports[`it renders 1`] = `
   }
 }
 
-<div>
+<div
+  class="c0"
+  data-alert-type="success"
+>
   <div
-    class="c0"
-    data-alert-type="success"
+    class="c1"
   >
-    <div
-      class="c1"
+    <img
+      src="https://source.unsplash.com/random/16x16"
+    />
+    <p
+      class="c2"
+      data-size="sm"
+      data-type="bold"
     >
-      <img
-        src="https://source.unsplash.com/random/16x16"
-      />
-      <p
-        class="c2"
-        data-size="sm"
-        data-type="bold"
-      >
-        This is an alert
-      </p>
-    </div>
-    <div
-      class="c3"
-    >
-      <img
-        src="https://source.unsplash.com/random/16x16"
-      />
-    </div>
+      This is an alert
+    </p>
+  </div>
+  <div
+    class="c3"
+  >
+    <img
+      src="https://source.unsplash.com/random/16x16"
+    />
   </div>
 </div>
 `;

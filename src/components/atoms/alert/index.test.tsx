@@ -16,10 +16,9 @@ test('it renders', () => {
     />,
   )
 
-  expect(alert.container).toMatchSnapshot()
+  const self = alert.container.firstChild
 
-  expect(alert.container.firstChild).toHaveAttribute(
-    'data-alert-type',
-    'success',
-  )
+  expect(self).toMatchSnapshot()
+
+  expect(self).toHaveAttribute('data-alert-type', 'success')
 })
