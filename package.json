@@ -29,8 +29,9 @@
     "Library",
     "Rollup",
     "Typescript",
-    "Sass",
-    "Storybook"
+    "Styled Components",
+    "Storybook",
+    "Hello Health Group"
   ],
   "author": {
     "name": "Pho Huynh",
