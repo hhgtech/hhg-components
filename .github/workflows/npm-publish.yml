@@ -16,8 +16,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-          registry-url: registry=https://npm.pkg.github.com/@hhgtech
-          _authToken: ${{secrets.GITHUB_TOKEN}}
+          registry-url: registry=https://npm.pkg.github.com/
       - run: npm ci
       - run: npm publish
         env:
