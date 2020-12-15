@@ -41,6 +41,7 @@
   "peerDependencies": {
     "react": ">=17.0.1",
     "react-dom": ">=17.0.1",
+    "react-id-generator": "^3.0.1",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
@@ -70,6 +71,7 @@
     "jest-styled-components": "^7.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-id-generator": "^3.0.1",
     "rollup": "^2.34.2",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
