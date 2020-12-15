@@ -22,7 +22,7 @@ const Alert = ({
   closeIcon,
 }: Props) => {
   return (
-    <StyledAlert style={{ ...style }} data-alert-type={type}>
+    <StyledAlert style={{ ...style }} data-alert-type={`${type}1`}>
       <StyledContent>
         {contentIcon}
         <Text type="bold" size="sm">
