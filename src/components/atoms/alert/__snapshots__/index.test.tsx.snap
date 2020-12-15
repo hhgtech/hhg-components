@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c2 {
+  color: #262626;
+}
+
+.c2[data-type='bold'],
+.c2[data-variant='heading'],
+.c2[data-type='caption'] {
+  font-weight: 700;
+}
+
+.c2[data-type='caption'] {
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 44px;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 18px;
+  padding-left: 24px;
+  border-left: 4px solid #00b16a;
+  background: #e0f8ee;
+}
+
+.c0[data-alert-type='danger'] {
+  border-left-color: #ff5331;
+  background: #fae9e8;
+}
+
+.c0[data-alert-type='warning'] {
+  border-left-color: #fe921d;
+  background: #fff8e2;
+}
+
+.c0[data-alert-type='blue'] {
+  border-left-color: #2b94ff;
+  background: #e3f2ff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 svg {
+  margin-right: 8px;
+}
+
+.c3 {
+  cursor: pointer;
+}
+
+@media (min-width:768px) {
+  .c2[data-size='md'] {
+    font-size: 20px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
+  .c2[data-size='base'] {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:767px) {
+  .c2[data-size='md'] {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .c2[data-size='base'] {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    data-alert-type="success"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        src="https://source.unsplash.com/random/16x16"
+      />
+      <p
+        class="c2"
+        data-size="sm"
+        data-type="bold"
+      >
+        This is an alert
+      </p>
+    </div>
+    <div
+      class="c3"
+    >
+      <img
+        src="https://source.unsplash.com/random/16x16"
+      />
+    </div>
+  </div>
+</div>
+`;
