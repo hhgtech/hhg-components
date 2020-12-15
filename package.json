@@ -21,7 +21,7 @@
     "url": "https://github.com/hhgtech/hhg-components.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/hhgtech"
+    "registry": "https://registry.npmjs.org/"
   },
   "keywords": [
     "React",
@@ -81,8 +81,5 @@
     "stylelint-prettier": "^1.1.2",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "react-cool-img": "^1.2.6"
   }
 }
