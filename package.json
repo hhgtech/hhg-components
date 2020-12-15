@@ -1,6 +1,6 @@
 {
   "name": "@hhgtech/hhg-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -29,8 +29,9 @@
     "Library",
     "Rollup",
     "Typescript",
-    "Sass",
-    "Storybook"
+    "Styled Components",
+    "Storybook",
+    "Hello Health Group"
   ],
   "author": {
     "name": "Pho Huynh",
@@ -66,6 +67,7 @@
     "hygen-react-typescript": "^1.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
+    "jest-styled-components": "^7.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "rollup": "^2.34.2",
