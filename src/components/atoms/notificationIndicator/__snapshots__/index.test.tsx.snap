@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 span {
+  background: $alert;
+  border-radius: 50%;
+  color: white;
+  font-weight: $fw-bold;
+  text-align: center;
+}
+
+.c0[data-notification-type='small'] span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  font-size: 0px;
+}
+
+.c0[data-notification-type='medium'] span {
+  display: block;
+  width: 17px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.c0[data-notification-type='large'] span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.c0[data-has-icon] span {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+}
+
+.c0[data-has-icon] svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+<div
+  class="c0"
+  data-has-icon="true"
+  data-notification-type="small"
+>
+   
+  <div>
+    <img
+      src="https://source.unsplash.com/random/16x16"
+    />
+  </div>
+</div>
+`;
