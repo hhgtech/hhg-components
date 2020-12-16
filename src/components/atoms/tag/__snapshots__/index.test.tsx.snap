@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c1 {
+  color: #262626;
+}
+
+.c1[data-type='bold'],
+.c1[data-variant='heading'],
+.c1[data-type='caption'] {
+  font-weight: 700;
+}
+
+.c1[data-type='caption'] {
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 2px 8px;
+  background: #d2d6dc;
+  border-radius: 24px;
+}
+
+.c0 p {
+  color: $gray-500;
+}
+
+.c0[data-tag-type='warning'] {
+  background: #fff8e2;
+}
+
+.c0[data-tag-type='warning'] p {
+  color: #fe921d;
+}
+
+.c0[data-tag-type='danger'] {
+  background: #fae9e8;
+}
+
+.c0[data-tag-type='danger'] p {
+  color: #e64728;
+}
+
+.c0[data-tag-type='success'] {
+  background: #e0f8ee;
+}
+
+.c0[data-tag-type='success'] p {
+  color: #00b16a;
+}
+
+.c0[data-tag-type='blue'] {
+  background: #e3f2ff;
+}
+
+.c0[data-tag-type='blue'] p {
+  color: #2c74df;
+}
+
+.c0[data-is-squared='true'] {
+  border-radius: 4px;
+}
+
+@media (min-width:768px) {
+  .c1[data-size='md'] {
+    font-size: 20px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
+  .c1[data-size='base'] {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:767px) {
+  .c1[data-size='md'] {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .c1[data-size='base'] {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+<div
+  class="c0"
+  data-tag-type="warning"
+>
+  <p
+    class="c1"
+    data-size="sm"
+    data-type="regular"
+  >
+    This is a test tag
+  </p>
+</div>
+`;
