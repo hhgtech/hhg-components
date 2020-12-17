@@ -11,14 +11,16 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": ["./*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "build",
     "storybook-static",
-    "src/**/*.stories.tsx",
-    "src/**/*.test.tsx"
+    "src/**/*.stories.tsx"
   ]
 }
