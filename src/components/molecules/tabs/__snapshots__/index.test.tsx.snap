@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  padding-bottom: 4px;
+}
+
+.c0 p {
+  color: #8c8c8c;
+  white-space: nowrap;
+}
+
+.c0:not(:last-child) {
+  margin-right: 24px;
+}
+
+.c0[data-is-tab-active] {
+  border-bottom: 2px solid #2d87f3;
+  margin-bottom: -1px;
+}
+
+.c0[data-is-tab-active] p {
+  color: #2d87f3;
+}
+
+.c0:not([data-is-tab-active]) {
+  cursor: pointer;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  color: #262626;
+}
+
+.c2[data-type='bold'],
+.c2[data-variant='heading'],
+.c2[data-type='caption'] {
+  font-weight: 700;
+}
+
+.c2[data-type='caption'] {
+  text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+  .c2[data-size='md'] {
+    font-size: 20px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
+  .c2[data-size='base'] {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:767px) {
+  .c2[data-size='md'] {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .c2[data-size='base'] {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c2[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+<li
+  class="c0"
+  data-is-tab-active="true"
+>
+  <div
+    class="c1"
+  >
+    <p
+      class="c2"
+      data-size="sm"
+      data-type="bold"
+    >
+      Tab 1
+    </p>
+  </div>
+</li>
+`;
