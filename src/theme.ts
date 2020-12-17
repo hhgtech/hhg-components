@@ -38,6 +38,16 @@ const theme = {
     red50: '#fae9e8',
     red500: '#ff5331',
     red700: '#e64728',
+
+    neutral50: '#F7F9FC',
+    neutral100: '#E4E8EC',
+    neutral200: '#D2D6DC',
+    neutral300: '#BFC5CC',
+    neutral400: '#BFC5CC',
+    neutral500: '#9AA2AC',
+    neutral600: '#87909C',
+    neutral700: '#757F8C',
+    neutral800: '#626D7C',
   },
   sizes: {
     fwBold: '700',
