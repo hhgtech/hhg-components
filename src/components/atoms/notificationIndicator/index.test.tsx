@@ -4,15 +4,19 @@ import 'jest-styled-components'
 
 import { NotificationIndicator } from '.'
 
+import MockTheme from './../../../mockTheme'
+
 afterEach(cleanup)
 
 test('it renders', () => {
   const notificationIndicator = render(
-    <NotificationIndicator
-      hasIcon={true}
-      type="small"
-      bellIcon={<img src="https://source.unsplash.com/random/16x16" />}
-    />,
+    <MockTheme>
+      <NotificationIndicator
+        hasIcon={true}
+        type="small"
+        bellIcon={<img src="https://source.unsplash.com/random/16x16" />}
+      />
+    </MockTheme>,
   )
 
   const self = notificationIndicator.container.firstChild

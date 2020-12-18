@@ -5,6 +5,7 @@ import { StyledText } from './index.styled'
 export type Props = {
   children: ReactNode
   size: 'md' | 'base' | 'sm' | 'xs'
+  className?: string
   type?: 'regular' | 'bold' | 'caption'
   title?: string
   style?: CSSProperties
@@ -14,6 +15,7 @@ const Text = ({
   size = 'base',
   type = 'regular',
   title,
+  className,
   style,
   children,
 }: Props) => (
@@ -22,6 +24,7 @@ const Text = ({
     data-size={size}
     data-type={type}
     style={{ ...style }}
+    className={className}
   >
     {children}
   </StyledText>

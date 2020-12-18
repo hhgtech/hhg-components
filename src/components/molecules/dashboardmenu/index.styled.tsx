@@ -1,13 +1,13 @@
 import styled from 'styled-components'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledDashboardMenu = styled.div`
   p {
-    color: $gray-800;
+    color: ${(props: ThemeProps) => props.theme.colors.neutral200};
   }
 
   &[data-is-active] {
-    background: $primary-base;
+    background: ${(props: ThemeProps) => props.theme.colors.primaryBase};
     p {
       color: $white;
     }

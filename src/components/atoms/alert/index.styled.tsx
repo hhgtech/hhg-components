@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { pcLayout, spLayout } from 'utils'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledAlert = styled.div`
   display: flex;
@@ -11,22 +11,22 @@ export const StyledAlert = styled.div`
   justify-content: space-between;
   padding-right: 18px;
   padding-left: 24px;
-  border-left: 4px solid ${({ theme: ThemeType }) => theme.colors.success};
-  background: ${({ theme: ThemeType }) => theme.colors.green50};
+  border-left: 4px solid ${(props: ThemeProps) => props.theme.colors.success};
+  background: ${(props: ThemeProps) => props.theme.colors.green50};
 
   &[data-alert-type='danger'] {
-    border-left-color: ${({ theme: ThemeType }) => theme.colors.red500};
-    background: ${({ theme: ThemeType }) => theme.colors.red50};
+    border-left-color: ${(props: ThemeProps) => props.theme.colors.red500};
+    background: ${(props: ThemeProps) => props.theme.colors.red50};
   }
 
   &[data-alert-type='warning'] {
-    border-left-color: ${({ theme: ThemeType }) => theme.colors.yellow500};
-    background: ${({ theme: ThemeType }) => theme.colors.yellow50};
+    border-left-color: ${(props: ThemeProps) => props.theme.colors.yellow500};
+    background: ${(props: ThemeProps) => props.theme.colors.yellow50};
   }
 
   &[data-alert-type='blue'] {
-    border-left-color: ${({ theme: ThemeType }) => theme.colors.blue500};
-    background: ${({ theme: ThemeType }) => theme.colors.blue50};
+    border-left-color: ${(props: ThemeProps) => props.theme.colors.blue500};
+    background: ${(props: ThemeProps) => props.theme.colors.blue50};
   }
 `
 export const StyledContent = styled.div`

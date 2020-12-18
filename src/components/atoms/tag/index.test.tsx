@@ -2,12 +2,18 @@ import React from 'react'
 import { render, cleanup, screen } from '@testing-library/react'
 import 'jest-styled-components'
 
+import MockTheme from './../../../mockTheme'
+
 import { Tag } from '.'
 
 afterEach(cleanup)
 
 test('it renders', () => {
-  const tag = render(<Tag type="warning">This is a test tag</Tag>)
+  const tag = render(
+    <MockTheme>
+      <Tag type="warning">This is a test tag</Tag>
+    </MockTheme>,
+  )
 
   const self = tag.container.firstChild
 

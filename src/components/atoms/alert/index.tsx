@@ -9,6 +9,7 @@ export type Props = {
   contentIcon: JSX.Element
   closeIcon: JSX.Element
   text: string
+  className?: string
   style?: CSSProperties
   onClose?: () => void
 }
@@ -20,9 +21,14 @@ const Alert = ({
   type,
   contentIcon,
   closeIcon,
+  className,
 }: Props) => {
   return (
-    <StyledAlert style={{ ...style }} data-alert-type={type}>
+    <StyledAlert
+      style={{ ...style }}
+      data-alert-type={type}
+      className={className}
+    >
       <StyledContent>
         {contentIcon}
         <Text type="bold" size="sm">
