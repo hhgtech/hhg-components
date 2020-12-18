@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  background: url('../../../public/bgSvg/arrow-down.svg') no-repeat;
+  background-position: right 16px center;
+  border-radius: 6px;
+}
+
+.c0[data-has-icons] {
+  border: none;
+  background: #f2f2f2;
+}
+
+.c0[data-has-icons] img,
+.c0[data-has-icons] svg {
+  display: inline-block;
+  max-width: 16px;
+  margin-right: 6px;
+}
+
+.c0[data-has-icons] span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c0[data-has-icons]:hover {
+  box-shadow: none;
+}
+
+.c0[data-has-icons] > div {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.c0[data-has-icons] > div::after {
+  content: '';
+  right: 12px;
+  top: 50%;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23595959' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c0:hover {
+  box-shadow: 0 0 2px 2px #91caff;
+}
+
+.c1 {
+  padding: 12px 18px 12px 16px;
+  cursor: pointer;
+}
+
+.c1[data-dropdown-open] {
+  padding: 11px 15px 11px 15px;
+  border: 1px solid #2d87f3;
+  border-radius: 6px;
+  box-shadow: 0 0 2px 2px #91caff;
+}
+
+<div
+  class="c0"
+  data-has-icons="true"
+  id="dropdown1"
+>
+  <div
+    class="c1"
+  >
+    <img
+      src="//unsplash.it/16"
+    />
+     
+    <span>
+      Dropdown
+    </span>
+  </div>
+</div>
+`;
