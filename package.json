@@ -38,6 +38,11 @@
     "name": "Pho Huynh",
     "email": "pho.huynh@hellohealthgroup.com"
   },
+  "storybook-deployer": {
+    "gitUsername": "Pho Huynh",
+    "gitEmail": "pho.huynh@hellohealthgroup.com",
+    "commitMessage": "Deploy Storybook to GitHub Pages"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": ">=17.0.1",
