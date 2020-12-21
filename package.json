@@ -39,7 +39,7 @@
     "email": "pho.huynh@hellohealthgroup.com"
   },
   "storybook-deployer": {
-    "gitUsername": "Pho Huynh",
+    "gitUsername": "phhg",
     "gitEmail": "pho.huynh@hellohealthgroup.com",
     "commitMessage": "Deploy Storybook to GitHub Pages"
   },
