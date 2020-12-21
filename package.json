@@ -15,7 +15,8 @@
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
     "prepublishOnly": "npm run build",
-    "deploy-storybook": "storybook-to-ghpages -- --ci --source-branch=dev"
+    "storybook-deployer": "storybook-to-ghpages",
+    "deploy-storybook": "npm run storybook-deployer -- --ci --source-branch=master --host-token-env-variable=GITHUB_TOKEN"
   },
   "repository": {
     "type": "git",
