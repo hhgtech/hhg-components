@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  width: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  -webkit-transition: background-color 0.3s,border-color 0.3s;
+  transition: background-color 0.3s,border-color 0.3s;
+}
+
+.c0[data-has-icon] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0[data-has-icon] svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.c0[data-color='primary'] {
+  background-color: #2d87f3;
+  color: #fff;
+}
+
+.c0[data-color='primary'][data-size='lg'] {
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0[data-color='primary'][data-size='md'] {
+  padding: 8px 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c0[data-color='primary'][data-size='sm'] {
+  padding: 6px 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.c0[data-color='primary']:hover {
+  background-color: #2c74df;
+}
+
+.c0[data-color='primary']:active {
+  background-color: #2b62cd;
+}
+
+.c0[data-is-loading] span {
+  padding-left: 32px;
+}
+
+.c0[data-is-loading] svg {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.c0[data-color='secondary'] {
+  border: solid 2px #2d87f3;
+  background-color: #fff;
+  color: #2d87f3;
+}
+
+.c0[data-color='secondary'][data-size='lg'] {
+  padding: 11px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0[data-color='secondary'][data-size='md'] {
+  padding: 7px 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c0[data-color='secondary'][data-size='sm'] {
+  padding: 5px 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.c0[data-color='secondary']:hover {
+  border-color: #2c74df;
+  background-color: #2c74df;
+  color: #fff;
+}
+
+.c0[data-color='secondary']:active {
+  border-color: #2b62cd;
+  background-color: #2b62cd;
+  color: #fff;
+}
+
+.c0:disabled {
+  border-color: $gray-300;
+  background-color: $gray-300;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.c0[data-block] {
+  width: 100%;
+  padding: 12px auto;
+}
+
+<button
+  class="c0"
+  data-color="primary"
+  data-size="md"
+>
+  <span>
+    This is a test tag
+  </span>
+</button>
+`;

@@ -48,6 +48,8 @@ const theme = {
     neutral600: '#87909c',
     neutral700: '#757f8c',
     neutral800: '#626d7c',
+
+    white: '#fff',
   },
   sizes: {
     fwBold: '700',
