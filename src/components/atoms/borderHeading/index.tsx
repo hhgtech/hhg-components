@@ -4,11 +4,14 @@ import { StyledBorderHeading } from './index.styled'
 
 export type Props = {
   children: ReactNode
+  className?: string
   style?: CSSProperties
 }
 
-const BorderHeading = ({ style, children }: Props) => (
-  <StyledBorderHeading style={{ ...style }}>{children}</StyledBorderHeading>
+const BorderHeading = ({ style, children, className }: Props) => (
+  <StyledBorderHeading style={{ ...style }} className={className}>
+    {children}
+  </StyledBorderHeading>
 )
 
 export { BorderHeading }

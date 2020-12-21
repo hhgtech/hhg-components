@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledTabs = styled.ul`
   display: inline-flex;
-  border-bottom: 1px solid ${({ theme: ThemeType }) => theme.colors.neutral100};
+  border-bottom: 1px solid
+    ${(props: ThemeProps) => props.theme.colors.neutral100};
   overflow-x: auto;
   overflow-y: hidden;
   max-width: 100%;
@@ -13,7 +14,7 @@ export const StyledTabs = styled.ul`
 export const StyledTab = styled.li`
   padding-bottom: 4px;
   p {
-    color: ${({ theme: ThemeType }) => theme.colors.gray400};
+    color: ${(props: ThemeProps) => props.theme.colors.gray400};
     white-space: nowrap;
   }
 
@@ -23,10 +24,10 @@ export const StyledTab = styled.li`
 
   &[data-is-tab-active] {
     p {
-      color: ${({ theme: ThemeType }) => theme.colors.primaryBase};
+      color: ${(props: ThemeProps) => props.theme.colors.primaryBase};
     }
     border-bottom: 2px solid
-      ${({ theme: ThemeType }) => theme.colors.primaryBase};
+      ${(props: ThemeProps) => props.theme.colors.primaryBase};
     margin-bottom: -1px;
   }
 

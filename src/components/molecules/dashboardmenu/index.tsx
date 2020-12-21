@@ -1,7 +1,6 @@
 import React, { useState, CSSProperties } from 'react'
-import classnames from 'classnames'
 import { Text } from 'components/atoms/text'
-import nextId, { useId } from 'react-id-generator'
+import { useId } from 'react-id-generator'
 import { StyledDashboardMenu, Styledli, StyledMenuItem } from './index.styled'
 
 type Pages = {
@@ -13,15 +12,16 @@ type Pages = {
 export type Props = {
   pages: Array<Pages>
   initalPage?: number
+  className?: string
   style?: CSSProperties
 }
 
-const DashboardMenu = ({ pages, initalPage, style }: Props) => {
+const DashboardMenu = ({ pages, initalPage, style, className }: Props) => {
   const [isPageActive, setPageActive] = useState(initalPage || 0)
   const idList = useId(pages.length)
 
   return (
-    <StyledDashboardMenu style={{ ...style }}>
+    <StyledDashboardMenu style={{ ...style }} className={className}>
       <ul>
         {pages.map((page, i) => (
           <Styledli

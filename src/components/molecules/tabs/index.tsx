@@ -7,7 +7,9 @@ import {
   StyledTabContent,
   StyledIcon,
 } from './index.styled'
-import { Text } from './../../atoms'
+import { Text } from 'components/atoms'
+
+import { useId } from 'react-id-generator'
 
 type TabContent = {
   name: string
@@ -16,19 +18,22 @@ type TabContent = {
 
 export type Props = {
   tabContent: Array<TabContent>
+  className?: string
   initialTab?: number
   style?: CSSProperties
 }
 
-const Tabs = ({ style, initialTab, tabContent }: Props) => {
+const Tabs = ({ style, initialTab, tabContent, className }: Props) => {
   const [activeTab, setActiveTab] = useState(initialTab || 0)
+  const idList = useId(tabContent.length)
 
   return (
-    <StyledTabs style={{ ...style }}>
+    <StyledTabs style={{ ...style }} className={className}>
       {tabContent.map((tab, i) => (
         <StyledTab
           data-is-tab-active={activeTab === i || undefined}
           onClick={() => setActiveTab(i)}
+          key={idList[i]}
         >
           <StyledTabContent>
             {tab.icon && <StyledIcon>{tab.icon}</StyledIcon>}

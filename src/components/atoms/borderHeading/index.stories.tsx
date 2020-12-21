@@ -3,6 +3,7 @@ import React from 'react'
 import { Story } from '@storybook/react/types-6-0'
 
 import { BorderHeading, Props } from '.'
+import MockTheme from './../../../mockTheme'
 
 export default {
   component: BorderHeading,
@@ -10,7 +11,9 @@ export default {
 }
 
 const Template: Story<Props> = (args) => (
-  <BorderHeading {...args}>Lorem ipsum dolor asit amet</BorderHeading>
+  <MockTheme>
+    <BorderHeading {...args}>Lorem ipsum dolor asit amet</BorderHeading>
+  </MockTheme>
 )
 
 export const Normal = Template.bind({})

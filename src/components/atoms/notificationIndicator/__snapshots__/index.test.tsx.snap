@@ -6,10 +6,10 @@ exports[`it renders 1`] = `
 }
 
 .c0 span {
-  background: $alert;
+  background: #fe921d;
   border-radius: 50%;
   color: white;
-  font-weight: $fw-bold;
+  font-weight: 700;
   text-align: center;
 }
 

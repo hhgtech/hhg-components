@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 import { pcLayout, spLayout } from 'utils'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledText = styled.p`
-  color: ${({ theme: ThemeType }) => theme.colors.gray800};
+  color: ${(props: ThemeProps) => props.theme.colors.gray800};
 
   ${pcLayout()`
     &[data-size='md'] {
@@ -51,7 +51,7 @@ export const StyledText = styled.p`
   &[data-type='bold'],
   &[data-variant='heading'],
   &[data-type='caption'] {
-    font-weight: ${({ theme: ThemeType }) => theme.sizes.fwBold};
+    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
   }
 
   /* Make caption uppercase */

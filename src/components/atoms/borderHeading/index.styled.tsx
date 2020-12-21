@@ -1,11 +1,11 @@
 import styled from 'styled-components'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledBorderHeading = styled.h4`
   position: relative;
   padding-left: 12px;
   font-size: 18px;
-  font-weight: ${({ theme: ThemeType }) => theme.sizes.fwBold};
+  font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
   letter-spacing: -0.6px;
   line-height: 18px;
 
@@ -15,7 +15,7 @@ export const StyledBorderHeading = styled.h4`
     left: 0;
     width: 4px;
     height: 16px;
-    background-color: ${({ theme: ThemeType }) => theme.colors.primaryBase};
+    background-color: ${(props: ThemeProps) => props.theme.colors.primaryBase};
     content: '';
   }
 `

@@ -56,4 +56,8 @@ const theme = {
 
 export type ThemeType = typeof theme
 
+export type ThemeProps = {
+  theme: ThemeType
+}
+
 export default theme

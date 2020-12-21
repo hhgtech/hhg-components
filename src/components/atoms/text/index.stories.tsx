@@ -4,13 +4,17 @@ import { Story } from '@storybook/react/types-6-0'
 
 import { Props, Text } from './index'
 
+import MockTheme from './../../../mockTheme'
+
 export default {
   component: Text,
   title: 'Atoms/Text',
 }
 
 const Template: Story<Props> = (args) => (
-  <Text {...args}>An example paragraph....</Text>
+  <MockTheme>
+    <Text {...args}>An example paragraph....</Text>
+  </MockTheme>
 )
 
 export const Normal = Template.bind({})

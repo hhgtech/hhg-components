@@ -1,13 +1,13 @@
 import styled from 'styled-components'
-import theme, { ThemeType } from 'theme'
+import { ThemeProps } from 'theme'
 
 export const StyledIndicator = styled.div`
   position: relative;
   span {
-    background: $alert;
+    background: ${(props: ThemeProps) => props.theme.colors.alertWarning};
     border-radius: 50%;
     color: white;
-    font-weight: $fw-bold;
+    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
     text-align: center;
   }
 
