@@ -1,6 +1,6 @@
 {
   "name": "@hhgtech/hhg-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -14,7 +14,8 @@
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "repository": {
     "type": "git",
@@ -52,6 +53,7 @@
     "@storybook/addon-essentials": "^6.0.28",
     "@storybook/addon-links": "^6.0.28",
     "@storybook/react": "^6.1.11",
+    "@storybook/storybook-deployer": "^2.8.7",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@types/jest": "^26.0.19",
