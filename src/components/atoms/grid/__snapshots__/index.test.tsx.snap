@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  --column-count: 2;
+  --columns-count-desktop: 2;
+  --columns: var(--grid-template-columns,repeat(var(--columns-count),1fr));
+  --columns-desktop: var( --grid-template-columns-desktop, repeat(var(--columns-count-desktop),1fr) );
+  display: grid;
+  grid-template-columns: var(--columns);
+  grid-gap: var(--grid-gap);
+  -webkit-align-items: var(--align-items);
+  -webkit-box-align: var(--align-items);
+  -ms-flex-align: var(--align-items);
+  align-items: var(--align-items);
+}
+
+.c0 > * {
+  justify-self: var(--justify-children);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-template-columns: var(--columns-desktop);
+  }
+}
+
+<div
+  class="c0"
+>
+  <div>
+    column 1
+  </div>
+  <div>
+    column 2
+  </div>
+</div>
+`;
