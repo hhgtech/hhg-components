@@ -42,7 +42,7 @@ const Grid = ({
   return (
     <StyledGrid
       className={className}
-      style={{ ...style }}
+      style={style}
       theme={{
         columns,
         columnsDesktop,

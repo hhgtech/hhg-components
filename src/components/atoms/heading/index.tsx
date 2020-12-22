@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import { CSSProperties } from 'styled-components'
 
 import { StyledHeading } from './index.styled'
 
@@ -8,10 +9,18 @@ export type Props = {
   title?: string
   color?: string
   className?: string
+  style?: CSSProperties
 }
 
-const Heading = ({ tag: Tag, className, children, title, color }: Props) => (
-  <StyledHeading className={className}>
+const Heading = ({
+  tag: Tag,
+  className,
+  children,
+  title,
+  color,
+  style,
+}: Props) => (
+  <StyledHeading style={style} className={className}>
     <Tag title={title} style={color ? { color } : undefined} data-tag={Tag}>
       {children}
     </Tag>

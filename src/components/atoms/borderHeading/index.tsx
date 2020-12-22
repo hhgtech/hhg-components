@@ -9,7 +9,7 @@ export type Props = {
 }
 
 const BorderHeading = ({ style, children, className }: Props) => (
-  <StyledBorderHeading style={{ ...style }} className={className}>
+  <StyledBorderHeading style={style} className={className}>
     {children}
   </StyledBorderHeading>
 )

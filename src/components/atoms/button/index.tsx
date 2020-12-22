@@ -21,7 +21,7 @@ export type Props = {
 
 const Button = ({
   size,
-  color,
+  color = 'primary',
   isDisabled,
   isBlock,
   title,

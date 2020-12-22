@@ -6,18 +6,18 @@ import { StyledTag } from './index.styled'
 
 export type Props = {
   children: ReactNode
+  type: 'danger' | 'warning' | 'blue' | 'success'
   className?: string
   squared?: boolean
-  type?: 'danger' | 'warning' | 'blue' | 'success'
   style?: CSSProperties
 }
 
-const Tag = ({ type, children, style, squared, className }: Props) => {
+const Tag = ({ type, children, style, squared = false, className }: Props) => {
   return (
     <StyledTag
       data-is-squared={squared || undefined}
-      data-tag-type={type || undefined}
-      style={{ ...style }}
+      data-tag-type={type}
+      style={style}
       className={className}
     >
       <Text size="sm">{children}</Text>

@@ -23,7 +23,7 @@ const Text = ({
     title={title}
     data-size={size}
     data-type={type}
-    style={{ ...style }}
+    style={style}
     className={className}
   >
     {children}
