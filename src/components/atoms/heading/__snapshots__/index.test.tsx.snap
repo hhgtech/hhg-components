@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  color: #284a75;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.c0 > [data-tag='h1'] {
+  font-size: 40px;
+  -webkit-letter-spacing: -1.2px;
+  -moz-letter-spacing: -1.2px;
+  -ms-letter-spacing: -1.2px;
+  letter-spacing: -1.2px;
+}
+
+.c0 > [data-tag='h2'] {
+  font-size: 32px;
+  -webkit-letter-spacing: -1px;
+  -moz-letter-spacing: -1px;
+  -ms-letter-spacing: -1px;
+  letter-spacing: -1px;
+}
+
+.c0 > [data-tag='h3'] {
+  font-size: 28px;
+  -webkit-letter-spacing: -0.8px;
+  -moz-letter-spacing: -0.8px;
+  -ms-letter-spacing: -0.8px;
+  letter-spacing: -0.8px;
+}
+
+.c0 > [data-tag='h4'] {
+  font-size: 24px;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+}
+
+.c0 > [data-tag='h5'] {
+  font-size: 20px;
+  -webkit-letter-spacing: -0.4px;
+  -moz-letter-spacing: -0.4px;
+  -ms-letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
+}
+
+@media (max-width:767px) {
+  .c0 > [data-tag='h1'] {
+    font-size: 26px;
+    -webkit-letter-spacing: -0.9px;
+    -moz-letter-spacing: -0.9px;
+    -ms-letter-spacing: -0.9px;
+    letter-spacing: -0.9px;
+  }
+
+  .c0 > [data-tag='h2'] {
+    font-size: 24px;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+  }
+
+  .c0 > [data-tag='h3'] {
+    font-size: 20px;
+    -webkit-letter-spacing: -0.7px;
+    -moz-letter-spacing: -0.7px;
+    -ms-letter-spacing: -0.7px;
+    letter-spacing: -0.7px;
+  }
+
+  .c0 > [data-tag='h4'] {
+    font-size: 18px;
+    -webkit-letter-spacing: -0.6px;
+    -moz-letter-spacing: -0.6px;
+    -ms-letter-spacing: -0.6px;
+    letter-spacing: -0.6px;
+  }
+
+  .c0[data-tag='h5'] {
+    font-size: 16px;
+    -webkit-letter-spacing: 0px;
+    -moz-letter-spacing: 0px;
+    -ms-letter-spacing: 0px;
+    letter-spacing: 0px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h2
+      data-tag="h2"
+    >
+      Hello, World!
+    </h2>
+  </div>
+</div>
+`;
