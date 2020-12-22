@@ -25,7 +25,7 @@ interface ExtendedGrid extends BasicProps {
   gridTemplateColumnsDesktop: string
 }
 
-type Props = BasicGrid | ExtendedGrid
+export type Props = BasicGrid | ExtendedGrid
 
 const Grid = ({
   className,

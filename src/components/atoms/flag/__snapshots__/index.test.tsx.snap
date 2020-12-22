@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  --width: 100;
+  --height: 100;
+}
+
+.c0 img,
+.c0 svg {
+  width: calc(var(--width) * 1px);
+  height: calc(var(--height) * 1px);
+}
+
+.c0[data-is-bitmap] img {
+  object-fit: contain;
+}
+
+<div
+  class="c0"
+  data-is-bitmap="true"
+>
+  <img
+    height="100"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAhCAYAAACfiCi5AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVHgB7dY9CgIxEIbhb8JqnV6QNILltnbuUTyRR/AK3kBrm/UIOUJKwZ9x0tsPn8wDCSFVXkggQPAlfbrlzbgQHBWyBwGBXh/6POxarTLnbVH5zLafwaW9VKcEvE/gO3yXB7s1SYXj2vwmYwK3zB6ACPAWAd4iwFsEeKMPGJbrFZiJGhCLN+AtArxFgLcI8BYB3v4ioIFX6wF38Dr332ixxcVGAZdqY/oC5+Yj9mTCW5wAAAAASUVORK5CYII="
+    width="100"
+  />
+</div>
+`;
