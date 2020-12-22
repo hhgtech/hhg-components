@@ -34,7 +34,7 @@ export default {
 }
 
 const Template: Story<Props> = (args) => (
-  <Grid columns={2} columnsDesktop={4}>
+  <Grid {...args}>
     <div style={{ background: 'lightBlue' }}>I am a column</div>
     <div style={{ background: 'lightBlue' }}>I am a column</div>
     <div style={{ background: 'lightBlue' }}>I am a column</div>
@@ -46,9 +46,5 @@ export const Normal = Template.bind({})
 
 Normal.args = {
   columns: 2,
-
-  // columnsDesktop: 4,
-
-  // justifyChildren: 'center',
-  // className: '',
+  columnsDesktop: 4,
 }
