@@ -46,6 +46,7 @@ export const Normal = Template.bind({})
 
 Normal.args = {
   columns: 2,
+
   // columnsDesktop: 4,
 
   // justifyChildren: 'center',
