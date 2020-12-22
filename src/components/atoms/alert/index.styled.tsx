@@ -33,7 +33,8 @@ export const StyledContent = styled.div`
   display: flex;
   align-items: center;
 
-  svg {
+  svg,
+  img {
     margin-right: 8px;
   }
 `

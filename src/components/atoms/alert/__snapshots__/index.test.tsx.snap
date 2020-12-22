@@ -63,7 +63,8 @@ exports[`it renders 1`] = `
   align-items: center;
 }
 
-.c1 svg {
+.c1 svg,
+.c1 img {
   margin-right: 8px;
 }
 
