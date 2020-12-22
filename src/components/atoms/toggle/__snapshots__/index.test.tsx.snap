@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 input[type='checkbox'] {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.c0 label {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 24px;
+  background: #c3cbd4;
+  border-radius: 100px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+
+.c0 label:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  content: '';
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c0 input:checked + label {
+  background: #2d87f3;
+}
+
+.c0 input:checked + label:after {
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+<div
+  class="c0"
+>
+  <input
+    checked=""
+    id="test-toggle"
+    type="checkbox"
+  />
+  <label
+    for="test-toggle"
+  >
+    Toggle
+  </label>
+</div>
+`;
