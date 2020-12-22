@@ -20,7 +20,7 @@ const UnderlinedLink = ({
   <StyledUnderlinedLink
     className={className}
     data-size={size}
-    style={{ ...style }}
+    style={style}
     data-disabled={isDisabled || undefined}
   >
     {link}
