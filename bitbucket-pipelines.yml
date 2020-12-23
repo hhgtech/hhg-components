@@ -22,7 +22,8 @@ pipelines:
     dev:
     - step:
         name: Deploy storybook to development
-        image: framgiaciteam/deb-deploy:7.3
+        image: framgia/laravel-workspace
+        # image: framgiaciteam/deb-deploy:7.3
         script:
           - npm install
           - npm run test
@@ -30,7 +31,8 @@ pipelines:
     master:
     - step:
         name: Publish component to npm 
-        image: framgiaciteam/deb-deploy:7.3
+        image: framgia/laravel-workspace
+        # image: framgiaciteam/deb-deploy:7.3
         script:
           - npm install
           - npm run build
