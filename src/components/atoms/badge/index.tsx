@@ -1,37 +1,39 @@
 import React from 'react'
-
-import { CSSProperties } from 'styled-components'
 import { StyledBadge } from './index.styled'
-
-import MockTheme from './../../../mockTheme'
+import MockTheme from '../../../mockTheme'
 
 export type Props = {
-  type: string
+  bellIcon: JSX.Element
+  type: 'dot' | 'numeric'
+  size?: 'medium' | 'large'
+  color?: 'primary' | 'warning'
   className?: string
-  style?: CSSProperties
-  number: string | number
-  color?: 'primary' | 'secondary'
+  amount?: number
+  hasIcon?: boolean
 }
 
-const Bagde = ({
-  type = 'numeric',
-  style,
-  className,
-  number,
+const Badge = ({
+  amount,
+  type,
+  size,
   color,
+  hasIcon,
+  bellIcon,
+  className,
 }: Props) => {
   return (
     <MockTheme>
       <StyledBadge
-        style={{ ...style }}
-        data-avatar-type={type || undefined}
+        data-notification-type={type}
+        data-notification-size={size}
+        data-notification-color={color}
+        data-has-icon={hasIcon || undefined}
         className={className}
-        data-color={color}
       >
-        <span>{number}</span>
+        {amount && <span>{amount}</span>} {hasIcon && <div>{bellIcon}</div>}
       </StyledBadge>
     </MockTheme>
   )
 }
 
-export { Bagde }
+export { Badge }

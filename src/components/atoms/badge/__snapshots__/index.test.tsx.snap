@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 span {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0[data-notification-type='dot'] span {
+  width: 8px;
+  height: 8px;
+  font-size: 0px;
+  border-radius: 50%;
+}
+
+.c0[data-notification-type='numeric'] span {
+  border-radius: 32px;
+}
+
+.c0[data-notification-type='numeric'][data-notification-size='medium'] span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 16px;
+  font-size: 11px;
+  padding: 1px 6px;
+}
+
+.c0[data-notification-type='numeric'][data-notification-size='large'] span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 24px;
+  font-size: 13px;
+  padding: 1px 10px;
+}
+
+.c0[data-has-icon] span {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+}
+
+.c0[data-has-icon] svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.c0[data-notification-color='warning'] span {
+  background: #fe921d;
+  color: white;
+}
+
+.c0[data-notification-color='primary'] span {
+  background: #e3f2ff;
+  color: #2d87f3;
+}
+
+<div
+  class="c0"
+  data-has-icon="true"
+  data-notification-type="dot"
+>
+   
+  <div>
+    <img
+      src="https://source.unsplash.com/random/16x16"
+    />
+  </div>
+</div>
+`;
