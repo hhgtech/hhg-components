@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  --horizontal-spacing: 19px;
+  --vertical-spacing: 26px;
+  width: 100%;
+  position: relative;
+}
+
+.c1 th {
+  padding: var(--vertical-spacing) var(--horizontal-spacing);
+  text-align: left;
+  color: #737373;
+  font-weight: 700;
+}
+
+.c1[data-is-sticky] th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.c2 {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.c2[data-is-active] {
+  background-color: #d9d9d9;
+}
+
+<table
+  class="c0"
+>
+  <thead
+    class="c1"
+    data-is-sticky="true"
+  >
+    <tr
+      class="c2"
+    >
+      <th>
+        Header one
+      </th>
+      <th>
+        Header two
+      </th>
+      <th>
+        Header three
+      </th>
+    </tr>
+  </thead>
+</table>
+`;
