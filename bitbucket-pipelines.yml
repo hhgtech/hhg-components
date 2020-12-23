@@ -15,6 +15,7 @@ pipelines:
         name: Run Jest Test
         image: framgia/laravel-workspace
         script:
+          - npm install
           - npm run test
         deployment: test
   branches:
@@ -23,6 +24,7 @@ pipelines:
         name: Deploy storybook to development
         image: framgiaciteam/deb-deploy:7.3
         script:
+          - npm install
           - npm run test
         deployment: staging
     master:
@@ -30,6 +32,7 @@ pipelines:
         name: Publish component to npm 
         image: framgiaciteam/deb-deploy:7.3
         script:
+          - npm install
           - npm run build
         deployment: production
 
