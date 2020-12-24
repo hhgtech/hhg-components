@@ -12,23 +12,18 @@ export default {
 
 const Template: Story<Props> = (args) => <Badge {...args} />
 
-export const Dot = Template.bind({})
-Dot.args = {
+export const StandAlone = Template.bind({})
+StandAlone.args = {
   className: '',
   amount: 4,
   type: 'dot',
+  size: 'medium',
   color: 'primary',
-  icon: (
-    <Avatar
-      avatarImg={<img src="https://source.unsplash.com/random/74x74" />}
-      type="rounded"
-      onClick={() => console.log('avatar')}
-    />
-  ),
+  icon: '',
 }
 
-export const Numeric = Template.bind({})
-Numeric.args = {
+export const WithIcon = Template.bind({})
+WithIcon.args = {
   className: '',
   amount: 4,
   type: 'numeric',

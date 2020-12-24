@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyledBadge } from './index.styled'
-import MockTheme from '../../../mockTheme'
 
 export type Props = {
   icon: JSX.Element
@@ -11,21 +10,26 @@ export type Props = {
   amount?: number
 }
 
-const Badge = ({ amount, type, size, color, icon, className }: Props) => {
+const Badge = ({
+  amount,
+  type,
+  size = 'medium',
+  color = 'primary',
+  icon,
+  className,
+}: Props) => {
   return (
-    <MockTheme>
-      <StyledBadge
-        data-notification-type={type}
-        data-notification-size={size || 'medium'}
-        data-notification-color={color || 'primary'}
-        data-has-icon={!!icon || undefined}
-        className={className}
-      >
-        <div>
-          {amount && <span>{amount}</span>} {icon && <div>{icon}</div>}
-        </div>
-      </StyledBadge>
-    </MockTheme>
+    <StyledBadge
+      data-notification-type={type}
+      data-notification-size={size}
+      data-notification-color={color}
+      data-has-icon={!!icon || undefined}
+      className={className}
+    >
+      <div>
+        {amount && <span>{amount}</span>} {icon && <div>{icon}</div>}
+      </div>
+    </StyledBadge>
   )
 }
 
