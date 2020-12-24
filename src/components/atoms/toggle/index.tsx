@@ -13,7 +13,7 @@ export type Props = {
 }
 
 const Toggle = ({ className, id, onChange, checked, style }: Props) => (
-  <StyledToggle className={className} style={{ ...style }}>
+  <StyledToggle className={className} style={style}>
     <input type="checkbox" id={id} onChange={onChange} checked={checked} />
     <label htmlFor={id}>Toggle</label>
   </StyledToggle>

@@ -28,7 +28,7 @@ const Tabs = ({ style, initialTab, tabContent, className }: Props) => {
   const idList = useId(tabContent.length)
 
   return (
-    <StyledTabs style={{ ...style }} className={className}>
+    <StyledTabs style={style} className={className}>
       {tabContent.map((tab, i) => (
         <StyledTab
           data-is-tab-active={activeTab === i || undefined}

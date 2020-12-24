@@ -24,11 +24,7 @@ const Alert = ({
   className,
 }: Props) => {
   return (
-    <StyledAlert
-      style={{ ...style }}
-      data-alert-type={type}
-      className={className}
-    >
+    <StyledAlert style={style} data-alert-type={type} className={className}>
       <StyledContent>
         {contentIcon}
         <Text type="bold" size="sm">

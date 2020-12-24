@@ -54,6 +54,7 @@ const theme = {
   },
   sizes: {
     fwBold: '700',
+    fwRegular: '400',
   },
 }
 

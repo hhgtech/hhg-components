@@ -1,4 +1,5 @@
 import React from 'react'
+import { CSSProperties } from 'styled-components'
 
 import {
   StyledDropdown,
@@ -22,6 +23,7 @@ export type Props = {
   onChange?: (o: Option) => void
   value?: Option
   className?: string
+  style?: CSSProperties
 }
 
 const Dropdown = ({
@@ -32,13 +34,12 @@ const Dropdown = ({
   id,
   placeHolderIcon,
   placeholder,
+  style,
 }: Props) => {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false)
   const showDropdown = () => setIsDropdownOpen(!isDropdownOpen)
 
   const hasIcons = placeHolderIcon ? true : false
-
-  console.log(hasIcons)
 
   return (
     <StyledDropdown
@@ -46,6 +47,7 @@ const Dropdown = ({
       data-dropdown-open={isDropdownOpen || undefined}
       id={id}
       data-has-icons={hasIcons}
+      style={style}
     >
       <StyledDropdownName onClick={showDropdown}>
         {hasIcons && placeHolderIcon}{' '}

@@ -23,8 +23,8 @@ const Avatar = ({
   return (
     <MockTheme>
       <StyledAvatar
-        style={{ ...style }}
-        data-avatar-type={type || undefined}
+        style={style}
+        data-avatar-type={type}
         onClick={onClick}
         className={className}
       >
