@@ -9,6 +9,7 @@ const theme = {
     secondaryDark: '#1b3250',
 
     success: '#00b16a',
+    error: '#f71210',
 
     gray100: '#f2f2f2',
     gray200: '#d9d9d9',
