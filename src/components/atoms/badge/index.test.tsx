@@ -12,9 +12,8 @@ test('it renders', () => {
   const badge = render(
     <MockTheme>
       <Badge
-        hasIcon={true}
         type="dot"
-        bellIcon={<img src="https://source.unsplash.com/random/16x16" />}
+        icon={<img src="https://source.unsplash.com/random/16x16" />}
       />
     </MockTheme>,
   )

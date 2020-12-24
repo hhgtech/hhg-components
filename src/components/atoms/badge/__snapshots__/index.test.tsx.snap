@@ -5,6 +5,13 @@ exports[`it renders 1`] = `
   position: relative;
 }
 
+.c0 > div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
 .c0 span {
   font-weight: 700;
   display: -webkit-box;
@@ -29,22 +36,19 @@ exports[`it renders 1`] = `
 }
 
 .c0[data-notification-type='numeric'] span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   border-radius: 32px;
 }
 
 .c0[data-notification-type='numeric'][data-notification-size='medium'] span {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   height: 16px;
   font-size: 11px;
   padding: 1px 6px;
 }
 
 .c0[data-notification-type='numeric'][data-notification-size='large'] span {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   height: 24px;
   font-size: 13px;
   padding: 1px 10px;
@@ -52,8 +56,20 @@ exports[`it renders 1`] = `
 
 .c0[data-has-icon] span {
   position: absolute;
-  top: -8px;
-  left: 10px;
+  top: 0;
+  left: 75%;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'] span {
+  left: 70%;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'][data-notification-size='medium'] span {
+  top: -2px;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'][data-notification-size='large'] span {
+  top: -7px;
 }
 
 .c0[data-has-icon] svg {
@@ -62,8 +78,8 @@ exports[`it renders 1`] = `
   top: 0;
 }
 
-.c0[data-notification-color='warning'] span {
-  background: #fe921d;
+.c0[data-notification-color='error'] span {
+  background: #f71210;
   color: white;
 }
 
@@ -75,13 +91,17 @@ exports[`it renders 1`] = `
 <div
   class="c0"
   data-has-icon="true"
+  data-notification-color="primary"
+  data-notification-size="medium"
   data-notification-type="dot"
 >
-   
   <div>
-    <img
-      src="https://source.unsplash.com/random/16x16"
-    />
+     
+    <div>
+      <img
+        src="https://source.unsplash.com/random/16x16"
+      />
+    </div>
   </div>
 </div>
 `;

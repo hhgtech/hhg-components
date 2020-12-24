@@ -4,6 +4,11 @@ import { ThemeProps } from 'theme'
 export const StyledBadge = styled.div`
   position: relative;
 
+  > div {
+    width: max-content;
+    position: relative;
+  }
+
   span {
     font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
     display: flex;
@@ -22,12 +27,12 @@ export const StyledBadge = styled.div`
 
   &[data-notification-type='numeric'] {
     span {
+      width: max-content;
       border-radius: 32px;
     }
 
     &[data-notification-size='medium'] {
       span {
-        width: max-content;
         height: 16px;
         font-size: 11px;
         padding: 1px 6px;
@@ -35,19 +40,37 @@ export const StyledBadge = styled.div`
     }
     &[data-notification-size='large'] {
       span {
-        width: max-content;
         height: 24px;
         font-size: 13px;
         padding: 1px 10px;
       }
     }
   }
+
   &[data-has-icon] {
     span {
       position: absolute;
-      top: -8px;
-      left: 10px;
+      top: 0;
+      left: 75%;
     }
+
+    &[data-notification-type='numeric'] {
+      span {
+        left: 70%;
+      }
+
+      &[data-notification-size='medium'] {
+        span {
+          top: -2px;
+        }
+      }
+      &[data-notification-size='large'] {
+        span {
+          top: -7px;
+        }
+      }
+    }
+
     svg {
       position: absolute;
       z-index: -1;
@@ -55,9 +78,9 @@ export const StyledBadge = styled.div`
     }
   }
 
-  &[data-notification-color='warning'] {
+  &[data-notification-color='error'] {
     span {
-      background: ${(props: ThemeProps) => props.theme.colors.alertWarning};
+      background: ${(props: ThemeProps) => props.theme.colors.error};
       color: white;
     }
   }
