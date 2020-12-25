@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c0 [data-page-active] {
+  background: #2d87f3;
+  color: #fff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #262626;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+
+.c1 > svg {
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  stroke: #2d87f3;
+}
+
+.c1[data-last-page] {
+  opacity: 0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  color: #262626;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <svg
+      data-name="Layer 1"
+      viewBox="0 0 5.5 9.5"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        chevron-right
+      </title>
+      <path
+        d="M4.75 8.75l-4-4 4-4"
+        fill="none"
+        stroke="#2d87f3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      />
+    </svg>
+  </div>
+  <li
+    class="c2"
+  >
+    1
+  </li>
+  <li
+    class="c2"
+  >
+    2
+  </li>
+  <li
+    class="c2"
+    data-page-active="true"
+  >
+    3
+  </li>
+  <li
+    class="c2"
+  >
+    4
+  </li>
+  <li
+    class="c2"
+  >
+    5
+  </li>
+  <div
+    class="c1"
+  >
+    <svg
+      data-name="Layer 1"
+      viewBox="0 0 5.5 9.5"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        chevron-right
+      </title>
+      <path
+        d="M.75 8.75l4-4-4-4"
+        fill="none"
+        stroke="#2d87f3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+      />
+    </svg>
+  </div>
+</div>
+`;

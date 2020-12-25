@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c1 {
+  color: #262626;
+}
+
+.c1[data-type='bold'],
+.c1[data-variant='heading'],
+.c1[data-type='caption'] {
+  font-weight: 700;
+}
+
+.c1[data-type='caption'] {
+  text-transform: uppercase;
+}
+
+.c0 {
+  margin: 0 12px;
+}
+
+.c0 div[role='slider'] {
+  -webkit-text-size-adjust: none;
+  -webkit-user-select: none;
+}
+
+.c0 div[role='slider']:focus {
+  outline: none;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.07),0px 4px 7px rgba(0,0,0,0.15);
+}
+
+.c6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #2d87f3;
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 36px;
+  margin-top: 32px;
+}
+
+.c3 {
+  width: 100%;
+  height: 5px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  border-radius: 4px;
+}
+
+.c5 {
+  position: absolute;
+  top: -28px;
+  display: block;
+  padding: 4px;
+  background-color: #2d87f3;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  white-space: nowrap;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+@media (min-width:768px) {
+  .c1[data-size='md'] {
+    font-size: 20px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
+  .c1[data-size='base'] {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width:767px) {
+  .c1[data-size='md'] {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .c1[data-size='base'] {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='sm'] {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .c1[data-size='xs'] {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+}
+
+<div
+  class="c0"
+>
+  <p
+    class="c1"
+    data-size="md"
+    data-type="bold"
+  >
+    Consultation Fee
+  </p>
+  <div
+    class="c2"
+    style="transform: scale(1); cursor: inherit;"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        aria-valuemax="400"
+        aria-valuemin="0"
+        aria-valuenow="0"
+        class="c4"
+        draggable="false"
+        role="slider"
+        style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+        tabindex="0"
+      >
+        <div
+          class="c5"
+          data-label="0"
+        >
+          0
+        </div>
+        <div
+          class="c6"
+          data-label="0"
+        />
+      </div>
+      <div
+        aria-valuemax="400"
+        aria-valuemin="0"
+        aria-valuenow="400"
+        class="c4"
+        draggable="false"
+        role="slider"
+        style="position: absolute; z-index: 1; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+        tabindex="0"
+      >
+        <div
+          class="c5"
+          data-label="1"
+        >
+          400
+        </div>
+        <div
+          class="c6"
+          data-label="1"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
