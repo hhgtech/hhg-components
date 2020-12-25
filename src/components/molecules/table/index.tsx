@@ -1,0 +1,5 @@
+export { Table } from './table'
+export { Cell } from './tableCell'
+export { Head } from './tableHead'
+export { Row } from './tableRow'
+export { Body } from './tableBody'
