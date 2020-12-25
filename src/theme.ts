@@ -54,7 +54,9 @@ const theme = {
   },
   sizes: {
     fwBold: '700',
+    fwSemiBold: '600',
     fsCaption2: '13px',
+    fsHeading2: '28px',
     fwRegular: '400',
   },
 }
