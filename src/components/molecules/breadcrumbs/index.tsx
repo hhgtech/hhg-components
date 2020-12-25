@@ -4,7 +4,6 @@ import { useId } from 'react-id-generator'
 import {
   StyledBreadcrumb,
   StyledTextLink,
-  // StyledLink,
   StyledSeperator,
 } from './index.styled'
 import { Dropdown } from '../../molecules/dropdown'
