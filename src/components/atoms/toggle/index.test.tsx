@@ -11,7 +11,11 @@ afterEach(cleanup)
 test('it renders', () => {
   const toggle = render(
     <MockTheme>
-      <Toggle id="test-toggle" checked onChange={undefined} />
+      <Toggle
+        id="test-toggle"
+        checked
+        onChange={() => console.log('onChange')}
+      />
     </MockTheme>,
   )
 
