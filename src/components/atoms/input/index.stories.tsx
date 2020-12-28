@@ -1,0 +1,50 @@
+import React from 'react'
+
+import DeleteIcon from './delete.svg'
+import { Story } from '@storybook/react/types-6-0'
+
+import { Input, Props } from '.'
+
+export default {
+  component: Input,
+  title: 'Atoms/Input',
+}
+
+const Template: Story<Props> = (args) => <Input {...args} />
+
+export const Normal = Template.bind({})
+Normal.args = {
+  name: 'normal',
+  label: 'Label',
+  placeholder: 'Placeholder',
+}
+
+export const NoLabel = Template.bind({})
+NoLabel.args = {
+  name: 'nolabel',
+  placeholder: 'Placeholder',
+}
+
+export const WithLeftIcon = Template.bind({})
+WithLeftIcon.args = {
+  name: 'withlefticon',
+  label: 'Label',
+  placeholder: 'Placeholder',
+  displayIcon: <img src={DeleteIcon} />,
+}
+
+export const WithRightIcon = Template.bind({})
+WithRightIcon.args = {
+  name: 'withrighticon',
+  label: 'Label',
+  placeholder: 'Placeholder',
+  actionIcon: <img src={DeleteIcon} />,
+}
+
+export const WithErrorMessage = Template.bind({})
+WithErrorMessage.args = {
+  name: 'witherrormessage',
+  label: 'Label',
+  placeholder: 'Placeholder',
+  errorMessage: 'Error message',
+}
