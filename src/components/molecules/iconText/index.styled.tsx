@@ -9,17 +9,17 @@ export const StyledIconText = styled.div`
     &[data-size='lg'] {
       font-size: 16px;
       line-height: 24px;
-      font-weight: $fw-bold;
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
     }
     &[data-size='md'] {
       font-size: 14px;
       line-height: 22px;
-      font-weight: $fw-regular;
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
     }
     &[data-size='sm'] {
       font-size: 13px;
       line-height: 20px;
-      font-weight: $fw-regular;
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
     }
   }
 `
