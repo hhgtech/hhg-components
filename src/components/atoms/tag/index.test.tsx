@@ -11,7 +11,7 @@ afterEach(cleanup)
 test('it renders', () => {
   const tag = render(
     <MockTheme>
-      <Tag type="warning">This is a test tag</Tag>
+      <Tag type="yellow">This is a test tag</Tag>
     </MockTheme>,
   )
 
@@ -19,5 +19,5 @@ test('it renders', () => {
 
   expect(self).toMatchSnapshot()
 
-  expect(self).toHaveAttribute('data-tag-type', 'warning')
+  expect(self).toHaveAttribute('data-tag-type', 'yellow')
 })

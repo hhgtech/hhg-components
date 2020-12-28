@@ -16,6 +16,5 @@ const Template: Story<Props> = (args) => (
 export const Normal = Template.bind({})
 
 Normal.args = {
-  type: 'warning',
   squared: false,
 }

@@ -10,28 +10,28 @@ exports[`it renders 1`] = `
   border-radius: 6px;
 }
 
-.c0[data-has-icons] {
+.c0[data-has-icons='true'] {
   border: none;
   background: #f2f2f2;
 }
 
-.c0[data-has-icons] img,
-.c0[data-has-icons] svg {
+.c0[data-has-icons='true'] img,
+.c0[data-has-icons='true'] svg {
   display: inline-block;
   max-width: 16px;
   margin-right: 6px;
 }
 
-.c0[data-has-icons] span {
+.c0[data-has-icons='true'] span {
   vertical-align: middle;
   display: inline-block;
 }
 
-.c0[data-has-icons]:hover {
+.c0[data-has-icons='true']:hover {
   box-shadow: none;
 }
 
-.c0[data-has-icons] > div {
+.c0[data-has-icons='true'] > div {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -45,7 +45,7 @@ exports[`it renders 1`] = `
   box-sizing: border-box;
 }
 
-.c0[data-has-icons] > div::after {
+.c0[data-has-icons='true'] > div::after {
   content: '';
   right: 12px;
   top: 50%;
@@ -79,6 +79,7 @@ exports[`it renders 1`] = `
   class="c0"
   data-has-icons="true"
   id="dropdown1"
+  tabindex="0"
 >
   <div
     class="c1"

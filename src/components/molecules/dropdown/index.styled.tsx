@@ -9,7 +9,7 @@ export const StyledDropdown = styled.div`
   background-position: right 16px center;
   border-radius: 6px;
 
-  &[data-has-icons] {
+  &[data-has-icons='true'] {
     border: none;
     background: ${(props: ThemeProps) => props.theme.colors.gray100};
 
@@ -71,7 +71,7 @@ export const StyledDropdownList = styled.ul`
   left: 0;
   display: block;
   margin-top: 4px;
-  background: $white;
+  background: ${(props: ThemeProps) => props.theme.colors.white};
   border-radius: 6px;
   box-shadow: -1px 1px 2px rgba(67, 70, 74, 0.0001),
     -2px 2px 5px rgba(67, 86, 100, 0.123689);

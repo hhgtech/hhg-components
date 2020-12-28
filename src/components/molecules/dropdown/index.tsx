@@ -30,7 +30,7 @@ const Dropdown = ({
   className,
   value,
   options,
-  onChange,
+  onChange = () => {},
   id,
   placeHolderIcon,
   placeholder,
@@ -48,6 +48,8 @@ const Dropdown = ({
       id={id}
       data-has-icons={hasIcons}
       style={style}
+      onBlur={() => setIsDropdownOpen(false)}
+      tabIndex={0}
     >
       <StyledDropdownName onClick={showDropdown}>
         {hasIcons && placeHolderIcon}{' '}

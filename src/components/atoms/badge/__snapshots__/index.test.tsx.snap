@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 > div {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+}
+
+.c0 span {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0[data-notification-type='dot'] span {
+  width: 8px;
+  height: 8px;
+  font-size: 0px;
+  border-radius: 50%;
+}
+
+.c0[data-notification-type='numeric'] span {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 32px;
+}
+
+.c0[data-notification-type='numeric'][data-notification-size='medium'] span {
+  height: 16px;
+  font-size: 11px;
+  padding: 1px 6px;
+}
+
+.c0[data-notification-type='numeric'][data-notification-size='large'] span {
+  height: 24px;
+  font-size: 13px;
+  padding: 1px 10px;
+}
+
+.c0[data-has-icon] span {
+  position: absolute;
+  top: 0;
+  left: 75%;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'] span {
+  left: 70%;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'][data-notification-size='medium'] span {
+  top: -2px;
+}
+
+.c0[data-has-icon][data-notification-type='numeric'][data-notification-size='large'] span {
+  top: -7px;
+}
+
+.c0[data-has-icon] svg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.c0[data-notification-color='error'] span {
+  background: #f71210;
+  color: white;
+}
+
+.c0[data-notification-color='primary'] span {
+  background: #e3f2ff;
+  color: #2d87f3;
+}
+
+<div
+  class="c0"
+  data-has-icon="true"
+  data-notification-color="primary"
+  data-notification-size="medium"
+  data-notification-type="dot"
+>
+  <div>
+     
+    <div>
+      <img
+        src="https://source.unsplash.com/random/16x16"
+      />
+    </div>
+  </div>
+</div>
+`;

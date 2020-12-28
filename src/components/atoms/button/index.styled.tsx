@@ -101,8 +101,8 @@ export const StyledButton = styled.button`
   }
 
   &:disabled {
-    border-color: $gray-300;
-    background-color: $gray-300;
+    border-color: ${(props: ThemeProps) => props.theme.colors.gray300};
+    background-color: ${(props: ThemeProps) => props.theme.colors.gray300};
     color: ${(props: ThemeProps) => props.theme.colors.white};
     cursor: not-allowed;
   }
