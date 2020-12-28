@@ -2,7 +2,7 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import figlet from 'figlet'
 import shadow from 'figlet/importable-fonts/Shadow'
-import theme from 'theme'
+import { theme } from 'theme'
 
 import './main.css'
 
