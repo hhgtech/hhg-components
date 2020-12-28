@@ -10,6 +10,29 @@ exports[`it renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  --font-weight-lg: 700;
+  --font-weight-md: 400;
+  --font-weight-sm: 400;
+}
+
+@media (max-width:767px) {
+  .c0[data-size='lg'] {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--font-weight-lg);
+  }
+
+  .c0[data-size='md'] {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--font-weight-md);
+  }
+
+  .c0[data-size='sm'] {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: var(----font-weight-sm);
+  }
 }
 
 <div
