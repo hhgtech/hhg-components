@@ -6,11 +6,17 @@ export type Props = {
   size: 'lg' | 'md' | 'sm'
   iconPosition: 'left' | 'right'
   children: ReactNode
-  Icon: JSX.Element
+  icon: JSX.Element
   className?: string
 }
 
-const IconText = ({ size, iconPosition, className, children, Icon }: Props) => {
+const IconText = ({
+  size,
+  iconPosition,
+  className,
+  children,
+  icon: Icon,
+}: Props) => {
   return (
     <StyledIconText className={className} data-size={size}>
       {iconPosition === 'left' && Icon}

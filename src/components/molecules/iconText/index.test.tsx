@@ -14,7 +14,7 @@ test('it renders', () => {
       <IconText
         size="lg"
         iconPosition="left"
-        Icon={<img src="https://source.unsplash.com/random/30x30" />}
+        icon={<img src="https://source.unsplash.com/random/30x30" />}
       >
         Test Icon Text
       </IconText>

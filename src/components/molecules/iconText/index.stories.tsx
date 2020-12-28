@@ -18,5 +18,5 @@ export const Normal = Template.bind({})
 Normal.args = {
   size: 'lg',
   iconPosition: 'left',
-  Icon: <img src="https://source.unsplash.com/random/30x30" />,
+  icon: <img src="https://source.unsplash.com/random/30x30" />,
 }
