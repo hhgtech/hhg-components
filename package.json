@@ -1,6 +1,6 @@
 {
   "name": "@hhgtech/hhg-components",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -45,7 +45,7 @@
     "gitEmail": "pho.huynh@hellohealthgroup.com",
     "commitMessage": "Deploy Storybook to GitHub Pages"
   },
-  "license": "MIT",
+  "license": "UNLICENSED",
   "peerDependencies": {
     "react": ">=17.0.1",
     "react-dom": ">=17.0.1",
