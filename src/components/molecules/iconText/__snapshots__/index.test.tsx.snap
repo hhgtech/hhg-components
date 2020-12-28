@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  --font-weight-lg: 700;
+  --font-weight-md: 400;
+  --font-weight-sm: 400;
+}
+
+@media (max-width:767px) {
+  .c0[data-size='lg'] {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: var(--font-weight-lg);
+  }
+
+  .c0[data-size='md'] {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: var(--font-weight-md);
+  }
+
+  .c0[data-size='sm'] {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: var(----font-weight-sm);
+  }
+}
+
+<div
+  class="c0"
+  data-size="lg"
+>
+  <img
+    src="https://source.unsplash.com/random/30x30"
+  />
+  Test Icon Text
+</div>
+`;
