@@ -29,44 +29,95 @@ exports[`it renders 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   padding: 2px 8px;
-  background: #d2d6dc;
   border-radius: 24px;
 }
 
+.c0[data-has-more-padding] {
+  padding: 5px 8px;
+}
+
 .c0 p {
-  color: $gray-500;
+  color: #fff;
 }
 
-.c0[data-tag-type='warning'] {
-  background: #fff8e2;
+.c0[data-tag-type='yellow'] {
+  background: #ffb521;
 }
 
-.c0[data-tag-type='warning'] p {
-  color: #fe921d;
+.c0[data-tag-type='yellow'] p {
+  color: #262626;
 }
 
-.c0[data-tag-type='danger'] {
-  background: #fae9e8;
+.c0[data-tag-type='default'] {
+  background: #d2d6dc;
 }
 
-.c0[data-tag-type='danger'] p {
-  color: #e64728;
+.c0[data-tag-type='red'] {
+  background: #ff5331;
 }
 
-.c0[data-tag-type='success'] {
-  background: #e0f8ee;
-}
-
-.c0[data-tag-type='success'] p {
-  color: #00b16a;
+.c0[data-tag-type='green'] {
+  background: #00C076;
 }
 
 .c0[data-tag-type='blue'] {
+  background: #2d87f3;
+}
+
+.c0[data-tag-type='teal'] {
+  background: #00aecd;
+}
+
+.c0[data-tag-type='pink'] {
+  background: #fc488d;
+}
+
+.c0[data-tag-type='violet'] {
+  background: #ad67d9;
+}
+
+.c0[data-tag-type='grey'] {
+  background: #595959;
+}
+
+.c0[data-is-light] {
+  color: #fff;
+}
+
+.c0[data-is-light][data-tag-type='yellow'] {
+  background: #fff8e2;
+}
+
+.c0[data-is-light][data-tag-type='red'] {
+  background: #fae9e8;
+}
+
+.c0[data-is-light][data-tag-type='green'] {
+  background: #e0f8ee;
+}
+
+.c0[data-is-light][data-tag-type='blue'] {
   background: #e3f2ff;
 }
 
-.c0[data-tag-type='blue'] p {
-  color: #2c74df;
+.c0[data-is-light][data-tag-type='teal'] {
+  background: #b1ebf8;
+}
+
+.c0[data-is-light][data-tag-type='pink'] {
+  background: #fec7dc;
+}
+
+.c0[data-is-light][data-tag-type='pink'] {
+  background: #fec7dc;
+}
+
+.c0[data-is-light][data-tag-type='violet'] {
+  background: #e7d2f7;
+}
+
+.c0[data-is-light][data-tag-type='grey'] {
+  background: #f2f2f2;
 }
 
 .c0[data-is-squared='true'] {
@@ -123,7 +174,7 @@ exports[`it renders 1`] = `
 
 <div
   class="c0"
-  data-tag-type="warning"
+  data-tag-type="yellow"
 >
   <p
     class="c1"
