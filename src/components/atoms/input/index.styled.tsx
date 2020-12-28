@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { ThemeProps } from 'theme'
+import { pcLayout, spLayout } from 'utils'
 
 export const StyledInput = styled.div`
   position: relative;
@@ -51,15 +52,16 @@ export const StyledInput = styled.div`
     }
   }
 
-  @include layout-sp {
+  ${spLayout()`
     font-size: 14px;
     line-height: 22px;
-  }
+  `}
 
-  @include layout-pc {
+  ${pcLayout()`
     font-size: 16px;
     line-height: 24px;
-  }
+  `}
+
   &[data-size='lg'] {
     font-size: 16px;
     line-height: 24px;
