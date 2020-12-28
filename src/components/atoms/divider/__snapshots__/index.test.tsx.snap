@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  border-color: #d2d6dc;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.c0[data-diver-type='dashed'] {
+  border-style: dashed;
+}
+
+.c0[data-diver-type='dotted'] {
+  border-style: dotted;
+}
+
+.c0[data-diver-type='double'] {
+  border-style: double;
+}
+
+.c0[data-diver-type='groove'] {
+  border-style: groove;
+}
+
+.c0[data-diver-type='ridge'] {
+  border-style: ridge;
+}
+
+.c0[data-diver-type='inset'] {
+  border-style: inset;
+}
+
+.c0[data-diver-type='outset'] {
+  border-style: outset;
+}
+
+<hr
+  class="c0"
+  data-diver-type="dotted"
+/>
+`;
