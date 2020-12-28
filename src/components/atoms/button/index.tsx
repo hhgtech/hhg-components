@@ -5,15 +5,14 @@ import classnames from 'classnames'
 import { StyledButton, StyledLoader } from './index.styled'
 
 export type Props = {
-  color?: 'primary' | 'secondary'
   size: 'lg' | 'md' | 'sm'
   children: ReactNode
+  color?: 'primary' | 'secondary'
   isDisabled?: boolean
   isBlock?: boolean
   title?: string
   className?: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  icon?: any
+  icon?: JSX.Element
   isLoading?: boolean
   loadingText?: string
   onClick?: () => void
@@ -108,7 +107,9 @@ const Button = ({
         <span>{loadingText}</span>
       </div>
     ) : (
-      <span>{children}</span>
+      <span>
+        {icon && !isLoading && icon} {children}
+      </span>
     )}
   </StyledButton>
 )

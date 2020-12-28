@@ -122,6 +122,7 @@ exports[`it renders 1`] = `
   data-size="md"
 >
   <span>
+     
     This is a test tag
   </span>
 </button>
