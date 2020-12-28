@@ -1,4 +1,7 @@
+export { Breadcrumbs } from './breadcrumbs'
 export { DashboardMenu } from './dashboardmenu'
-export { Tabs } from './tabs'
 export { DatePicker } from './datePicker'
+export { Dropdown } from './dropdown'
 export { StatisticCard } from './statisticCard'
+export { Table } from './table'
+export { Tabs } from './tabs'
