@@ -1,12 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
 import {
   StyledDescriptionWrapper,
+  StyledDot,
   StyledStatisticContainer,
   StyledStatisticNumberWrapper,
 } from './index.styled'
 
 export type Props = {
+  type: 'big' | 'small'
   description: string
   value: string | number
   withIcon?: JSX.Element
@@ -16,6 +18,7 @@ export type Props = {
 }
 
 const StatisticCard = ({
+  type,
   description,
   value,
   withIcon,
@@ -26,13 +29,17 @@ const StatisticCard = ({
   return (
     <StyledStatisticContainer
       className={className}
-      data-is-in-card={isInACard || undefined}
-      cardColor={cardColor}
+      data-size={type}
+      data-is-in-card={type === 'big' && isInACard}
+      data-card-color={cardColor}
     >
-      <StyledDescriptionWrapper>{description}</StyledDescriptionWrapper>
-      <StyledStatisticNumberWrapper>
-        {withIcon}
-        <div>{value}</div>
+      <StyledDescriptionWrapper>
+        {type === 'small' && <StyledDot data-color={cardColor} />}
+        {description}
+      </StyledDescriptionWrapper>
+      <StyledStatisticNumberWrapper data-size={type}>
+        {type !== 'small' && withIcon}
+        {value}
       </StyledStatisticNumberWrapper>
     </StyledStatisticContainer>
   )

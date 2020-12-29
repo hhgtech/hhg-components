@@ -9,9 +9,10 @@ import MockTheme from '../../../mockTheme'
 afterEach(cleanup)
 
 test('it renders', () => {
-  const datePicker = render(
+  const statisticCard = render(
     <MockTheme>
       <StatisticCard
+        type="big"
         description="Total Bookings"
         value={12789}
         withIcon={
@@ -38,6 +39,6 @@ test('it renders', () => {
     </MockTheme>,
   )
 
-  const self = datePicker.container.firstChild
+  const self = statisticCard.container.firstChild
   expect(self).toMatchSnapshot()
 })

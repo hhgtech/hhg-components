@@ -127,6 +127,8 @@ export const theme = {
     fwSemiBold: '600',
     fsCaption2: '13px',
     fsHeading2: '28px',
+    fsHeading6: '16px',
+    fsParagraph4: '14px',
     fwRegular: '400',
   },
 }

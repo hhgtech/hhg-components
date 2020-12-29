@@ -1,22 +1,28 @@
 import styled from 'styled-components'
 import { ThemeProps } from 'theme'
 
-type Props = {
-  cardColor?: string
-}
-
-export const StyledStatisticContainer = styled.div<Props>`
+export const StyledStatisticContainer = styled.div`
   border-radius: 6px;
-
-  &[data-is-in-card] {
-    padding: 12px;
-    background-color: ${(props) => props.cardColor};
-  }
+  ${(props: any) =>
+    props['data-is-in-card'] &&
+    `
+  padding: 12px; 
+  background-color: ${props['data-card-color']};`}
+`
+export const StyledDot = styled.div`
+  height: 13px;
+  width: 13px;
+  background-color: ${(props: any) => props['data-color']};
+  border-radius: 50%;
+  margin-right: 10px;
 `
 
 export const StyledDescriptionWrapper = styled.div`
+  display: flex;
+  align-items: center;
   font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
   color: ${(props: ThemeProps) => props.theme.colors.gray800};
+  font-size: ${(props: ThemeProps) => props.theme.sizes.fsParagraph4};
 `
 
 export const StyledStatisticNumberWrapper = styled.div`
@@ -31,5 +37,11 @@ export const StyledStatisticNumberWrapper = styled.div`
     height: 24px;
     width: 24px;
     margin-right: 12px;
+  }
+
+  &[data-size='small'] {
+    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
+    font-size: ${(props: ThemeProps) => props.theme.sizes.fsParagraph4};
+    margin-left: 23px;
   }
 `

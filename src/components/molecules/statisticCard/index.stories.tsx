@@ -12,6 +12,7 @@ const Template: Story<Props> = (args) => <StatisticCard {...args} />
 export const Normal = Template.bind({})
 
 Normal.args = {
+  type: 'big',
   description: 'Total Bookings',
   value: 12789,
   withIcon: (
