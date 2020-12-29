@@ -27,7 +27,7 @@ export const StyledStep = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  ${(props: any) =>
+  ${(props: ThemeProps) =>
     props['data-is-active']
       ? `background-color:  ${props.theme.colors.primaryBase};
       `

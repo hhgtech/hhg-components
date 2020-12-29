@@ -1,6 +1,6 @@
 import React, { CSSProperties, ReactNode } from 'react'
+
 import styled from 'styled-components'
-import { ThemeProps, ThemeType } from 'theme'
 
 type Props = {
   children: ReactNode

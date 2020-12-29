@@ -1,6 +1,8 @@
 import React, { CSSProperties, useState, useEffect } from 'react'
 
 import { Text } from 'components/atoms'
+import { Range, getTrackBackground, useThumbOverlap } from 'react-range'
+
 import {
   StyledTrackContainer,
   StyledDot,
@@ -9,8 +11,6 @@ import {
   StyledTrack,
   StyledLabel,
 } from './index.styled'
-
-import { Range, getTrackBackground, useThumbOverlap } from 'react-range'
 
 export type Props = {
   step: number

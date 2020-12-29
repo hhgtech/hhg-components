@@ -1,9 +1,9 @@
 import React from 'react'
+
 import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
 import { Uploader } from '.'
-
 import MockTheme from '../../../mockTheme'
 import { Avatar } from '../avatar'
 import { Button } from '../button'
@@ -42,7 +42,7 @@ const avatar = (
   <Avatar
     type="square"
     avatarImg={<img src="https://source.unsplash.com/random/74x74" />}
-    onClick={() => {}}
+    onClick={() => console.log('onClick')}
   />
 )
 
@@ -72,7 +72,7 @@ const button = (
   </Button>
 )
 
-let type: 'badge' | 'button' = 'badge'
+const type: 'badge' | 'button' = 'badge'
 
 test('it renders', () => {
   const uploader = render(

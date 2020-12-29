@@ -3,7 +3,7 @@ import { ThemeProps } from 'theme'
 
 export const StyledStatisticContainer = styled.div`
   border-radius: 6px;
-  ${(props: any) =>
+  ${(props) =>
     props['data-is-in-card'] &&
     `
   padding: 12px; 
@@ -12,7 +12,7 @@ export const StyledStatisticContainer = styled.div`
 export const StyledDot = styled.div`
   height: 13px;
   width: 13px;
-  background-color: ${(props: any) => props['data-color']};
+  background-color: ${(props) => props['data-color']};
   border-radius: 50%;
   margin-right: 10px;
 `

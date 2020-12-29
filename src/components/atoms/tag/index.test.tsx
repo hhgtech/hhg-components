@@ -1,10 +1,10 @@
 import React from 'react'
-import { render, cleanup, screen } from '@testing-library/react'
+
+import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
-import MockTheme from './../../../mockTheme'
-
 import { Tag } from '.'
+import MockTheme from './../../../mockTheme'
 
 afterEach(cleanup)
 

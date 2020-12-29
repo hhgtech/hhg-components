@@ -1,10 +1,10 @@
 import React from 'react'
+
 import { render, cleanup } from '@testing-library/react'
-import ReactTestUtils, { act } from 'react-dom/test-utils'
+import { act } from 'react-dom/test-utils'
 import 'jest-styled-components'
 
 import { DatePicker } from '.'
-
 import MockTheme from './../../../mockTheme'
 
 afterEach(cleanup)
@@ -18,7 +18,7 @@ test('it renders and calendar appears on click', () => {
         placeholder={placeholder}
         displayDateFormat="dd-MM-yyyy"
         pickedDate={new Date()}
-        customInput={(props: any) => <input {...props} />}
+        customInput={(props) => <input {...props} />}
         onChange={(d: Date) => {
           console.log(d)
         }}

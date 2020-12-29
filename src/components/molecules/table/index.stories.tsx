@@ -4,8 +4,6 @@ import { Story } from '@storybook/react/types-6-0'
 
 import * as Table from '../table'
 
-import MockTheme from './../../../mockTheme'
-
 export default {
   component: Table,
   title: 'Molecules/Table',
@@ -151,7 +149,7 @@ FullTable.args = {
   verticalPadding: '30px',
 }
 
-const Header: Story = (args) => (
+const Header: Story = () => (
   <Table.Table>
     <Table.Head>
       <th>Header Cell one</th>

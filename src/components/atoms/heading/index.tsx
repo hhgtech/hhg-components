@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+
 import { CSSProperties } from 'styled-components'
 
 import { StyledHeading } from './index.styled'

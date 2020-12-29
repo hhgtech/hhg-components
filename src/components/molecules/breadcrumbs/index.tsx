@@ -1,12 +1,13 @@
 import React, { Fragment, useMemo } from 'react'
+
 import { useId } from 'react-id-generator'
 
+import { Dropdown } from '../../molecules/dropdown'
 import {
   StyledBreadcrumb,
   StyledTextLink,
   StyledSeperator,
 } from './index.styled'
-import { Dropdown } from '../../molecules/dropdown'
 
 type Page = {
   label: string
@@ -18,6 +19,7 @@ export type Props = {
   size: 'lg' | 'md' | 'sm'
   pages: Array<Page>
   className?: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   LinkComponent?: React.ComponentType<any> | string
   onChangePage?: () => void
 }
@@ -29,6 +31,7 @@ interface MappedPage extends Page {
 export type BreadcrumbItemProps = {
   page: MappedPage
   isLast?: boolean
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   LinkComponent: React.ComponentType<any> | string
   onChangePage?: () => void
 }

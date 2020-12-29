@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { CSSProperties } from 'styled-components'
 
 import {
@@ -30,7 +31,7 @@ const Dropdown = ({
   className,
   value,
   options,
-  onChange = () => {},
+  onChange,
   id,
   placeHolderIcon,
   placeholder,

@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Text } from 'components/atoms'
 import { CSSProperties } from 'styled-components'
+
 import { StyledAlert, StyledClose, StyledContent } from './index.styled'
 
 export type Props = {

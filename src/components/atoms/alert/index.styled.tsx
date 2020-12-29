@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { pcLayout, spLayout } from 'utils'
 import { ThemeProps } from 'theme'
 
 export const StyledAlert = styled.div`

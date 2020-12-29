@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
+
+import _ from 'lodash'
+
 import {
   StyledTrackContainer,
   StyledStep,
@@ -6,7 +9,6 @@ import {
   StyledTrack,
   StyledStepLabel,
 } from './index.styled'
-import _ from 'lodash'
 
 export type Props = {
   numberOfStep: number

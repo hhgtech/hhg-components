@@ -1,6 +1,7 @@
 import React from 'react'
-import { theme } from 'theme'
+
 import { ThemeProvider } from 'styled-components'
+import { theme } from 'theme'
 
 const MockTheme = ({ children }: { children: React.ReactNode }) => (
   <ThemeProvider theme={theme}>{children}</ThemeProvider>

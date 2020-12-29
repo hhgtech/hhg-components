@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { pcLayout, spLayout } from 'utils'
 import { ThemeProps } from 'theme'
+import { pcLayout, spLayout } from 'utils'
 
 export const StyledText = styled.p`
   color: ${(props: ThemeProps) => props.theme.colors.gray800};

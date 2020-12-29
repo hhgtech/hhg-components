@@ -20,62 +20,62 @@ const Flag = ({ country, rounded, height, width }: Props) => {
           <defs />
           <rect width="24" height="16" rx="2" fill="#DA251D" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.938 4.759l-.396 1.218a1.903 1.903 0 001.232 2.418l.457.149"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M12.062 4.759l.395 1.218a1.903 1.903 0 01-1.232 2.418l-.457.149"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M15.259 6.903l-1.465.027c-1.085.02-1.96.872-1.984 1.93l-.008.36"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M15.298 7.013l-1.202.783c-.89.579-2.135.37-2.821-.474l-.233-.287"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M14.105 10.586l-.453-1.22c-.37-.997-1.487-1.552-2.53-1.258l-.447.126"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M14.006 10.653l-1.104-.78c-.9-.637-1.121-1.8-.5-2.635l.267-.357"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M8.738 6.903l1.465.026c1.085.02 1.96.872 1.984 1.932l.008.359"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M8.7 7.013l1.202.782c.89.58 2.135.37 2.821-.474l.233-.286"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M9.892 10.586l.453-1.22c.37-.997 1.487-1.552 2.53-1.258l.447.126"
             fill="#FF0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M9.991 10.654l1.104-.78c.901-.637 1.122-1.8.5-2.635l-.267-.357"
             fill="#FF0"
           />
@@ -97,62 +97,62 @@ const Flag = ({ country, rounded, height, width }: Props) => {
           <g mask="url(#a)">
             <path fill="#DA251D" d="M-4-.017h28v20H-4z" />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M9.928 5.932L8.774 9.736l2.663.927"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M10.072 5.932l1.154 3.804-2.663.927"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M13.804 8.613l-3.975.078-.059 2.82"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M13.849 8.75l-3.262 2.273-1.704-2.246"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M12.458 13.215L11.155 9.46l-2.699.815"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M12.342 13.3l-3.17-2.4 1.61-2.315"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.195 8.613l3.975.078.059 2.82"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.15 8.75l3.262 2.273 1.704-2.246"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.541 13.215L8.844 9.46l2.699.815"
               fill="#FF0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.657 13.3l3.17-2.4-1.61-2.315"
               fill="#FF0"
             />
@@ -184,8 +184,8 @@ const Flag = ({ country, rounded, height, width }: Props) => {
           <rect y=".983" width="24" height="16" rx="2" fill="#ED1C24" />
           <path fill="#fff" d="M0 3.65h24v10.667H0z" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M0 6.317h24v5.333H0V6.317z"
             fill="#241D4F"
           />
@@ -208,8 +208,8 @@ const Flag = ({ country, rounded, height, width }: Props) => {
             <path fill="#ED1C24" d="M-4-.017h28v20H-4z" />
             <path fill="#fff" d="M-4 3.317h28V16.65H-4z" />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M-4 6.65h28v6.667H-4V6.65z"
               fill="#241D4F"
             />
@@ -246,14 +246,14 @@ const Flag = ({ country, rounded, height, width }: Props) => {
           />
           <path d="M0 2a2 2 0 012-2h10v8.38H0v-6.38z" fill="#010066" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M4.936 1.524c-1.424 0-2.58 1.045-2.58 2.332 0 1.288 1.156 2.333 2.58 2.333.515 0 .994-.137 1.397-.372a2.502 2.502 0 01-.748.114c-1.263 0-2.288-.927-2.288-2.068 0-1.142 1.025-2.069 2.288-2.069.279 0 .546.046.794.129a2.763 2.763 0 00-1.443-.4z"
             fill="#FC0"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M9.216 5.07l-1.087-.514.322 1.053-.727-.88-.227 1.07-.223-1.071-.73.878.325-1.052-1.089.512.809-.823-1.232.043 1.133-.431-1.131-.434 1.231.046-.805-.825 1.086.514-.321-1.052.727.88.227-1.071.223 1.072.73-.879-.325 1.052 1.088-.511-.808.823 1.231-.043-1.132.43 1.13.435-1.23-.047.805.825z"
             fill="#FC0"
           />
@@ -281,14 +281,14 @@ const Flag = ({ country, rounded, height, width }: Props) => {
             />
             <path fill="#010066" d="M0-1h10v12H0z" />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M4.114 3.86c-1.187 0-2.15 1.372-2.15 3.062 0 1.69.963 3.061 2.15 3.061.429 0 .828-.179 1.164-.487a1.401 1.401 0 01-.624.149c-1.052 0-1.906-1.216-1.906-2.715 0-1.498.854-2.714 1.906-2.714.233 0 .456.06.662.168-.343-.33-.757-.523-1.202-.523z"
               fill="#FC0"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.68 8.516l-.906-.675.267 1.381-.605-1.155-.19 1.406-.185-1.407-.608 1.153.27-1.38-.907.67.674-1.08-1.026.057.943-.566-.942-.57 1.026.061L4.82 5.33l.905.675-.267-1.382.605 1.156.19-1.407.185 1.407.609-1.153-.271 1.38.907-.67-.674 1.08 1.026-.057-.943.566.942.57-1.026-.061.671 1.083z"
               fill="#FC0"
             />
@@ -304,32 +304,32 @@ const Flag = ({ country, rounded, height, width }: Props) => {
           <rect y="8.381" width="24" height="7.619" rx="2" fill="#EA2839" />
           <path fill="#34B233" d="M0 5.87h24v4.935H0z" />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M10.77 8.63l1.384-3.94 1.384 3.94H10.77z"
             fill="#fff"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M13.31 9.355L9.587 11.82l1.486-3.91 2.239 1.445z"
             fill="#fff"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.787 9.802L8 7.415l4.644.048-.856 2.34z"
             fill="#fff"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M11.667 7.459l4.643-.048-3.788 2.387-.855-2.34z"
             fill="#fff"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M13.236 7.906l1.486 3.911-3.725-2.465 2.24-1.446z"
             fill="#fff"
           />
@@ -353,32 +353,32 @@ const Flag = ({ country, rounded, height, width }: Props) => {
             <path fill="#EA2839" d="M-4 10h28v10H-4z" />
             <path fill="#34B233" d="M-4 6.704h28v6.478H-4z" />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.565 10.327l1.615-5.172 1.614 5.172H8.565z"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M11.53 11.277l-4.347 3.236L8.917 9.38l2.612 1.897z"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M9.752 11.865L5.332 8.73l5.417.063-.997 3.07z"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M9.61 8.79l5.418-.063-4.42 3.133-.998-3.07z"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M11.442 9.377l1.735 5.133-4.346-3.236 2.611-1.897z"
               fill="#fff"
             />
@@ -410,98 +410,98 @@ const Flag = ({ country, rounded, height, width }: Props) => {
               fill="#CE1126"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M13.025 7.605L-2.572 18l-.857-8V-2.4"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M11.723 7.071v.97l-.6-.784.971.3-.972.299.6-.785zM6.216 11.3l-.9-.486 1.029-.093-.764.636.208-.936.427.878zM5.217 4.445l.9-.485-.428.878-.208-.936.765.636-1.029-.093zM7.714 8.57c.508 0 .92-.432.92-.965 0-.533-.412-.965-.92-.965s-.92.432-.92.965c0 .533.412.965.92.965z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M5.977 7.604l.14.146 1.595-.146-1.596-.147-.14.147zM6.237 7.877l.107.112 1.369-.385-1.476.273zM6.237 7.331l.107-.112 1.369.385-1.476-.273zM6.48 6.395l-.012.196 1.24.95L6.69 6.384l-.21.011z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.456 6.76l-.009.15 1.26.63-1.25-.78z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.87 6.374l.16-.009.676 1.176-.836-1.167z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.647 5.936l-.157.13.157 1.49.157-1.49-.157-.13zM7.354 6.178l-.12.1.412 1.277-.292-1.377z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.939 6.178l.12.1-.413 1.277.293-1.377zM8.94 6.405l-.209-.012L7.713 7.55l1.24-.95-.012-.195z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.55 6.383l-.16-.009-.677 1.176.837-1.167zM8.964 6.77l.009.149-1.26.631 1.25-.78zM9.45 7.606l-.14-.146-1.597.146 1.597.147.14-.147zM9.188 7.333l-.106-.112-1.37.385 1.476-.273z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M9.188 7.879l-.106.111-1.37-.384 1.476.273zM8.948 8.815l.012-.196-1.24-.95 1.018 1.157.21-.011z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.971 8.45l.01-.15-1.26-.63 1.25.78z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.558 8.836l-.16.009-.677-1.176.837 1.167z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.781 9.274l.157-.13-.157-1.49-.157 1.49.157.13z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M8.074 9.032l.12-.1-.413-1.277.293 1.377z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M7.489 9.032l-.12-.1.412-1.277-.292 1.377zM6.486 8.805l.21.012L7.713 7.66l-1.24.95.013.195z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.877 8.827l.16.008.676-1.175-.836 1.167z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.463 8.44l-.01-.149 1.26-.631-1.25.78z"
               fill="#FCD116"
             />
@@ -531,62 +531,62 @@ const Flag = ({ country, rounded, height, width }: Props) => {
               fill="#CE1126"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M11.196 9.507L1.9 15.539-3.5 13l5.4-9.524"
               fill="#fff"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M9.678 8.84v1.212l-.701-.98 1.134.374-1.134.375.7-.981zM3.251 14.125l-1.05-.607 1.2-.116-.891.795.242-1.17.5 1.098zM2.086 5.557l1.05-.606-.499 1.097-.243-1.17.892.795-1.2-.116zM5 10.713c.592 0 1.072-.54 1.072-1.206 0-.666-.48-1.206-1.073-1.206s-1.073.54-1.073 1.206c0 .666.48 1.206 1.073 1.206z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M2.973 9.507l.163.183 1.862-.183-1.862-.183-.163.183zM3.276 9.848l.125.14 1.597-.48-1.722.34zM3.276 9.166l.125-.14 1.597.481-1.722-.341zM3.558 7.996l-.014.245L4.99 9.428 3.803 7.982l-.245.014z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M3.531 8.452l-.01.187 1.469.789-1.459-.976zM4.014 7.97l.187-.011.789 1.469-.976-1.459z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M4.921 7.422l-.183.163.183 1.862.183-1.862-.183-.163zM4.58 7.725l-.14.125.48 1.597-.34-1.722z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M5.262 7.725l.14.125-.481 1.597.341-1.722zM6.431 8.007l-.245-.014L5 9.439l1.446-1.187-.014-.245zM5.976 7.98l-.187-.01-.79 1.469.977-1.459z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.458 8.463l.01.187L5 9.438l1.459-.976zM7.023 9.507l-.162-.183-1.863.183 1.863.183.162-.183zM6.72 9.166l-.125-.14-1.597.481 1.722-.341zM6.72 9.848l-.125.14-1.597-.48 1.722.34zM6.439 11.018l.014-.244-1.446-1.188 1.187 1.447.245-.015z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M6.466 10.562l.01-.187-1.469-.789 1.459.976zM5.983 11.045l-.186.01-.79-1.469.976 1.459z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M5.076 11.592l.183-.162-.183-1.863-.183 1.863.183.162zM5.417 11.29l.14-.125-.48-1.597.34 1.721z"
               fill="#FCD116"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M4.735 11.29l-.14-.125.481-1.597-.341 1.721zM3.565 11.007l.245.014 1.187-1.446-1.446 1.188.014.244zM4.02 11.034l.187.01.79-1.469-.976 1.459zM3.538 10.552l-.01-.187 1.469-.79-1.459.977z"
               fill="#FCD116"
             />

@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/display-name */
 import React, { useEffect, useRef, useState } from 'react'
 
 import { format } from 'date-fns'
 import DayPickerInput from 'react-day-picker/DayPickerInput'
+
 import { StyledCaptionWrapper, StyledPickerContainer } from './index.styled'
 
 export type Props = {
@@ -43,6 +46,7 @@ const DatePicker = ({
     return dateFormatter(date, format)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleDateClick = (e: any) => {
     if (
       !datePickerContainer.current ||
@@ -145,6 +149,7 @@ const DatePicker = ({
           overlayWrapper: 'pickerOverlayWrapper',
           overlay: 'pickerOverlay',
         }}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         component={React.forwardRef((props: any, ref: any) => (
           <CustomInput {...props} />
         ))}

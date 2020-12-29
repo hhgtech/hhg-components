@@ -1,10 +1,10 @@
 import React from 'react'
+
 import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
-import MockTheme from './../../../mockTheme'
-
 import { Toggle } from '.'
+import MockTheme from './../../../mockTheme'
 
 afterEach(cleanup)
 

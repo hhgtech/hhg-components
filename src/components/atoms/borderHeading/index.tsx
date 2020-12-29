@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react'
+
 import { CSSProperties } from 'styled-components'
+
 import { StyledBorderHeading } from './index.styled'
 
 export type Props = {

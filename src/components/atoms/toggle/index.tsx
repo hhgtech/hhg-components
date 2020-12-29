@@ -1,7 +1,5 @@
 import React, { CSSProperties } from 'react'
 
-import classnames from 'classnames'
-
 import { StyledToggle } from './index.styled'
 
 export type Props = {

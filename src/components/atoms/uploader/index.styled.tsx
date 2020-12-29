@@ -18,12 +18,10 @@ export const StyledUploader = styled.div`
   }
 `
 export const StyledElementContainer = styled.div`
-  ${(props: any) =>
+  ${(props) =>
     props['data-is-attached-to-element'] &&
-    `
-  display: inline-block;
-  position: relative;
-  `}
+    `display: inline-block;
+    position: relative;`}
 `
 export const StyledIconWrapper = styled.div`
   display: flex;
@@ -34,7 +32,7 @@ export const StyledIconWrapper = styled.div`
   border-radius: 50%;
   background-color: ${(props: ThemeProps) => props.theme.colors.gray100};
 
-  ${(props: any) =>
+  ${(props) =>
     props['data-is-attached-to-element'] &&
     `
     position: absolute;

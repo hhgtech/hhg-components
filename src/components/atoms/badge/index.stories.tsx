@@ -2,8 +2,8 @@ import React from 'react'
 
 import { Story } from '@storybook/react/types-6-0'
 
-import { Badge, Props } from './index'
 import { Avatar } from '../avatar'
+import { Badge, Props } from './index'
 
 export default {
   component: Badge,

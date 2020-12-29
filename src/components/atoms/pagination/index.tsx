@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 
-import classnames from 'classnames'
 import {
   StyledPageBlock,
   StyledPagination,
@@ -42,7 +41,7 @@ const Pagination = ({
   }, [currentPage])
 
   return (
-    <StyledPagination className={classnames(className)}>
+    <StyledPagination className={className}>
       <StyledPageBlock
         onClick={() => handlePageChange(activePage - 1)}
         data-last-page={activePage === 1 || undefined}

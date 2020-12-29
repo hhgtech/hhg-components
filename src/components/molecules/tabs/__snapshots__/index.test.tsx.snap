@@ -1,6 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`it renders 1`] = `
+.c2 {
+  color: #262626;
+}
+
+.c2[data-type='bold'],
+.c2[data-variant='heading'],
+.c2[data-type='caption'] {
+  font-weight: 700;
+}
+
+.c2[data-type='caption'] {
+  text-transform: uppercase;
+}
+
 .c0 {
   padding-bottom: 4px;
 }
@@ -36,20 +50,6 @@ exports[`it renders 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 {
-  color: #262626;
-}
-
-.c2[data-type='bold'],
-.c2[data-variant='heading'],
-.c2[data-type='caption'] {
-  font-weight: 700;
-}
-
-.c2[data-type='caption'] {
-  text-transform: uppercase;
 }
 
 @media (min-width:768px) {

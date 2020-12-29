@@ -1,8 +1,8 @@
-import { Popup, Props } from './index'
-
 import React from 'react'
+
 import { Story } from '@storybook/react/types-6-0'
-import { useArgTypes } from '@storybook/api'
+
+import { Popup, Props } from './index'
 
 export default {
   component: Popup,

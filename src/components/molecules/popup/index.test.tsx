@@ -1,9 +1,9 @@
 import React from 'react'
-import { render, cleanup, screen } from '@testing-library/react'
+
+import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
 import { Popup } from '.'
-
 import MockTheme from './../../../mockTheme'
 
 afterEach(cleanup)

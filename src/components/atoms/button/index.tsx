@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react'
 
-import classnames from 'classnames'
-
 import { StyledButton, StyledLoader } from './index.styled'
 
 export type Props = {

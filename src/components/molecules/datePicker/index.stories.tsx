@@ -1,5 +1,8 @@
+/* eslint-disable react/display-name */
 import React from 'react'
+
 import { Story } from '@storybook/react/types-6-0'
+
 import { DatePicker, Props } from './index'
 
 export default {
@@ -15,7 +18,7 @@ Normal.args = {
   placeholder: 'placeholder',
   displayDateFormat: 'dd-MM-yyyy',
   pickedDate: new Date(),
-  customInput: (props: any) => <input {...props} />,
+  customInput: (props) => <input {...props} />,
   onChange: (d: Date) => {
     console.log(d)
   },

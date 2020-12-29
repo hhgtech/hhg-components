@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { ThemeProps } from 'theme'
 
 export const StyledToggle = styled.div`

@@ -1,5 +1,4 @@
-import styled, { keyframes } from 'styled-components'
-import { ThemeProps } from 'theme'
+import styled from 'styled-components'
 
 export const StyledFlag = styled.div`
   --width: ${(props) => props.theme.width};

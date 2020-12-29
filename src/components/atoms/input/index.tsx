@@ -1,5 +1,6 @@
 import React, { KeyboardEvent } from 'react'
-import styled, { CSSProperties } from 'styled-components'
+
+import { CSSProperties } from 'styled-components'
 
 import {
   StyledInput,

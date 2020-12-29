@@ -1,9 +1,9 @@
 import React from 'react'
 
-import DeleteIcon from './delete.svg'
 import { Story } from '@storybook/react/types-6-0'
 
 import { Input, Props } from '.'
+import DeleteIcon from './delete.svg'
 
 export default {
   component: Input,

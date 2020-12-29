@@ -1,13 +1,12 @@
 import React from 'react'
 
+import { Button } from '../button'
 import {
   StyledDefaultButtonContent,
   StyledElementContainer,
   StyledIconWrapper,
   StyledUploader,
 } from './index.styled'
-
-import { Button } from '../button'
 
 export type Props = {
   type: 'badge' | 'button'

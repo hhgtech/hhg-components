@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { StyledBadge } from './index.styled'
 
 export type Props = {

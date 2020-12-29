@@ -1,9 +1,9 @@
 import React from 'react'
 
 import { CSSProperties } from 'styled-components'
-import { StyledAvatar } from './index.styled'
 
 import MockTheme from './../../../mockTheme'
+import { StyledAvatar } from './index.styled'
 
 export type Props = {
   avatarImg: JSX.Element

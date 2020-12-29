@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0[data-type='circle'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0[data-type='circle'] input {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #737373;
+  border-radius: 100%;
+  -webkit-transition: background 0.4s,border-color 0.4s,box-shadow 0.4s;
+  transition: background 0.4s,border-color 0.4s,box-shadow 0.4s;
+  cursor: inherit;
+  margin-right: 8px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0[data-type='circle'] input:hover,
+.c0[data-type='circle'] input:active {
+  border-color: #2d87f3;
+  box-shadow: 0 0 2px 2px #2d87f3;
+}
+
+.c0[data-type='circle'] input:checked {
+  border-color: #2d87f3;
+}
+
+.c0[data-type='circle'] input:checked:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 3px;
+  top: 4px;
+  border-radius: 50%;
+  background-color: #2d87f3;
+}
+
+.c0[data-type='circle'] label {
+  font-weight: 400;
+  width: calc(100% - 24px);
+  cursor: inherit;
+}
+
+.c0[data-type='circle'][data-disabled='true'] {
+  color: #bfbfbf;
+  cursor: not-allowed;
+}
+
+.c0[data-type='circle'][data-disabled='true'] input {
+  border-color: #bfbfbf;
+}
+
+.c0[data-type='circle'][data-disabled='true'] input:hover {
+  border-color: #bfbfbf;
+  box-shadow: none;
+}
+
+.c0[data-type='rectangle'] input {
+  display: none;
+}
+
+.c0[data-type='rectangle'] input:checked ~ label {
+  font-weight: 700;
+  color: #fff;
+  background-color: #2d87f3;
+  border-color: #2d87f3;
+}
+
+.c0[data-type='rectangle'] label {
+  box-sizing: border-box;
+  display: inline-block;
+  width: auto;
+  border: solid 1px #bfbfbf;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 400;
+  color: #262626;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0[data-type='rectangle'] label:hover,
+.c0[data-type='rectangle'] label:active {
+  border-color: #2d87f3;
+}
+
+.c0[data-type='rectangle'][data-disabled='true'] input {
+  cursor: not-allowed;
+}
+
+.c0[data-type='rectangle'][data-disabled='true'] label {
+  cursor: not-allowed;
+  color: #bfbfbf;
+}
+
+.c0[data-type='rectangle'][data-disabled='true'] label:hover {
+  border-color: #bfbfbf;
+}
+
+.c0[data-type='rectangle'][data-size='small'] label {
+  font-size: 13px;
+  height: 32px;
+  padding: 6px 12px;
+}
+
+.c0[data-type='rectangle'][data-size='large'] label {
+  font-size: 14px;
+  height: 48px;
+  padding: 13px 16px;
+}
+
+<div
+  class="c0"
+  data-disabled="false"
+  data-size="small"
+  data-type="circle"
+>
+  <input
+    checked=""
+    id="radio-abc"
+    name="radio"
+    type="radio"
+    value="abc"
+  />
+  <label
+    for="radio-abc"
+  >
+    radio
+  </label>
+</div>
+`;

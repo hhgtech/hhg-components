@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 
+import { Text } from 'components/atoms'
+import { useId } from 'react-id-generator'
 import { CSSProperties } from 'styled-components'
+
 import {
   StyledTabs,
   StyledTab,
   StyledTabContent,
   StyledIcon,
 } from './index.styled'
-import { Text } from 'components/atoms'
-
-import { useId } from 'react-id-generator'
 
 type TabContent = {
   name: string

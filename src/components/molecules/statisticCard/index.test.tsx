@@ -1,9 +1,9 @@
 import React from 'react'
+
 import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
 import { StatisticCard } from '.'
-
 import MockTheme from '../../../mockTheme'
 
 afterEach(cleanup)

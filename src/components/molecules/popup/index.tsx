@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import { CSSProperties } from 'styled-components'
 import { StyledPopup } from './index.styled'
 
 export type Props = {
@@ -10,12 +9,7 @@ export type Props = {
   onClose: () => void
 }
 
-const Popup = ({
-  type = 'lead',
-  closeIcon,
-  isOpen = true,
-  onClose = () => {},
-}: Props) => {
+const Popup = ({ type = 'lead', closeIcon, isOpen = true, onClose }: Props) => {
   return (
     <StyledPopup data-open={isOpen} data-type={type}>
       <div onClick={onClose}>{closeIcon}</div>
