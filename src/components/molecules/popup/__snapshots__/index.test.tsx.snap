@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px #d9d9d9;
+  border-radius: 6px;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.c0[data-open='true'] {
+  visibility: visible;
+  z-index: 200;
+  opacity: 1;
+  top: 50%;
+}
+
+.c0[data-open='false'] {
+  top: -50%;
+}
+
+.c0[data-type='lead'] {
+  width: 332px;
+  height: 460px;
+}
+
+.c0[data-type='lead'] div {
+  top: -15px;
+  right: -15px;
+}
+
+.c0[data-type='form'] {
+  width: 496px;
+  height: 548px;
+}
+
+.c0[data-type='confirm'] {
+  width: 380px;
+  height: 252px;
+}
+
+.c0 div {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.c0 div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+<div
+  class="c0"
+  data-open="true"
+  data-type="lead"
+>
+  <div>
+    <img
+      src="https://source.unsplash.com/random/16x16"
+    />
+  </div>
+</div>
+`;
