@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.c1 input {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #737373;
+  border-radius: 2px;
+  -webkit-transition: background 0.4s,border-color 0.4s,box-shadow 0.4s;
+  transition: background 0.4s,border-color 0.4s,box-shadow 0.4s;
+  cursor: inherit;
+}
+
+.c1 input:hover,
+.c1 input:active {
+  border-color: #2d87f3;
+  box-shadow: 0 0 2px 2px #91caff;
+}
+
+.c1 input:checked {
+  border: 0;
+  background: #2d87f3 url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L4.125 8L1 4.81819' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+.c1 label {
+  max-width: 15rem;
+  margin-left: 8px;
+  font-weight: 400;
+  width: calc(100% - 24px);
+  cursor: inherit;
+}
+
+.c1[data-disabled] {
+  color: #bfbfbf;
+  cursor: not-allowed;
+}
+
+.c1[data-disabled] input {
+  border-color: #bfbfbf;
+}
+
+.c1[data-disabled] input:hover {
+  border-color: #bfbfbf;
+  box-shadow: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0[data-type='vertical'] {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0[data-type='vertical'] div {
+  margin-bottom: 20px;
+}
+
+.c0[data-type='horizontal'] {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c0[data-type='horizontal'] div {
+  margin-right: 25px;
+}
+
+@media (max-width:767px) {
+  .c1 label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 label {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+<div
+  class="c0"
+  data-type="vertical"
+>
+  <div
+    class="c1"
+    data-disabled="true"
+  >
+    <input
+      checked=""
+      disabled=""
+      id="checkbox1-1"
+      name="checkbox1"
+      type="checkbox"
+      value="1"
+    />
+    <label
+      for="checkbox1-1"
+    >
+      option 1
+    </label>
+  </div>
+  <div
+    class="c1"
+    data-disabled="true"
+  >
+    <input
+      disabled=""
+      id="checkbox1-2"
+      name="checkbox1"
+      type="checkbox"
+      value="2"
+    />
+    <label
+      for="checkbox1-2"
+    >
+      option 2
+    </label>
+  </div>
+  <div
+    class="c1"
+    data-disabled="true"
+  >
+    <input
+      disabled=""
+      id="checkbox1-3"
+      name="checkbox1"
+      type="checkbox"
+      value="3"
+    />
+    <label
+      for="checkbox1-3"
+    >
+      option 3
+    </label>
+  </div>
+  <div
+    class="c1"
+    data-disabled="true"
+  >
+    <input
+      checked=""
+      disabled=""
+      id="checkbox1-4"
+      name="checkbox1"
+      type="checkbox"
+      value="4"
+    />
+    <label
+      for="checkbox1-4"
+    >
+      option 4
+    </label>
+  </div>
+</div>
+`;
