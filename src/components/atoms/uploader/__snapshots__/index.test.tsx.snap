@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 .default-button[data-color='secondary'] {
+  border: solid 2px #bfbfbf;
+  color: #262626;
+}
+
+.c0 .default-button[data-color='secondary']:hover {
+  border: solid 2px #bfbfbf;
+  background-color: #bfbfbf;
+  color: #fff;
+}
+
+.c0 .default-button[data-color='secondary']:hover > svg {
+  fill: #fff;
+}
+
+.c1 {
+  display: inline-block;
+  position: relative;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+}
+
+.c3 > svg {
+  height: 16px;
+  width: 16px;
+}
+
+.c2 {
+  cursor: pointer;
+}
+
+.c2[data-avatar-type='square'] img {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+}
+
+.c2[data-avatar-type='rounded'] img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+    data-is-attached-to-element="true"
+  >
+    <div
+      class="c2"
+      data-avatar-type="square"
+    >
+      <img
+        src="https://source.unsplash.com/random/74x74"
+      />
+    </div>
+    <div
+      class="c3"
+      data-is-attached-to-element="true"
+    >
+      <svg
+        data-name="Layer 1"
+        id="prefix__Layer_1"
+        viewBox="0 0 15.5 12.5"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <style>
+            .prefix__cls-1{fill:none;stroke:#262626;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+          </style>
+        </defs>
+        <title>
+          camera
+        </title>
+        <path
+          class="prefix__cls-1"
+          d="M15 11.78a1.19 1.19 0 01-.37.86 1.31 1.31 0 01-.9.36H2.27a1.31 1.31 0 01-.9-.36 1.19 1.19 0 01-.37-.86V5.06a1.19 1.19 0 01.37-.87 1.31 1.31 0 01.9-.36h2.55L6.09 2h3.82l1.27 1.83h2.55a1.31 1.31 0 01.9.36 1.19 1.19 0 01.37.87z"
+          transform="translate(-.25 -1.25)"
+        />
+        <path
+          class="prefix__cls-1"
+          d="M8 10a2 2 0 10-2-2 2 2 0 002 2z"
+          transform="translate(-.25 -1.25)"
+        />
+      </svg>
+    </div>
+  </div>
+  <input
+    accept="image/*"
+    id="uploader-input-1"
+    multiple=""
+    style="display: none;"
+    type="file"
+  />
+</div>
+`;
