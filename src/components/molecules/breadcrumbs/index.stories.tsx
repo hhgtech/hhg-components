@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Story } from '@storybook/react/types-6-0'
 
-import { Breadcrumbs, Props } from './index'
+import { Breadcrumbs, Props } from './'
 
 export default {
   component: Breadcrumbs,

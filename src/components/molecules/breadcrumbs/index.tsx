@@ -2,7 +2,7 @@ import React, { Fragment, useMemo } from 'react'
 
 import { useId } from 'react-id-generator'
 
-import { Dropdown } from '../../molecules/dropdown'
+import { Dropdown } from '../dropdown'
 import {
   StyledBreadcrumb,
   StyledTextLink,

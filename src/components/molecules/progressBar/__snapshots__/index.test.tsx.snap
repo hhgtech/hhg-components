@@ -2,8 +2,8 @@
 
 exports[`it renders 1`] = `
 .c0 {
-  margin: 0 12px;
   position: relative;
+  width: 100%;
 }
 
 .c0 div[role='slider'] {
@@ -44,31 +44,10 @@ exports[`it renders 1`] = `
   border: 1px solid #bfbfbf;
 }
 
-.c5 {
-  position: absolute;
-  top: 19px;
-  width: 24px;
-  height: 24px;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  cursor: pointer;
+.c3[data-is-active='true'] {
   background-color: #2d87f3;
+  color: #fff;
+  border: none;
 }
 
 .c1 {
@@ -78,7 +57,20 @@ exports[`it renders 1`] = `
   display: flex;
   width: 100%;
   height: 36px;
-  margin-top: 32px;
+}
+
+.c1[data-track-type='detail'] {
+  margin-top: 0;
+}
+
+.c1[data-track-type='detail'][data-step-passed='true'] > div {
+  border: 1px solid #2d87f3;
+  height: 0px;
+}
+
+.c1[data-track-type='detail'] > div {
+  border: 1px solid #d9d9d9;
+  height: 0px;
 }
 
 .c2 {
@@ -96,15 +88,20 @@ exports[`it renders 1`] = `
   top: 32px;
   min-width: 100px;
   text-align: center;
-  color: #262626;
+  color: #737373;
   font-size: 13px;
+  font-weight: 700;
+}
+
+.c4[data-step-passed='true'] {
+  color: #262626;
 }
 
 <div
-  class="c0 custom-class"
+  class="c0 custom-class progress-bar"
 >
   <div
-    class="c1 progress-track"
+    class="c1"
   >
     <div
       class="c2"
@@ -119,32 +116,35 @@ exports[`it renders 1`] = `
     1
     <div
       class="c4"
+      data-step-passed="true"
     >
       Step 1
     </div>
   </div>
   <div
     class="c3"
-    data-is-active="false"
+    data-is-active="true"
     data-label="1"
     style="left: 0px;"
   >
     2
     <div
       class="c4"
+      data-step-passed="true"
     >
       Step 2
     </div>
   </div>
   <div
-    class="c5"
-    data-is-active="true"
+    class="c3"
+    data-is-active="false"
     data-label="2"
     style="left: 0px;"
   >
     3
     <div
       class="c4"
+      data-step-passed="false"
     >
       Step 3
     </div>
@@ -158,6 +158,7 @@ exports[`it renders 1`] = `
     4
     <div
       class="c4"
+      data-step-passed="false"
     >
       Step 4
     </div>
