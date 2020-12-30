@@ -1,4 +1,4 @@
-import { ThemeProps } from 'src/misc/theme'
+import { ThemeProps } from 'misc/theme'
 import styled from 'styled-components'
 
 export const StyledPagination = styled.div`

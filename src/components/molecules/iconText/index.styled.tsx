@@ -1,5 +1,5 @@
-import { ThemeProps } from 'src/misc/theme'
-import { spLayout } from 'src/misc/utils'
+import { ThemeProps } from 'misc/theme'
+import { spLayout } from 'misc/utils'
 import styled from 'styled-components'
 
 export const StyledIconText = styled.div`

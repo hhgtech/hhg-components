@@ -1,4 +1,4 @@
-import { pcLayout } from 'src/misc/utils'
+import { pcLayout } from 'misc/utils'
 import styled from 'styled-components'
 
 export const StyledGrid = styled.div`

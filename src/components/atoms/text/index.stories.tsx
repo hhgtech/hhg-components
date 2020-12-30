@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Story } from '@storybook/react/types-6-0'
 
-import MockTheme from './../../../mockTheme'
+import MockTheme from './../../../misc/mockTheme'
 import { Props, Text } from './index'
 
 export default {

@@ -3,7 +3,7 @@ import React from 'react'
 import { Story } from '@storybook/react/types-6-0'
 
 import { BorderHeading, Props } from '.'
-import MockTheme from './../../../mockTheme'
+import MockTheme from './../../../misc/mockTheme'
 
 export default {
   component: BorderHeading,
