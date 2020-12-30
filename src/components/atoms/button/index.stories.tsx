@@ -9,28 +9,9 @@ export default {
   title: 'Atoms/Button',
 }
 
-const Template: Story<Props> = (args) => (
-  <Button {...args}>Normal Button</Button>
-)
-
-const IsLoading: Story<Props> = (args) => <Button {...args}>Is Loading</Button>
-
-const WithIcon: Story<Props> = (args) => <Button {...args}>Icon Button</Button>
-
-const Secondary: Story<Props> = (args) => (
-  <Button {...args}>Secondary Button</Button>
-)
-
-const Medium: Story<Props> = (args) => (
-  <Button {...args}>Medium sized button</Button>
-)
-
-const IsDisabled: Story<Props> = (args) => (
-  <Button {...args}>Is Disabled</Button>
-)
+const Template: Story<Props> = (args) => <Button {...args}>A Button</Button>
 
 export const Normal = Template.bind({})
-
 Normal.args = {
   color: 'primary',
   size: 'lg',
@@ -38,9 +19,16 @@ Normal.args = {
   isLoading: false,
 }
 
-export const withIcon = WithIcon.bind({})
+export const Disabled = Template.bind({})
+Disabled.args = {
+  color: 'primary',
+  size: 'lg',
+  isDisabled: true,
+  isLoading: false,
+}
 
-withIcon.args = {
+export const WithIcon = Template.bind({})
+WithIcon.args = {
   color: 'primary',
   size: 'lg',
   isDisabled: false,
@@ -48,38 +36,26 @@ withIcon.args = {
   icon: <img src="//unsplash.it/16" />,
 }
 
-export const isLoading = IsLoading.bind({})
-
-isLoading.args = {
+export const Loading = Template.bind({})
+Loading.args = {
   color: 'primary',
   size: 'lg',
   isDisabled: false,
   isLoading: true,
 }
 
-export const secondary = Secondary.bind({})
-
-secondary.args = {
+export const Secondary = Template.bind({})
+Secondary.args = {
   color: 'secondary',
   size: 'lg',
   isDisabled: false,
   isLoading: false,
 }
 
-export const medium = Medium.bind({})
-
+export const Medium = Template.bind({})
 Medium.args = {
   color: 'primary',
   size: 'md',
   isDisabled: false,
-  isLoading: false,
-}
-
-export const isDisabled = IsDisabled.bind({})
-
-isDisabled.args = {
-  color: 'primary',
-  size: 'lg',
-  isDisabled: true,
   isLoading: false,
 }
