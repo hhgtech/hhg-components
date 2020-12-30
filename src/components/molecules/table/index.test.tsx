@@ -3,8 +3,8 @@ import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
+import MockTheme from '../../../misc/mockTheme'
 import * as Table from '../table'
-import MockTheme from './../../../mockTheme'
 
 afterEach(cleanup)
 

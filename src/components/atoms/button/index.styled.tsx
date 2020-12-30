@@ -1,5 +1,5 @@
+import { ThemeProps } from 'src/misc/theme'
 import styled, { keyframes } from 'styled-components'
-import { ThemeProps } from 'theme'
 
 export const StyledButton = styled.button`
   width: auto;

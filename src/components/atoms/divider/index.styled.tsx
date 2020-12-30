@@ -1,5 +1,5 @@
+import { ThemeProps } from 'src/misc/theme'
 import styled from 'styled-components'
-import { ThemeProps } from 'theme'
 
 export const StyledDivider = styled.hr`
   border-color: ${(props: ThemeProps) => props.theme.colors.neutral200};

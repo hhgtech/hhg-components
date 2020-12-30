@@ -1,5 +1,5 @@
+import { pcLayout } from 'src/misc/utils'
 import styled from 'styled-components'
-import { pcLayout } from 'utils'
 
 export const StyledGrid = styled.div`
   --column-count: ${(props) => props.theme.columns};
