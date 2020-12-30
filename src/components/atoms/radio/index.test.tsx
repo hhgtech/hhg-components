@@ -5,7 +5,7 @@ import React from 'react'
 import { cleanup, render } from '@testing-library/react'
 
 import { Radio } from '.'
-import MockTheme from './../../../mockTheme'
+import MockTheme from '../../../misc/mockTheme'
 
 afterEach(cleanup)
 

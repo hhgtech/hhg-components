@@ -2,7 +2,7 @@ import React from 'react'
 
 import { CSSProperties } from 'styled-components'
 
-import MockTheme from './../../../mockTheme'
+import MockTheme from '../../../misc/mockTheme'
 import { StyledAvatar } from './index.styled'
 
 export type Props = {

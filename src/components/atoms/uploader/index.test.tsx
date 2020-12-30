@@ -4,7 +4,7 @@ import { render, cleanup } from '@testing-library/react'
 import 'jest-styled-components'
 
 import { Uploader } from '.'
-import MockTheme from '../../../mockTheme'
+import MockTheme from '../../../misc/mockTheme'
 import { Avatar } from '../avatar'
 import { Button } from '../button'
 

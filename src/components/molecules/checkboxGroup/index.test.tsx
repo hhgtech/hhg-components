@@ -5,7 +5,7 @@ import React from 'react'
 import { cleanup, render } from '@testing-library/react'
 
 import { CheckboxGroup } from '.'
-import MockTheme from './../../../mockTheme'
+import MockTheme from '../../../misc/mockTheme'
 
 afterEach(cleanup)
 

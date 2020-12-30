@@ -5,7 +5,7 @@ import { act } from 'react-dom/test-utils'
 import 'jest-styled-components'
 
 import { DatePicker } from '.'
-import MockTheme from './../../../mockTheme'
+import MockTheme from '../../../misc/mockTheme'
 
 afterEach(cleanup)
 

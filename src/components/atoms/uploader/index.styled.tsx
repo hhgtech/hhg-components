@@ -1,5 +1,5 @@
+import { ThemeProps } from 'src/misc/theme'
 import styled from 'styled-components'
-import { ThemeProps } from 'theme'
 
 export const StyledUploader = styled.div`
   .default-button[data-color='secondary'] {

@@ -1,5 +1,5 @@
+import { ThemeProps } from 'src/misc/theme'
 import styled from 'styled-components'
-import { ThemeProps } from 'theme'
 
 export const StyledPopup = styled.div`
   background-color: ${(props: ThemeProps) => props.theme.colors.white};

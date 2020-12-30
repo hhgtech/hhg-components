@@ -1,6 +1,6 @@
+import { ThemeProps } from 'src/misc/theme'
+import { spLayout } from 'src/misc/utils'
 import styled from 'styled-components'
-import { ThemeProps } from 'theme'
-import { spLayout } from 'utils'
 
 export const StyledIconText = styled.div`
   display: flex;
