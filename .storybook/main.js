@@ -4,6 +4,7 @@ module.exports = {
   stories: ['../src/**/*.stories.tsx'],
   // Add any Storybook addons you want here: https://storybook.js.org/addons/
   addons: [
+    '@storybook/addon-docs',
     '@storybook/addon-controls',
     '@storybook/addon-links',
     '@storybook/addon-essentials',

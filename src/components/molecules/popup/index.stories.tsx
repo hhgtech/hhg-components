@@ -6,7 +6,7 @@ import { Popup, Props } from './index'
 
 export default {
   component: Popup,
-  title: 'Organisms/Popup',
+  title: 'Molecules/Popup',
   argTypes: { onClick: { action: 'clicked' } },
 }
 
