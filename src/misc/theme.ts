@@ -8,6 +8,9 @@ export const theme = {
     secondaryBase: '#284a75',
     secondaryDark: '#1b3250',
 
+    accentLight: '#b1ebf8',
+    accentMain: '#00AECD',
+
     success: '#00b16a',
     error: '#f71210',
 

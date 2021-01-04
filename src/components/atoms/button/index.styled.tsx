@@ -40,7 +40,7 @@ export const StyledButton = styled.button`
       line-height: 20px;
     }
 
-    &:hover {
+    &:hover:not(:disabled) {
       background-color: ${(props: ThemeProps) =>
         props.theme.colors.primaryHover};
     }

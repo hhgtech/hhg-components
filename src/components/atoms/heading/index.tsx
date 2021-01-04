@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react'
-
-import { CSSProperties } from 'styled-components'
+import { CSSProperties } from 'react'
 
 import { StyledHeading } from './index.styled'
 
@@ -10,7 +9,7 @@ export type Props = {
   title?: string
   color?: string
   className?: string
-  style?: CSSProperties
+  style?: string
 }
 
 const Heading = ({
@@ -21,8 +20,14 @@ const Heading = ({
   color,
   style,
 }: Props) => (
-  <StyledHeading style={style} className={className}>
-    <Tag title={title} style={color ? { color } : undefined} data-tag={Tag}>
+  <StyledHeading style={style as CSSProperties} className={className}>
+    <Tag
+      title={title}
+      style={
+        color ? { ['--custom-heading-color' as string]: color } : undefined
+      }
+      data-tag={Tag}
+    >
       {children}
     </Tag>
   </StyledHeading>

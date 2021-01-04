@@ -50,7 +50,7 @@ exports[`it renders 1`] = `
   line-height: 20px;
 }
 
-.c0[data-color='primary']:hover {
+.c0[data-color='primary']:hover:not(:disabled) {
   background-color: #2c74df;
 }
 
