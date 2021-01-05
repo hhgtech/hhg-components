@@ -8,6 +8,7 @@ export type Props = {
   children: ReactNode
   size: 'md' | 'base' | 'sm' | 'xs'
   className?: string
+  color?: string
   type?: 'regular' | 'bold' | 'caption'
   title?: string
   style?: CSSProperties
@@ -20,16 +21,21 @@ const Text = ({
   className,
   style,
   children,
-}: Props) => (
-  <StyledText
-    title={title}
-    data-size={size}
-    data-type={type}
-    style={style}
-    className={className}
-  >
-    {children}
-  </StyledText>
-)
+  color,
+}: Props) => {
+  const customColor = { '--custom-color': color } as React.CSSProperties
+
+  return (
+    <StyledText
+      title={title}
+      data-size={size}
+      data-type={type}
+      style={{ ...style, ...customColor }}
+      className={className}
+    >
+      {children}
+    </StyledText>
+  )
+}
 
 export { Text }

@@ -2,7 +2,9 @@
 
 exports[`it renders 1`] = `
 .c1 {
-  color: #262626;
+  --default-color: #262626;
+  --text-color: var(--custom-color,--default-color);
+  color: var(--text-color);
 }
 
 .c1[data-type='bold'],

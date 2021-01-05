@@ -31,7 +31,7 @@ const Dropdown = ({
   className,
   value,
   options,
-  onChange,
+  onChange = () => undefined,
   id,
   placeHolderIcon,
   placeholder,

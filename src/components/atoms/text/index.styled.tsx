@@ -3,7 +3,10 @@ import { pcLayout, spLayout } from 'misc/utils'
 import styled from 'styled-components'
 
 export const StyledText = styled.p`
-  color: ${(props: ThemeProps) => props.theme.colors.gray800};
+  --default-color: ${(props: ThemeProps) => props.theme.colors.gray800};
+  --text-color: var(--custom-color, --default-color);
+
+  color: var(--text-color);
 
   ${pcLayout()`
     &[data-size='md'] {

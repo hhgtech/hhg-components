@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  --menu-width: 240px;
+  padding: 28px 16px;
+  background-color: #f8f9fc;
+  width: var(--menu-width);
+  height: 100vh;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.c0[data-is-collapsed] {
+  --menu-width: 64px;
+}
+
+.c4 {
+  cursor: pointer;
+}
+
+.c4[data-avatar-type='square'] img {
+  width: 72px;
+  height: 72px;
+  border-radius: 6px;
+}
+
+.c4[data-avatar-type='rounded'] img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c1 svg {
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.c2 {
+  cursor: pointer;
+}
+
+.c2[data-is-collapsed] {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
+  padding: 9px 21px;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.c5:not([data-is-link-active]) {
+  cursor: pointer;
+}
+
+.c5 p {
+  margin-left: 12px;
+}
+
+.c5[data-is-link-active] {
+  background: #2d87f3;
+}
+
+.c5[data-is-link-collapsed] {
+  margin-left: -14px;
+  margin-right: -14px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+<div
+  class="c0"
+  data-is-collapsed="true"
+>
+  <div
+    class="c1"
+  >
+    <div>
+      <svg
+        height="24px"
+        viewBox="0 0 60 56.31"
+        width="24px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          data-name="Layer 2"
+        >
+          <g
+            data-name="Layer 1"
+            fill="#2c87f3"
+            fill-rule="evenodd"
+          >
+            <path
+              d="M24.36 21.26v14.41c0 .5-.06 1-.06 1.45a6.12 6.12 0 01-6.2 5.42 3.16 3.16 0 01-3.1-3.07A3.2 3.2 0 0117 36a.94.94 0 00.62-1 2.48 2.48 0 010-.72V7.73a1.1 1.1 0 00-.73-1.23 3.41 3.41 0 01-1.4-4.87A3.17 3.17 0 0118.1 0a5.93 5.93 0 015.42 2.84 4.77 4.77 0 01.84 2.58 12.13 12.13 0 01.06 1.44c-.06 4.79-.06 9.59-.06 14.4zM0 21.21V6.2a5.89 5.89 0 011.33-3.91A5.94 5.94 0 016.17 0a3.18 3.18 0 013.12 2.45 3.49 3.49 0 01-1.4 3.85 1.13 1.13 0 01-.45.23.84.84 0 00-.61.89v27.12a1.34 1.34 0 00.88 1.56 3.28 3.28 0 011.73 3.4A3.35 3.35 0 017 42.4a4.75 4.75 0 01-3-.28 6.17 6.17 0 01-4-5.69c.06-5.07 0-10.14 0-15.22z"
+            />
+            <path
+              d="M45.4 43.48a31.69 31.69 0 00-3.68-.39c-.23-.06-.17-.21-.39-.15a8.24 8.24 0 01-5.13 6.36 14.51 14.51 0 01-3.39 1 31.47 31.47 0 01-9.59 0 13.83 13.83 0 01-4.08-1.3 7.58 7.58 0 01-3.79-4c-.06-.11-.45-1.67-.67-2.22A2.88 2.88 0 009.16 44a17.83 17.83 0 00.62 2.77A10.48 10.48 0 0011.51 50a13.88 13.88 0 005.68 4.33 24.46 24.46 0 007.92 1.88 33 33 0 008.81-.39 22.17 22.17 0 006.63-2.27A12.57 12.57 0 0047 43.36a6.83 6.83 0 01-1.6.12z"
+            />
+            <path
+              d="M53.12 27.66a16.43 16.43 0 01-.5 3.13 8.79 8.79 0 01-1.56 3.06 7.11 7.11 0 01-6.14 2.84A7.38 7.38 0 0137.84 32a10.73 10.73 0 01-.84-3.17 14.85 14.85 0 01.5-6.62 9.18 9.18 0 011.62-2.9 7.44 7.44 0 017.21-2.51 7.32 7.32 0 016 5 12.22 12.22 0 01.79 5.86zm6.71-3.73a18.66 18.66 0 00-2.52-7.41 13.69 13.69 0 00-8.75-6.35 17 17 0 00-4.79-.33 13.14 13.14 0 00-6 1.72 14.44 14.44 0 00-6.14 7 19.78 19.78 0 00-1.56 9.65 19.51 19.51 0 001.23 5.74c1.73 4.46 4.74 7.63 9.43 9 .16.06 5.91.78 6.3.45a13.47 13.47 0 009-4.85 17.19 17.19 0 003.12-5.86 23.15 23.15 0 00.68-8.76z"
+            />
+            <path
+              d="M45 30a3.15 3.15 0 01-3.18-3.21 3.21 3.21 0 116.41.06A3.13 3.13 0 0145 30z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      class="c2"
+      data-is-collapsed="true"
+    >
+      <svg
+        data-name="Layer 1"
+        height="20px"
+        viewBox="0 0 20 20"
+        width="20px"
+      >
+        <path
+          d="M10 .75A9.25 9.25 0 1019.25 10 9.25 9.25 0 0010 .75z"
+          fill="none"
+          stroke="#d2d6dc"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        />
+        <path
+          d="M11.44 6.53L8 10l3.48 3.47"
+          fill="none"
+          stroke="#737373"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    class="c3"
+  >
+    <div
+      class="c4"
+      data-avatar-type="square"
+    >
+      <img
+        src="//unsplash.it/32"
+      />
+    </div>
+  </div>
+  <div
+    class="c5"
+    data-is-link-active="true"
+    data-is-link-collapsed="true"
+  >
+    <img
+      src="//unsplash.it/16"
+    />
+  </div>
+  <div
+    class="c5"
+    data-is-link-collapsed="true"
+  >
+    <img
+      src="//unsplash.it/16"
+    />
+  </div>
+  <div
+    class="c5"
+    data-is-link-collapsed="true"
+  >
+    <img
+      src="//unsplash.it/16"
+    />
+  </div>
+</div>
+`;
