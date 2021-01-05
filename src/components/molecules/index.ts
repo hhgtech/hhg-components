@@ -1,3 +1,4 @@
+export { ArticleCard } from './articleCard'
 export { Breadcrumbs } from './breadcrumbs'
 export { CheckboxGroup } from './checkboxGroup'
 export { DashboardMenu } from './dashboardmenu'

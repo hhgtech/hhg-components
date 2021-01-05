@@ -1,4 +1,4 @@
-import React, { CSSProperties, ReactNode, useState } from 'react'
+import React, { CSSProperties, ReactNode } from 'react'
 
 import styled from 'styled-components'
 

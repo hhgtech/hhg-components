@@ -6,7 +6,7 @@ import { StyledText } from './index.styled'
 
 export type Props = {
   children: ReactNode
-  size: 'md' | 'base' | 'sm' | 'xs'
+  size: 'lg' | 'md' | 'base' | 'sm' | 'xs'
   className?: string
   color?: string
   type?: 'regular' | 'bold' | 'caption'

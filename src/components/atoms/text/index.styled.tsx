@@ -9,6 +9,11 @@ export const StyledText = styled.p`
   color: var(--text-color);
 
   ${pcLayout()`
+    &[data-size='lg'] {
+      font-size: 26px;
+      letter-spacing: -0.4px;
+      line-height: 1.2;
+    }
     &[data-size='md'] {
       font-size: 20px;
       letter-spacing: -0.4px;
@@ -29,6 +34,11 @@ export const StyledText = styled.p`
   `}
 
   ${spLayout()`
+      &[data-size='lg'] {
+        font-size: 22px;
+        letter-spacing: -0.4px;
+        line-height: 1.2;
+      }
       &[data-size='md'] {
         font-size: 16px;
         line-height: 1.2;
