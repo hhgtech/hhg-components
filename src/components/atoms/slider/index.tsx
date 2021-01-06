@@ -1,8 +1,8 @@
 import React, { CSSProperties, useState, useEffect } from 'react'
 
-import { Text } from 'components/atoms'
 import { Range, getTrackBackground, useThumbOverlap } from 'react-range'
 
+import { Text } from '../text'
 import {
   StyledTrackContainer,
   StyledDot,

@@ -1,6 +1,6 @@
 {
   "name": "@hhgtech/hhg-components",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -63,7 +63,6 @@
     "@babel/core": "^7.12.10",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
-    "@rollup/plugin-typescript": "^8.1.0",
     "@storybook/addon-actions": "^6.1.11",
     "@storybook/addon-docs": "^6.1.11",
     "@storybook/addon-essentials": "^6.0.28",
@@ -99,6 +98,7 @@
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
     "styled-components": "^5.2.1",
     "stylelint": "^13.7.2",
     "stylelint-config-idiomatic-order": "^8.1.0",

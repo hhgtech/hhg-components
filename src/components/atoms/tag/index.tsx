@@ -1,7 +1,6 @@
 import React, { ReactNode, CSSProperties } from 'react'
 
-import { Text } from 'components/atoms'
-
+import { Text } from '../text'
 import { StyledTag } from './index.styled'
 
 export type Props = {
