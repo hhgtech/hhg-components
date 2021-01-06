@@ -64,8 +64,21 @@ exports[`it renders 1`] = `
 
 .c0[data-is-loading] svg {
   position: absolute;
+}
+
+.c0[data-is-loading][data-size='lg'] svg {
+  width: 26px;
+  height: 26px;
+}
+
+.c0[data-is-loading][data-size='md'] svg {
   width: 24px;
   height: 24px;
+}
+
+.c0[data-is-loading][data-size='sm'] svg {
+  width: 22px;
+  height: 22px;
 }
 
 .c0[data-color='secondary'] {
@@ -102,6 +115,21 @@ exports[`it renders 1`] = `
   border-color: #2b62cd;
   background-color: #2b62cd;
   color: #fff;
+}
+
+.c0[data-color='secondary'][data-size='lg'] {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0[data-color='secondary'][data-size='md'] {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c0[data-color='secondary'][data-size='sm'] {
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .c0:disabled {

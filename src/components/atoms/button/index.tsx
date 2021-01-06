@@ -5,7 +5,7 @@ import { StyledButton, StyledLoader } from './index.styled'
 export type Props = {
   size: 'lg' | 'md' | 'sm'
   children: ReactNode
-  color?: 'primary' | 'secondary'
+  color?: 'primary' | 'secondary' | 'transparent'
   isDisabled?: boolean
   isBlock?: boolean
   title?: string
@@ -42,35 +42,44 @@ const Button = ({
   >
     {isLoading ? (
       <div>
-        {color === 'secondary' && (
-          <>
-            <svg
-              width="24"
-              height="24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="12" cy="12" r="10" stroke="#DBDFE5" strokeWidth="4" />
-            </svg>
+        {color === 'secondary' ||
+          (color === 'transparent' && (
+            <>
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="#DBDFE5"
+                  strokeWidth="4"
+                />
+              </svg>
 
-            <StyledLoader
-              width="24"
-              height="24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <mask id="a" fill="#fff">
-                <path d="M12 0A12 12 0 11.19 9.88l3.9.7A8.03 8.03 0 1012 3.98V0z" />
-              </mask>
-              <path
-                d="M12 0A12 12 0 11.19 9.88l3.9.7A8.03 8.03 0 1012 3.98V0z"
-                stroke="#2D87F3"
-                strokeWidth="8"
-                mask="url(#a)"
-              />
-            </StyledLoader>
-          </>
-        )}
+              <StyledLoader
+                width="24"
+                height="24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <mask id="a" fill="#fff">
+                  <path d="M12 0A12 12 0 11.19 9.88l3.9.7A8.03 8.03 0 1012 3.98V0z" />
+                </mask>
+                <path
+                  d="M12 0A12 12 0 11.19 9.88l3.9.7A8.03 8.03 0 1012 3.98V0z"
+                  stroke="#2D87F3"
+                  strokeWidth="8"
+                  mask="url(#a)"
+                />
+              </StyledLoader>
+            </>
+          ))}
 
         {color === 'primary' && (
           <>

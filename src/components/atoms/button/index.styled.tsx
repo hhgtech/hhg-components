@@ -57,8 +57,25 @@ export const StyledButton = styled.button`
     }
     svg {
       position: absolute;
-      width: 24px;
-      height: 24px;
+    }
+
+    &[data-size='lg'] {
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &[data-size='md'] {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &[data-size='sm'] {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 
@@ -97,6 +114,22 @@ export const StyledButton = styled.button`
       background-color: ${(props: ThemeProps) =>
         props.theme.colors.primaryActive};
       color: ${(props: ThemeProps) => props.theme.colors.white};
+    }
+  }
+  &[data-color='secondary'] {
+    &[data-size='lg'] {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &[data-size='md'] {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &[data-size='sm'] {
+      font-size: 13px;
+      line-height: 20px;
     }
   }
 
