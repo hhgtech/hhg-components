@@ -8,7 +8,7 @@ export const StyledCard = styled.div`
   box-sizing: border-box;
   display: flex;
 
-  div.banner {
+  .banner {
     height: 0;
     position: relative;
 
@@ -23,11 +23,11 @@ export const StyledCard = styled.div`
     }
   }
 
-  div.content {
+  .content {
     display: flex;
     flex-direction: column;
 
-    div.new {
+    .new {
       display: flex;
       flex-direction: column;
 
@@ -54,16 +54,16 @@ export const StyledCard = styled.div`
     }
   }
 
-  div.footer {
+  .footer {
     display: flex;
 
-    div.bookmark {
+    .bookmark {
       width: 12px;
       height: 14px;
       display: flex;
       cursor: pointer;
 
-      img {
+      svg {
         width: 100%;
         height: 100%;
       }
@@ -73,7 +73,7 @@ export const StyledCard = styled.div`
   &[data-type='group1'] {
     padding: 16px;
 
-    div.banner {
+    .banner {
       img {
         border-radius: 6px;
       }
@@ -82,7 +82,7 @@ export const StyledCard = styled.div`
     &[data-size='large'] {
       flex-direction: column;
 
-      div.banner {
+      .banner {
         width: 100%;
         padding-top: 192px;
       }
@@ -92,18 +92,18 @@ export const StyledCard = styled.div`
       height: 134px;
       flex-direction: row;
 
-      div.banner {
+      .banner {
         width: 100px;
         padding-top: 100px;
         margin-right: 16px;
       }
 
-      div.content {
+      .content {
         /* 100px (img), 16px(margin-right banner) */
         width: calc(100% - 100px - 16px);
         justify-content: space-between;
 
-        div.new {
+        .new {
           .label {
             margin-top: 0px;
           }
@@ -119,15 +119,15 @@ export const StyledCard = styled.div`
   &[data-type='group2'] {
     flex-direction: column;
 
-    div.banner {
+    .banner {
       width: 100%;
       padding-top: 192px;
     }
 
-    div.content {
+    .content {
       padding: 16px;
 
-      div.new {
+      .new {
         .label {
           display: none;
         }
@@ -142,7 +142,7 @@ export const StyledCard = styled.div`
         }
       }
 
-      div.footer {
+      .footer {
         justify-content: center;
       }
     }
@@ -159,11 +159,11 @@ export const StyledAuthor = styled.div`
     justify-content: space-between;
   }
 
-  div.author {
+  .author {
     display: flex;
     align-items: center;
 
-    div.avatar {
+    .avatar {
       flex-shrink: 0;
 
       img {
@@ -173,7 +173,7 @@ export const StyledAuthor = styled.div`
       }
     }
 
-    div.poster {
+    .poster {
       display: flex;
       align-items: center;
       white-space: pre-wrap;
@@ -190,7 +190,7 @@ export const StyledAuthor = styled.div`
     }
 
     &[data-type='group1'] {
-      div.avatar {
+      .avatar {
         width: 24px;
         height: 24px;
         margin-right: 4px;
@@ -198,13 +198,13 @@ export const StyledAuthor = styled.div`
     }
 
     &[data-type='group2'] {
-      div.avatar {
+      .avatar {
         width: 40px;
         height: 40px;
         margin-right: 8px;
       }
 
-      div.poster {
+      .poster {
         p {
           display: -webkit-box;
           -webkit-line-clamp: 3;
