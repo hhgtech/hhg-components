@@ -116,7 +116,9 @@ export const StyledButton = styled.button`
       color: ${(props: ThemeProps) => props.theme.colors.white};
     }
   }
-  &[data-color='secondary'] {
+  &[data-color='transparent'] {
+    background-color: transparent;
+    border: none;
     &[data-size='lg'] {
       font-size: 16px;
       line-height: 24px;
