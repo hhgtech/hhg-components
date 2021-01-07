@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders 1`] = `
+.c0 {
+  position: relative;
+  width: 100%;
+}
+
+.c0[data-has-error] input {
+  border-color: #e64728;
+}
+
+.c0 input {
+  width: calc(100% - 34px);
+  border-radius: 6px;
+  border: solid 1px #d9d9d9;
+  padding: 12px 16px;
+}
+
+.c0 input:active,
+.c0 input:focus {
+  border-color: #2d87f3;
+  box-shadow: 0px 0px 2px 2px #91caff;
+}
+
+.c0 input:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+
+.c0[data-has-action-icon] input {
+  width: calc(100% - 66px);
+  padding: 12px 48px 12px 16px;
+}
+
+.c0[data-has-display-icon] input {
+  width: calc(100% - 66px);
+  padding: 12px 16px 12px 48px;
+}
+
+.c0[data-has-action-icon][data-has-display-icon] input {
+  width: calc(100% - 98px);
+  padding: 12px 48px;
+}
+
+.c0[data-size='lg'] {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.c0[data-size='md'] {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.c0[data-size='sm'] {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.c1 {
+  display: inline-block;
+  color: #595959;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+@media (max-width:767px) {
+  .c0 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+<div
+  class="c0"
+  data-size="md"
+>
+  <label
+    class="c1 inputLabel"
+    for="test-input"
+  >
+    test input
+  </label>
+  <div
+    style="position: relative;"
+  >
+    <input
+      id="test-input"
+      type="text"
+      value="test"
+    />
+  </div>
+</div>
+`;
