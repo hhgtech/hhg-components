@@ -11,30 +11,31 @@
 pipelines:
   pull-requests:
     '**':
-    - step: 
-        name: Run Jest Test
-        image: framgia/laravel-workspace
-        script:
-          - npm install
-          - npm run test
-        deployment: test
+      - step:
+          name: Run Jest Test
+          image: framgia/laravel-workspace
+          script:
+            - npm install
+            - npm run test
+          deployment: test
   branches:
     dev:
-    - step:
-        name: Deploy storybook to development
-        image: framgia/laravel-workspace
-        # image: framgiaciteam/deb-deploy:7.3
-        script:
-          - npm install
-          - npm run test
-        deployment: staging
+      - step:
+          name: Deploy storybook to development
+          image: framgia/laravel-workspace
+          # image: framgiaciteam/deb-deploy:7.3
+          script:
+            - npm install
+            - npm run test
+          deployment: staging
     master:
-    - step:
-        name: Publish component to npm 
-        image: framgia/laravel-workspace
-        # image: framgiaciteam/deb-deploy:7.3
-        script:
-          - npm install
-          - npm run build
-        deployment: production
-
+      - step:
+          name: Publish component to npm
+          image: framgia/laravel-workspace
+          # image: framgiaciteam/deb-deploy:7.3
+          script:
+            - npm install
+            - npm set registry "https://registry.npmjs.org/"
+            - npm set //registry.npmjs.org/:_authToken=$TOKEN_NPM
+            - npm publish
+          deployment: production
