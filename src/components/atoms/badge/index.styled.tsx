@@ -72,9 +72,8 @@ export const StyledBadge = styled.div`
     }
 
     svg {
-      position: absolute;
-      z-index: -1;
-      top: 0;
+      width: 40px;
+      height: 40px;
     }
   }
 
