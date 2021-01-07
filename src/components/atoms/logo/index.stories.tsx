@@ -7,6 +7,22 @@ import { Logo, Props } from '.'
 export default {
   component: Logo,
   title: 'Atoms/Logo',
+  argTypes: {
+    type: {
+      control: {
+        type: 'select',
+        options: [
+          'hellobacsi',
+          'hellosehat',
+          'hellohealth',
+          'hellotogether',
+          'hellocare',
+          'logomark',
+        ],
+      },
+      description: 'Show the logo for any Hello brand',
+    },
+  },
 }
 
 const Template: Story<Props> = (args) => <Logo {...args} />

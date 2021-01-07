@@ -2,7 +2,9 @@
 
 exports[`it renders 1`] = `
 .c1 {
-  color: #262626;
+  --default-color: #262626;
+  --text-color: var(--custom-color,--default-color);
+  color: var(--text-color);
 }
 
 .c1[data-type='bold'],
@@ -99,6 +101,15 @@ exports[`it renders 1`] = `
 }
 
 @media (min-width:768px) {
+  .c1[data-size='lg'] {
+    font-size: 26px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
   .c1[data-size='md'] {
     font-size: 20px;
     -webkit-letter-spacing: -0.4px;
@@ -125,6 +136,15 @@ exports[`it renders 1`] = `
 }
 
 @media (max-width:767px) {
+  .c1[data-size='lg'] {
+    font-size: 22px;
+    -webkit-letter-spacing: -0.4px;
+    -moz-letter-spacing: -0.4px;
+    -ms-letter-spacing: -0.4px;
+    letter-spacing: -0.4px;
+    line-height: 1.2;
+  }
+
   .c1[data-size='md'] {
     font-size: 16px;
     line-height: 1.2;

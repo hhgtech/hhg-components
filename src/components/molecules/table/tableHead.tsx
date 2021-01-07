@@ -3,7 +3,7 @@ import React, { CSSProperties, ReactNode } from 'react'
 import { ThemeProps } from 'misc/theme'
 import styled from 'styled-components'
 
-import * as Table from '../table'
+import { Row } from './tableRow'
 
 type Props = {
   children: ReactNode
@@ -38,7 +38,7 @@ const Head = ({ isSticky, children, className, style }: Props) => {
       data-is-sticky={isSticky || undefined}
       style={style}
     >
-      <Table.Row>{children}</Table.Row>
+      <Row>{children}</Row>
     </StyledTableHead>
   )
 }

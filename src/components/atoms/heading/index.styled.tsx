@@ -3,11 +3,16 @@ import { spLayout } from 'misc/utils'
 import styled from 'styled-components'
 
 export const StyledHeading = styled.div`
-  color: ${(props: ThemeProps) => props.theme.colors.secondaryBase};
   font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
   line-height: 1.2;
 
   /* Base headings sizes and properties */
+  > [data-tag] {
+    --default-heading-color: ${(props: ThemeProps) =>
+      props.theme.colors.secondaryBase};
+    color: var(--custom-heading-color, --default-heading-color);
+  }
+
   > [data-tag='h1'] {
     font-size: 40px;
     letter-spacing: -1.2px;

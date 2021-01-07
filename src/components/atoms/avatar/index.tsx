@@ -7,7 +7,7 @@ import { StyledAvatar } from './index.styled'
 
 export type Props = {
   avatarImg: JSX.Element
-  onClick: () => void
+  onClick?: () => void
   className?: string
   type?: 'rounded' | 'square'
   style?: CSSProperties

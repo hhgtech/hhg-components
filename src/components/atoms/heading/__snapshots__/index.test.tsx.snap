@@ -2,9 +2,13 @@
 
 exports[`it renders 1`] = `
 .c0 {
-  color: #284a75;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.c0 > [data-tag] {
+  --default-heading-color: #284a75;
+  color: var(--custom-heading-color,--default-heading-color);
 }
 
 .c0 > [data-tag='h1'] {
