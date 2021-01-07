@@ -73,9 +73,8 @@ exports[`it renders 1`] = `
 }
 
 .c0[data-has-icon] svg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
+  width: 40px;
+  height: 40px;
 }
 
 .c0[data-notification-color='error'] span {
