@@ -35,6 +35,7 @@ type Props = {
   children: ReactNode
   isCollapsed: boolean
   onLinkClick: () => void
+  activeIcon?: JSX.Element
   isActive?: boolean
 }
 
@@ -43,6 +44,7 @@ const MenuLink = ({
   isActive,
   children,
   isCollapsed,
+  activeIcon,
   onLinkClick,
 }: Props) => {
   return (
@@ -51,7 +53,7 @@ const MenuLink = ({
       onClick={onLinkClick}
       data-is-link-collapsed={isCollapsed || undefined}
     >
-      {icon}
+      {!(isActive && activeIcon) ? icon : activeIcon}
       {!isCollapsed && (
         <Text size="base" type="bold" color={isActive ? '#fff' : '#595959'}>
           {children}

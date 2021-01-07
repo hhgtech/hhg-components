@@ -135,5 +135,6 @@ Link.args = {
   isActive: true,
   isCollapsed: false,
   icon: <img src="//unsplash.it/16" />,
+  activeIcon: <img src="//unsplash.it/16" />,
   onLinkClick: () => console.log('Click 😇'),
 }
