@@ -7,10 +7,12 @@ import DeleteIcon from './delete.svg'
 
 export default {
   component: PureInput,
-  title: 'Atoms/Input',
+  title: 'Atoms/PureInput',
 }
 
-const Template: Story<Props> = (args) => <PureInput {...args} />
+const Template: Story<Props> = (args) => (
+  <PureInput {...args} onChange={(v) => console.log(v)} />
+)
 
 export const Normal = Template.bind({})
 Normal.args = {

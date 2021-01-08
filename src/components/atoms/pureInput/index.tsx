@@ -14,6 +14,7 @@ import {
 export type Props = {
   name: string
   size: 'lg' | 'md' | 'sm'
+  onChange: (v: string) => void
   defaultValue?: string
   errorMessage?: string
   actionIcon?: JSX.Element
@@ -22,7 +23,6 @@ export type Props = {
   label?: string
   placeholder?: string
   className?: string
-  onChange: (v: string) => void
   onKeyPress?: (e: KeyboardEvent) => void
   isDisabled?: boolean
   CustomInput?: JSX.Element
