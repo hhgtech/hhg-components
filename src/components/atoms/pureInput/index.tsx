@@ -1,4 +1,4 @@
-import React, { KeyboardEvent, useState } from 'react'
+import React, { KeyboardEvent } from 'react'
 
 import { debounce } from 'lodash'
 import { CSSProperties } from 'styled-components'
