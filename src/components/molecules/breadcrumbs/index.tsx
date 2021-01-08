@@ -51,7 +51,7 @@ const BreadcrumbItem = ({
         options={dropdownItems}
         placeholder="..."
         id=""
-        placeHolderIcon={null}
+        placeholderIcon={null}
         onChange={onChangePage}
         className="collapsed-breadcrumb"
       />

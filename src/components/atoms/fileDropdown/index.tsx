@@ -24,7 +24,7 @@ export type Props = {
   options: Array<Option>
   placeholder: string
   id: string
-  placeHolderIcon?: JSX.Element
+  placeholderIcon?: JSX.Element
   onUploadSelected?: (e: FileList) => void
   value?: Option
   className?: string
@@ -37,7 +37,7 @@ const FileDropdown = ({
   options,
   onUploadSelected,
   id,
-  placeHolderIcon,
+  placeholderIcon,
   placeholder,
   style,
 }: Props) => {
@@ -162,7 +162,7 @@ const FileDropdown = ({
       tabIndex={0}
     >
       <StyledDropdownName onClick={showDropdown}>
-        {placeHolderIcon || defaultFileIcon}{' '}
+        {placeholderIcon || defaultFileIcon}{' '}
         <span>{value && value.value ? value.label : placeholder}</span>
       </StyledDropdownName>
 

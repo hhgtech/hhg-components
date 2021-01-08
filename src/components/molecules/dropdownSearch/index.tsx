@@ -21,7 +21,7 @@ export type Props = {
   id: string
   placeholder: string
   options: Array<Option>
-  placeHolderIcon: JSX.Element
+  placeholderIcon: JSX.Element
   onChange?: (o: Option) => void
   value?: Option
   className?: string
@@ -33,7 +33,7 @@ const DropdownSearch = ({
   style,
   id,
   placeholder,
-  placeHolderIcon,
+  placeholderIcon,
   onChange,
   value,
 }: Props) => {
@@ -77,7 +77,7 @@ const DropdownSearch = ({
       <StyledDropdownName onClick={showDropdown}>
         <PureInput
           name="dropdown-input"
-          displayIcon={placeHolderIcon}
+          displayIcon={placeholderIcon}
           size="md"
           onChange={handleOnChange}
         />

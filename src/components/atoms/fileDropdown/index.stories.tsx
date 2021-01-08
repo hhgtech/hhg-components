@@ -16,7 +16,7 @@ export const Normal = Template.bind({})
 Normal.args = {
   id: 'dropdown1',
   placeholder: 'CSV file',
-  placeHolderIcon: undefined,
+  placeholderIcon: undefined,
   value: undefined,
   options: [
     {

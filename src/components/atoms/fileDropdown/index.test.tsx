@@ -14,7 +14,7 @@ test('it renders', () => {
       <FileDropdown
         id="dropdown1"
         placeholder="CSV file"
-        placeHolderIcon={undefined}
+        placeholderIcon={undefined}
         value={undefined}
         options={[
           {
