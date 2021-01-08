@@ -60,7 +60,7 @@ export const StyledHeading = styled.div`
       letter-spacing: -0.6px;
     }
 
-    &[data-tag='h5'] {
+    > [data-tag='h5'] {
       font-size: 16px;
       letter-spacing: 0px;
     }

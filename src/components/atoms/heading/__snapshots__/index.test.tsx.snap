@@ -84,7 +84,7 @@ exports[`it renders 1`] = `
     letter-spacing: -0.6px;
   }
 
-  .c0[data-tag='h5'] {
+  .c0 > [data-tag='h5'] {
     font-size: 16px;
     -webkit-letter-spacing: 0px;
     -moz-letter-spacing: 0px;
