@@ -38,4 +38,5 @@ pipelines:
             - npm set registry "https://registry.npmjs.org/"
             - npm set //registry.npmjs.org/:_authToken=$TOKEN_NPM
             - npm publish
+            - ls -la
           deployment: production
