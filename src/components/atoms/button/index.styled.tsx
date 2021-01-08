@@ -51,34 +51,6 @@ export const StyledButton = styled.button`
     }
   }
 
-  &[data-is-loading] {
-    span {
-      padding-left: 32px;
-    }
-    svg {
-      position: absolute;
-    }
-
-    &[data-size='lg'] {
-      svg {
-        width: 26px;
-        height: 26px;
-      }
-    }
-    &[data-size='md'] {
-      svg {
-        width: 24px;
-        height: 24px;
-      }
-    }
-    &[data-size='sm'] {
-      svg {
-        width: 22px;
-        height: 22px;
-      }
-    }
-  }
-
   &[data-color='secondary'] {
     border: solid 2px ${(props: ThemeProps) => props.theme.colors.primaryBase};
     background-color: ${(props: ThemeProps) => props.theme.colors.white};
@@ -116,6 +88,31 @@ export const StyledButton = styled.button`
       color: ${(props: ThemeProps) => props.theme.colors.white};
     }
   }
+
+  &[data-color='tertiary'] {
+    border: solid 2px ${(props: ThemeProps) => props.theme.colors.gray300};
+    background-color: transparent;
+    color: ${(props: ThemeProps) => props.theme.colors.gray800};
+
+    &[data-size='lg'] {
+      padding: 11px 24px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &[data-size='md'] {
+      padding: 7px 24px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &[data-size='sm'] {
+      padding: 5px 24px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
   &[data-color='transparent'] {
     background-color: transparent;
     border: none;
@@ -132,6 +129,34 @@ export const StyledButton = styled.button`
     &[data-size='sm'] {
       font-size: 13px;
       line-height: 20px;
+    }
+  }
+
+  &[data-is-loading] {
+    span {
+      padding-left: 32px;
+    }
+    svg {
+      position: absolute;
+    }
+
+    &[data-size='lg'] {
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    &[data-size='md'] {
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &[data-size='sm'] {
+      svg {
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 

@@ -58,29 +58,6 @@ exports[`it renders 1`] = `
   background-color: #2b62cd;
 }
 
-.c0[data-is-loading] span {
-  padding-left: 32px;
-}
-
-.c0[data-is-loading] svg {
-  position: absolute;
-}
-
-.c0[data-is-loading][data-size='lg'] svg {
-  width: 26px;
-  height: 26px;
-}
-
-.c0[data-is-loading][data-size='md'] svg {
-  width: 24px;
-  height: 24px;
-}
-
-.c0[data-is-loading][data-size='sm'] svg {
-  width: 22px;
-  height: 22px;
-}
-
 .c0[data-color='secondary'] {
   border: solid 2px #2d87f3;
   background-color: #fff;
@@ -117,6 +94,30 @@ exports[`it renders 1`] = `
   color: #fff;
 }
 
+.c0[data-color='tertiary'] {
+  border: solid 2px #bfbfbf;
+  background-color: transparent;
+  color: #262626;
+}
+
+.c0[data-color='tertiary'][data-size='lg'] {
+  padding: 11px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0[data-color='tertiary'][data-size='md'] {
+  padding: 7px 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c0[data-color='tertiary'][data-size='sm'] {
+  padding: 5px 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 .c0[data-color='transparent'] {
   background-color: transparent;
   border: none;
@@ -135,6 +136,29 @@ exports[`it renders 1`] = `
 .c0[data-color='transparent'][data-size='sm'] {
   font-size: 13px;
   line-height: 20px;
+}
+
+.c0[data-is-loading] span {
+  padding-left: 32px;
+}
+
+.c0[data-is-loading] svg {
+  position: absolute;
+}
+
+.c0[data-is-loading][data-size='lg'] svg {
+  width: 26px;
+  height: 26px;
+}
+
+.c0[data-is-loading][data-size='md'] svg {
+  width: 24px;
+  height: 24px;
+}
+
+.c0[data-is-loading][data-size='sm'] svg {
+  width: 22px;
+  height: 22px;
 }
 
 .c0:disabled {

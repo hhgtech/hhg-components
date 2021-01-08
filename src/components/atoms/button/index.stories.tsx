@@ -11,10 +11,50 @@ export default {
 
 const Template: Story<Props> = (args) => <Button {...args}>A Button</Button>
 
-export const Normal = Template.bind({})
-Normal.args = {
+export const Primary = Template.bind({})
+Primary.args = {
   color: 'primary',
   size: 'lg',
+  isDisabled: false,
+  isLoading: false,
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  color: 'secondary',
+  size: 'lg',
+  isDisabled: false,
+  isLoading: false,
+}
+
+export const Tertiary = Template.bind({})
+Tertiary.args = {
+  color: 'tertiary',
+  size: 'lg',
+  isDisabled: false,
+  isLoading: false,
+}
+
+export const Transparent = Template.bind({})
+Transparent.args = {
+  color: 'transparent',
+  size: 'lg',
+  isDisabled: false,
+  isLoading: false,
+}
+
+export const Medium = Template.bind({})
+Medium.args = {
+  color: 'primary',
+  size: 'md',
+  isDisabled: false,
+  isLoading: false,
+}
+
+export const Small = Template.bind({})
+Small.args = {
+  color: 'primary',
+  size: 'sm',
   isDisabled: false,
   isLoading: false,
 }
@@ -42,20 +82,4 @@ Loading.args = {
   size: 'lg',
   isDisabled: false,
   isLoading: true,
-}
-
-export const Secondary = Template.bind({})
-Secondary.args = {
-  color: 'secondary',
-  size: 'lg',
-  isDisabled: false,
-  isLoading: false,
-}
-
-export const Medium = Template.bind({})
-Medium.args = {
-  color: 'primary',
-  size: 'md',
-  isDisabled: false,
-  isLoading: false,
 }
