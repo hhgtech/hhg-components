@@ -18,7 +18,11 @@ const IconText = ({
   icon: Icon,
 }: Props) => {
   return (
-    <StyledIconText className={className} data-size={size}>
+    <StyledIconText
+      className={className}
+      data-size={size}
+      data-icon-position={iconPosition}
+    >
       {iconPosition === 'left' && Icon}
       {children}
       {iconPosition === 'right' && Icon}

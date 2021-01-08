@@ -34,7 +34,7 @@ type CardAuthorProps = {
   doctorName: string
   uploadTime: string
   posterName?: string
-  handleClick: () => void
+  handleClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
   isBookmarked: boolean
 }
 
@@ -124,7 +124,8 @@ const ArticleCard = ({
 }: Props) => {
   const [isBookmarked, setisBookmarked] = useState(isBookmark)
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.stopPropagation()
     setisBookmarked(!isBookmarked)
     onBookmark && onBookmark()
   }
@@ -157,7 +158,7 @@ const ArticleCard = ({
               doctorName={doctorName}
               posterName={posterName}
               uploadTime={uploadTime}
-              handleClick={handleClick}
+              handleClick={(e) => handleClick(e)}
               isBookmarked={isBookmarked}
             />
           ) : (

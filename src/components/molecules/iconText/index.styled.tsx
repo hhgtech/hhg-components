@@ -8,6 +8,18 @@ export const StyledIconText = styled.div`
   --font-weight-lg: ${(props: ThemeProps) => props.theme.sizes.fwBold};
   --font-weight-md: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
   --font-weight-sm: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+
+  &[data-icon-position='left'] {
+    & > *:first-child {
+      margin-right: 8px;
+    }
+  }
+  &[data-icon-position='left'] {
+    & > *:last-child {
+      margin-left: 8px;
+    }
+  }
+
   ${spLayout()`
     &[data-size='lg'] {
       font-size: 16px;

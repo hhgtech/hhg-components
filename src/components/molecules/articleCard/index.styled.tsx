@@ -72,8 +72,6 @@ export const StyledCard = styled.div`
   }
 
   &[data-type='group1'] {
-    padding: 16px;
-
     .banner {
       img {
         border-radius: 6px;
@@ -90,7 +88,7 @@ export const StyledCard = styled.div`
     }
 
     &[data-size='sm'] {
-      height: 134px;
+      height: 100px;
       flex-direction: row;
 
       .banner {
