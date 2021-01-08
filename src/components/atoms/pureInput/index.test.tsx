@@ -16,6 +16,7 @@ test('it renders', () => {
         name="test-input"
         size="md"
         label="test input"
+        onChange={(v) => console.log(v)}
       />
     </MockTheme>,
   )

@@ -22,7 +22,7 @@ export type Props = {
   label?: string
   placeholder?: string
   className?: string
-  onChange?: (v: string) => void
+  onChange: (v: string) => void
   onKeyPress?: (e: KeyboardEvent) => void
   isDisabled?: boolean
   CustomInput?: JSX.Element
@@ -46,7 +46,7 @@ const PureInput = ({
   size,
   style,
 }: Props) => {
-  const deboucedOnChange = onChange ? debounce(onChange, 300) : undefined
+  const deboucedOnChange = debounce(onChange, 300)
 
   return (
     <StyledInput
