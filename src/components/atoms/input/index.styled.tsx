@@ -14,7 +14,7 @@ export const StyledInput = styled.div`
   }
 
   input {
-    width: calc(100% - 2px);
+    width: 100%;
     border-radius: 6px;
     border: solid 1px ${(props: ThemeProps) => props.theme.colors.gray200};
     padding: 12px 16px;
@@ -34,20 +34,20 @@ export const StyledInput = styled.div`
 
   &[data-has-action-icon] {
     input {
-      width: calc(100% - 34px);
+      width: calc(100% - 32px);
       padding: 12px 48px 12px 16px;
     }
   }
   &[data-has-display-icon] {
     input {
-      width: calc(100% - 34px);
+      width: calc(100% - 32px);
       padding: 12px 16px 12px 48px;
     }
   }
 
   &[data-has-action-icon][data-has-display-icon] {
     input {
-      width: calc(100% - 66px);
+      width: calc(100% - 64px);
       padding: 12px 48px;
     }
   }
