@@ -20,8 +20,8 @@ export const Group1Large = Template.bind({})
 
 Group1Large.args = {
   type: 'group1',
-  banner: 'https://source.unsplash.com/random/500x500',
-  size: 'large',
+  banner: <img src="https://source.unsplash.com/random/500x500" />,
+  size: 'lg',
   label: 'category name',
   styleLabel: { color: '#008C50' },
   title: 'Article Title',
@@ -36,8 +36,8 @@ export const Group1Small = Template.bind({})
 
 Group1Small.args = {
   type: 'group1',
-  banner: 'https://source.unsplash.com/random/500x500',
-  size: 'small',
+  banner: <img src="https://source.unsplash.com/random/500x500" />,
+  size: 'sm',
   label: 'category name',
   styleLabel: { color: '#008C50' },
   title: 'Article Title',
@@ -52,8 +52,8 @@ export const Group1HasButton = Template.bind({})
 
 Group1HasButton.args = {
   type: 'group1',
-  banner: 'https://source.unsplash.com/random/500x500',
-  size: 'large',
+  banner: <img src="https://source.unsplash.com/random/500x500" />,
+  size: 'lg',
   label: 'category name',
   styleLabel: { color: '#008C50' },
   title: 'Article Title',
@@ -70,7 +70,7 @@ export const Group2 = Template.bind({})
 
 Group2.args = {
   type: 'group2',
-  banner: 'https://source.unsplash.com/random/500x500',
+  banner: <img src="https://source.unsplash.com/random/500x500" />,
   title: 'Article Title',
   text:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus quis lacus, ullamcorper pellentesque pharetra, a dignissim',

@@ -7,6 +7,7 @@ export const StyledCard = styled.div`
   background-color: ${(props: ThemeProps) => props.theme.colors.white};
   box-sizing: border-box;
   display: flex;
+  cursor: pointer;
 
   .banner {
     height: 0;
@@ -79,7 +80,7 @@ export const StyledCard = styled.div`
       }
     }
 
-    &[data-size='large'] {
+    &[data-size='lg'] {
       flex-direction: column;
 
       .banner {
@@ -88,7 +89,7 @@ export const StyledCard = styled.div`
       }
     }
 
-    &[data-size='small'] {
+    &[data-size='sm'] {
       height: 134px;
       flex-direction: row;
 

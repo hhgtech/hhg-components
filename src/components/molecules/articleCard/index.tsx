@@ -7,36 +7,26 @@ import { Label } from '../../atoms/label'
 import { Text } from '../../atoms/text'
 import { StyledCard, StyledAuthor } from './index.styled'
 
-type BaseProps = {
-  banner: string
+export type Props = {
+  type: 'group1' | 'group2'
+  banner: JSX.Element
   title: string
-  styleLabel?: CSSProperties
-  styleTitle?: CSSProperties
   text: string
   avatarImg: JSX.Element
   doctorName: string
   uploadTime: string
+  onBookmark?: () => void
+  onArticleClick?: () => void
   isBookmark?: boolean
   hasButton?: boolean
   textButton?: string
   className?: string
-}
-
-interface Group1 extends BaseProps {
-  type: 'group1'
-  size: 'small' | 'large'
-  label: string
+  size?: 'sm' | 'lg'
+  styleLabel?: CSSProperties
+  styleTitle?: CSSProperties
+  categoryName?: string
   posterName?: string
 }
-
-interface Group2 extends BaseProps {
-  type: 'group2'
-  size?: never
-  label?: never
-  posterName: string
-}
-
-export type Props = Group1 | Group2
 
 type CardAuthorProps = {
   type: 'group1' | 'group2'
@@ -115,8 +105,10 @@ const CardAuthor = ({
 const ArticleCard = ({
   type,
   banner,
-  size = 'large',
-  label,
+  onBookmark,
+  onArticleClick,
+  size = 'lg',
+  categoryName,
   styleLabel,
   title,
   styleTitle,
@@ -134,17 +126,21 @@ const ArticleCard = ({
 
   const handleClick = () => {
     setisBookmarked(!isBookmarked)
+    onBookmark && onBookmark()
   }
 
   return (
-    <StyledCard className={className} data-size={size} data-type={type}>
-      <div className="banner">
-        <img src={banner} />
-      </div>
+    <StyledCard
+      className={className}
+      data-size={size}
+      data-type={type}
+      onClick={onArticleClick}
+    >
+      <div className="banner">{banner}</div>
       <div className="content">
         <div className="new">
           <Text style={styleLabel} className="label" size="sm" type="caption">
-            {label}
+            {categoryName}
           </Text>
           <Text
             style={styleTitle}
