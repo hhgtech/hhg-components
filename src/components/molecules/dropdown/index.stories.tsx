@@ -16,7 +16,31 @@ export const Normal = Template.bind({})
 Normal.args = {
   id: 'dropdown1',
   placeholder: 'Dropdown',
-  placeHolderIcon: <img src="//unsplash.it/16" />,
+  value: undefined,
+  options: [
+    {
+      label: 'None',
+      value: '1',
+      icon: <img src="//unsplash.it/16" />,
+    },
+    {
+      label: 'Second point',
+      value: '2',
+      icon: <img src="//unsplash.it/16" />,
+    },
+    {
+      label: 'Third point',
+      value: '3',
+      icon: <img src="//unsplash.it/16" />,
+    },
+  ],
+}
+export const WithPlaceholderIcon = Template.bind({})
+
+WithPlaceholderIcon.args = {
+  id: 'dropdown1',
+  placeholder: 'Dropdown',
+  placeholderIcon: <img src="//unsplash.it/16" />,
   value: undefined,
   options: [
     {

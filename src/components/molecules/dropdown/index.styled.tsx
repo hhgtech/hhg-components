@@ -5,7 +5,8 @@ export const StyledDropdown = styled.div`
   position: relative;
   box-sizing: border-box;
   border: 1px solid ${(props: ThemeProps) => props.theme.colors.gray200};
-  background: url('../../../public/bgSvg/arrow-down.svg') no-repeat;
+  background: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23595959' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+    no-repeat;
   background-position: right 16px center;
   border-radius: 6px;
 

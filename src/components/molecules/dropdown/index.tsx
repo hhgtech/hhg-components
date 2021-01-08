@@ -20,7 +20,7 @@ export type Props = {
   options: Array<Option>
   placeholder: string
   id: string
-  placeHolderIcon: JSX.Element
+  placeholderIcon?: JSX.Element
   onChange?: (o: Option) => void
   value?: Option
   className?: string
@@ -33,7 +33,7 @@ const Dropdown = ({
   options,
   onChange = () => undefined,
   id,
-  placeHolderIcon,
+  placeholderIcon,
   placeholder,
   style,
 }: Props) => {
@@ -45,20 +45,20 @@ const Dropdown = ({
       className={className}
       data-dropdown-open={isDropdownOpen || undefined}
       id={id}
-      data-has-icons={!!placeHolderIcon}
+      data-has-icons={!!placeholderIcon}
       style={style}
       onBlur={() => setIsDropdownOpen(false)}
       tabIndex={0}
     >
       <StyledDropdownName onClick={showDropdown}>
-        {placeHolderIcon}{' '}
+        {placeholderIcon}{' '}
         <span>{value && value.value ? value.label : placeholder}</span>
       </StyledDropdownName>
 
       {isDropdownOpen && (
         <StyledDropdownList
           onClick={showDropdown}
-          data-has-icons={!!placeHolderIcon}
+          data-has-icons={!!placeholderIcon}
         >
           {options.map((option) => (
             <StyledDropdownOption

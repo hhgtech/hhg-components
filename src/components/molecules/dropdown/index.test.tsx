@@ -14,7 +14,7 @@ test('it renders', () => {
       <Dropdown
         id="dropdown1"
         placeholder="Dropdown"
-        placeHolderIcon={<img src="//unsplash.it/16" />}
+        placeholderIcon={<img src="//unsplash.it/16" />}
         value={undefined}
         options={[
           {
