@@ -14,6 +14,7 @@ export type Props = {
   value: string
   name: string
   size: 'lg' | 'md' | 'sm'
+  autoComplete?: 'on' | 'off'
   errorMessage?: string
   actionIcon?: JSX.Element
   onActionClick?: () => void
@@ -44,6 +45,7 @@ const Input = ({
   CustomInput,
   size,
   style,
+  autoComplete = 'off',
 }: Props) => {
   return (
     <StyledInput
@@ -71,6 +73,7 @@ const Input = ({
             type="text"
             value={value}
             disabled={isDisabled}
+            autoComplete={autoComplete}
           />
         )}
         {DisplayIcon && (

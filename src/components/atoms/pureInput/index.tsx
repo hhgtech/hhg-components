@@ -14,6 +14,7 @@ import {
 export type Props = {
   name: string
   size: 'lg' | 'md' | 'sm'
+  autoComplete?: 'on' | 'off'
   onChange: (v: string) => void
   defaultValue?: string
   errorMessage?: string
@@ -32,6 +33,7 @@ export type Props = {
 const PureInput = ({
   name,
   errorMessage,
+  autoComplete = 'off',
   defaultValue,
   actionIcon: ActionIcon,
   displayIcon: DisplayIcon,
@@ -74,6 +76,7 @@ const PureInput = ({
             type="text"
             disabled={isDisabled}
             defaultValue={defaultValue}
+            autoComplete={autoComplete}
           />
         )}
         {DisplayIcon && (

@@ -93,6 +93,7 @@ exports[`it renders 1`] = `
     style="position: relative;"
   >
     <input
+      autocomplete="off"
       id="test-input"
       type="text"
       value="test"
