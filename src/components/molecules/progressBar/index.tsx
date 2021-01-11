@@ -40,9 +40,9 @@ const ProgressBar = ({
 }: Props) => {
   const [trackLength, setTrackLength] = useState(0)
 
-  const Track = ({ ...props }: { trackClassName: string }) => {
+  const Track = ({ trackClassName, ...props }: { trackClassName?: string }) => {
     return (
-      <StyledTrackContainer {...props} className={props.trackClassName}>
+      <StyledTrackContainer {...props} className={trackClassName}>
         <StyledTrack></StyledTrack>
       </StyledTrackContainer>
     )

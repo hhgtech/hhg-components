@@ -134,6 +134,9 @@ export const theme = {
     fsParagraph4: '14px',
     fwRegular: '400',
   },
+  zIndexes: {
+    zIndex100: '100',
+  },
 }
 
 export type ThemeType = typeof theme
