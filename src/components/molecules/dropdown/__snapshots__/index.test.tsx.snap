@@ -10,6 +10,21 @@ exports[`it renders 1`] = `
   border-radius: 6px;
 }
 
+.c0[data-size='sm'] {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.c0[data-size='md'] {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.c0[data-size='lg'] {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .c0[data-has-icons='true'] {
   border: none;
   background: #f2f2f2;
@@ -78,6 +93,7 @@ exports[`it renders 1`] = `
 <div
   class="c0"
   data-has-icons="true"
+  data-size="lg"
   id="dropdown1"
   tabindex="0"
 >

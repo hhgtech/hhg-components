@@ -20,6 +20,7 @@ export type Props = {
   options: Array<Option>
   placeholder: string
   id: string
+  size?: 'sm' | 'md' | 'lg'
   placeholderIcon?: JSX.Element
   onChange?: (o: Option) => void
   value?: Option
@@ -36,6 +37,7 @@ const Dropdown = ({
   placeholderIcon,
   placeholder,
   style,
+  size = 'lg',
 }: Props) => {
   const [isDropdownOpen, setIsDropdownOpen] = React.useState(false)
   const showDropdown = () => setIsDropdownOpen(!isDropdownOpen)
@@ -44,6 +46,7 @@ const Dropdown = ({
     <StyledDropdown
       className={className}
       data-dropdown-open={isDropdownOpen || undefined}
+      data-size={size}
       id={id}
       data-has-icons={!!placeholderIcon}
       style={style}

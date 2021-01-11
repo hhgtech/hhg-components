@@ -10,6 +10,19 @@ export const StyledDropdown = styled.div`
   background-position: right 16px center;
   border-radius: 6px;
 
+  &[data-size='sm'] {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  &[data-size='md'] {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &[data-size='lg'] {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &[data-has-icons='true'] {
     border: none;
     background: ${(props: ThemeProps) => props.theme.colors.gray100};
