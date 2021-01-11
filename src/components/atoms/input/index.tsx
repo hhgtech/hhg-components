@@ -77,7 +77,7 @@ const Input = ({
           />
         )}
         {DisplayIcon && (
-          <StyledDisplayIcon className="displayIcon" onClick={onActionClick}>
+          <StyledDisplayIcon className="displayIcon">
             {DisplayIcon}
           </StyledDisplayIcon>
         )}
