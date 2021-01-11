@@ -99,5 +99,6 @@ export const StyledDisplayIcon = styled.div`
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  display: inline-flex;
   cursor: default;
 `

@@ -14,9 +14,9 @@ export const StyledInput = styled.div`
 
   input {
     width: 100%;
-    border-radius: 6px;
-    border: solid 1px ${(props: ThemeProps) => props.theme.colors.gray200};
     padding: 12px 16px;
+    border: solid 1px ${(props: ThemeProps) => props.theme.colors.gray200};
+    border-radius: 6px;
 
     &:active,
     &:focus {
@@ -60,25 +60,25 @@ export const StyledInput = styled.div`
 
   &[data-size='lg'] {
     font-size: 16px;
-    line-height: 24px;
     font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
+    line-height: 24px;
   }
   &[data-size='md'] {
     font-size: 14px;
-    line-height: 22px;
     font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+    line-height: 22px;
   }
   &[data-size='sm'] {
     font-size: 13px;
-    line-height: 20px;
     font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+    line-height: 20px;
   }
 `
 export const StyledInputLabel = styled.label`
   display: inline-block;
+  margin-bottom: 4px;
   color: ${(props: ThemeProps) => props.theme.colors.gray600};
   font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
-  margin-bottom: 4px;
 `
 
 export const StyledErrorLabel = styled.label`
@@ -88,15 +88,15 @@ export const StyledErrorLabel = styled.label`
 
 export const StyledActionIcon = styled.div`
   position: absolute;
-  right: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  right: 16px;
   cursor: pointer;
+  transform: translateY(-50%);
 `
 export const StyledDisplayIcon = styled.div`
   position: absolute;
-  left: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 16px;
   cursor: default;
+  transform: translateY(-50%);
 `
