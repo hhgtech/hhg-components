@@ -3,22 +3,22 @@ import styled from 'styled-components'
 import { ThemeProps } from '../../../misc/theme'
 
 export const StyledCard = styled.div`
-  width: 100%;
-  background-color: ${(props: ThemeProps) => props.theme.colors.white};
-  box-sizing: border-box;
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: ${(props: ThemeProps) => props.theme.colors.white};
   cursor: pointer;
 
   .banner {
-    height: 0;
     position: relative;
+    height: 0;
 
     img {
-      width: 100%;
-      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center;
     }
@@ -37,20 +37,20 @@ export const StyledCard = styled.div`
       }
 
       .title {
-        margin-top: 4px;
         display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
         overflow: hidden;
+        margin-top: 4px;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
       }
 
       .text {
+        display: -webkit-box;
+        overflow: hidden;
         margin-top: 8px;
         margin-bottom: 8px;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
-        overflow: hidden;
+        -webkit-line-clamp: 3;
       }
     }
   }
@@ -59,9 +59,9 @@ export const StyledCard = styled.div`
     display: flex;
 
     .bookmark {
+      display: flex;
       width: 12px;
       height: 14px;
-      display: flex;
       cursor: pointer;
 
       svg {
@@ -83,17 +83,16 @@ export const StyledCard = styled.div`
 
       .banner {
         width: 100%;
-        padding-top: 192px;
+        height: 100px;
       }
     }
 
     &[data-size='sm'] {
-      height: 100px;
       flex-direction: row;
 
       .banner {
         width: 100px;
-        padding-top: 100px;
+        height: 100px;
         margin-right: 16px;
       }
 
@@ -149,8 +148,8 @@ export const StyledCard = styled.div`
 `
 
 export const StyledAuthor = styled.div`
-  width: 100%;
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
 
@@ -178,9 +177,9 @@ export const StyledAuthor = styled.div`
       white-space: pre-wrap;
 
       p {
+        color: ${(props: ThemeProps) => props.theme.colors.gray800};
         font-size: 11px;
         font-weight: 400;
-        color: ${(props: ThemeProps) => props.theme.colors.gray800};
 
         span {
           color: ${(props: ThemeProps) => props.theme.colors.gray400};
@@ -206,9 +205,9 @@ export const StyledAuthor = styled.div`
       .poster {
         p {
           display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
           overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
         }
       }
     }
