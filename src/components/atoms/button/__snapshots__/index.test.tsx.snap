@@ -118,9 +118,40 @@ exports[`it renders 1`] = `
   line-height: 20px;
 }
 
-.c0[data-color='transparent'] {
+.c0[data-color='ghost'] {
+  border: 0;
   background-color: transparent;
+  color: #2d87f3;
+}
+
+.c0[data-color='ghost'][data-size='lg'] {
+  padding: 11px 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0[data-color='ghost'][data-size='md'] {
+  padding: 7px 24px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.c0[data-color='ghost'][data-size='sm'] {
+  padding: 5px 24px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.c0[data-color='ghost']:disabled {
+  border-color: 0;
+  background-color: transparent;
+  color: #bfbfbf;
+  cursor: not-allowed;
+}
+
+.c0[data-color='transparent'] {
   border: none;
+  background-color: transparent;
 }
 
 .c0[data-color='transparent'][data-size='lg'] {

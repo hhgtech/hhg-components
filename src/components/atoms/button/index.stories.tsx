@@ -43,6 +43,14 @@ Transparent.args = {
   isLoading: false,
 }
 
+export const Ghost = Template.bind({})
+Ghost.args = {
+  color: 'ghost',
+  size: 'lg',
+  isDisabled: false,
+  isLoading: false,
+}
+
 export const Medium = Template.bind({})
 Medium.args = {
   color: 'primary',

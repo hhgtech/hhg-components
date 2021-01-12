@@ -5,7 +5,7 @@ import { StyledButton, StyledLoader } from './index.styled'
 export type Props = {
   size: 'lg' | 'md' | 'sm'
   children: ReactNode
-  color?: 'primary' | 'secondary' | 'transparent' | 'tertiary'
+  color?: 'primary' | 'secondary' | 'transparent' | 'tertiary' | 'ghost'
   isDisabled?: boolean
   isBlock?: boolean
   title?: string

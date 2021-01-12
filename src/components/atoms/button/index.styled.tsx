@@ -113,9 +113,40 @@ export const StyledButton = styled.button`
     }
   }
 
-  &[data-color='transparent'] {
+  &[data-color='ghost'] {
+    border: 0;
     background-color: transparent;
+    color: ${(props: ThemeProps) => props.theme.colors.primaryBase};
+
+    &[data-size='lg'] {
+      padding: 11px 24px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &[data-size='md'] {
+      padding: 7px 24px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &[data-size='sm'] {
+      padding: 5px 24px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &:disabled {
+      border-color: 0;
+      background-color: transparent;
+      color: ${(props: ThemeProps) => props.theme.colors.gray300};
+      cursor: not-allowed;
+    }
+  }
+
+  &[data-color='transparent'] {
     border: none;
+    background-color: transparent;
     &[data-size='lg'] {
       font-size: 16px;
       line-height: 24px;
@@ -175,11 +206,11 @@ export const StyledButton = styled.button`
 
 const circle = keyframes`
   0% {
-        transfrom: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
+    transfrom: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 `
 
 export const StyledLoader = styled.svg`
