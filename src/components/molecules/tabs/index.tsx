@@ -18,12 +18,19 @@ type TabContent = {
 
 export type Props = {
   tabContent: Array<TabContent>
+  onChange?: (n: number) => void
   className?: string
   initialTab?: number
   style?: CSSProperties
 }
 
-const Tabs = ({ style, initialTab, tabContent, className }: Props) => {
+const Tabs = ({
+  style,
+  initialTab,
+  tabContent,
+  onChange,
+  className,
+}: Props) => {
   const [activeTab, setActiveTab] = useState(initialTab || 0)
   const idList = useId(tabContent.length)
 
@@ -32,7 +39,10 @@ const Tabs = ({ style, initialTab, tabContent, className }: Props) => {
       {tabContent.map((tab, i) => (
         <StyledTab
           data-is-tab-active={activeTab === i || undefined}
-          onClick={() => setActiveTab(i)}
+          onClick={() => {
+            setActiveTab(i)
+            onChange && onChange(i)
+          }}
           key={idList[i]}
         >
           <StyledTabContent>
