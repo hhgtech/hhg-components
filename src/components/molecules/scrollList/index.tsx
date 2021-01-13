@@ -54,15 +54,10 @@ export const ScrollList = ({
     const { clientWidth, scrollLeft } = scrollRef.current
     const page = Math.floor(scrollLeft / clientWidth)
 
-    setOnSection((oldOnSection) => {
-      if (page != oldOnSection) {
-        return page
-      }
-      return oldOnSection
-    })
+    setOnSection(page)
   }
 
-  const handleScrollThrottle = useCallback(throttle(handleScroll, 200), [])
+  const handleScrollThrottle = throttle(handleScroll, 400)
 
   return (
     <StyledScrollList className={className} data-row={row}>
