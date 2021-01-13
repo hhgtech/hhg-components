@@ -35,8 +35,8 @@ export const StyledDropdown = styled.div`
     }
 
     span {
-      vertical-align: middle;
       display: inline-block;
+      vertical-align: middle;
     }
 
     &:hover {
@@ -44,20 +44,20 @@ export const StyledDropdown = styled.div`
     }
     > div {
       position: relative;
-      width: 100%;
       display: flex;
-      align-items: center;
+      width: 100%;
       box-sizing: border-box;
+      align-items: center;
     }
     > div::after {
-      content: '';
-      right: 12px;
+      position: absolute;
       top: 50%;
-      background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23595959' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      right: 12px;
       width: 10px;
       height: 8px;
-      position: absolute;
+      background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L5 5L9 1' stroke='%23595959' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
       background-repeat: no-repeat;
+      content: '';
       transform: translateY(-50%);
     }
   }
@@ -92,22 +92,22 @@ export const StyledDropdownList = styled.ul`
   cursor: pointer;
 
   &[data-has-icons='true'] {
+    border: 1px solid ${(props: ThemeProps) => props.theme.colors.gray200};
     background: white;
     box-shadow: none;
-    border: 1px solid ${(props: ThemeProps) => props.theme.colors.gray200};
     filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.04));
   }
 `
 
 export const StyledDropdownOption = styled.li`
-  padding: 12px 18px 12px 16px;
   display: flex;
+  padding: 12px 18px 12px 16px;
   &:hover,
   :active {
     background: ${(props: ThemeProps) => props.theme.colors.gray100};
   }
 `
 export const StyledIcon = styled.div`
-  margin-right: 8px;
   max-width: 16px;
+  margin-right: 8px;
 `

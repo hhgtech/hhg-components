@@ -39,4 +39,7 @@ Normal.args = {
       icon: <img src="//unsplash.it/16/16" />,
     },
   ],
+  onChange: (n: number) => {
+    console.log(n)
+  },
 }
