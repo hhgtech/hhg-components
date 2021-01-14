@@ -41,6 +41,7 @@ export const ScrollList = ({
 
   const handleClick = (index) => {
     refs[index].current.scrollIntoView({
+      block: 'nearest',
       behavior: 'smooth',
     })
 
