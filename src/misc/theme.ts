@@ -136,6 +136,7 @@ export const theme = {
   },
   zIndexes: {
     zIndex100: '100',
+    onTop: '1000',
   },
 }
 
