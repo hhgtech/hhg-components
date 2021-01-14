@@ -90,6 +90,7 @@ export const StyledActionIcon = styled.div`
   position: absolute;
   top: 50%;
   right: 16px;
+  display: inline-flex;
   cursor: pointer;
   transform: translateY(-50%);
 `
@@ -97,6 +98,7 @@ export const StyledDisplayIcon = styled.div`
   position: absolute;
   top: 50%;
   left: 16px;
+  display: inline-flex;
   cursor: default;
   transform: translateY(-50%);
 `

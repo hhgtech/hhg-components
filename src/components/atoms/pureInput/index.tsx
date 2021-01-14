@@ -1,6 +1,5 @@
 import React, { KeyboardEvent, useState } from 'react'
 
-import { debounce } from 'lodash'
 import { CSSProperties } from 'styled-components'
 
 import {
@@ -60,9 +59,9 @@ const PureInput = ({
   const handleOnActionClick = () => {
     if (isDeleteAction) {
       setLocalValue('')
-    } else {
-      onActionClick && onActionClick()
     }
+
+    onActionClick && onActionClick()
   }
 
   return (
