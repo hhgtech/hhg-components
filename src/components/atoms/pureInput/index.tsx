@@ -1,4 +1,4 @@
-import React, { KeyboardEvent } from 'react'
+import React, { KeyboardEvent, useState } from 'react'
 
 import { debounce } from 'lodash'
 import { CSSProperties } from 'styled-components'
@@ -20,6 +20,7 @@ export type Props = {
   errorMessage?: string
   actionIcon?: JSX.Element
   onActionClick?: () => void
+  isDeleteAction?: boolean
   displayIcon?: JSX.Element
   label?: string
   placeholder?: string
@@ -37,6 +38,7 @@ const PureInput = ({
   defaultValue,
   actionIcon: ActionIcon,
   displayIcon: DisplayIcon,
+  isDeleteAction,
   onActionClick,
   label,
   placeholder,
@@ -49,6 +51,15 @@ const PureInput = ({
   style,
 }: Props) => {
   const deboucedOnChange = debounce(onChange, 300)
+  const [localValue, setLocalValue] = useState(defaultValue)
+
+  const handleOnActionClick = () => {
+    if (isDeleteAction) {
+      setLocalValue('')
+    } else {
+      onActionClick && onActionClick()
+    }
+  }
 
   return (
     <StyledInput
@@ -75,7 +86,7 @@ const PureInput = ({
             onKeyPress={(e) => onKeyPress && onKeyPress(e as KeyboardEvent)}
             type="text"
             disabled={isDisabled}
-            defaultValue={defaultValue}
+            value={localValue}
             autoComplete={autoComplete}
           />
         )}
@@ -85,7 +96,10 @@ const PureInput = ({
           </StyledDisplayIcon>
         )}
         {ActionIcon && (
-          <StyledActionIcon className="actionIcon" onClick={onActionClick}>
+          <StyledActionIcon
+            className="actionIcon"
+            onClick={handleOnActionClick}
+          >
             {ActionIcon}
           </StyledActionIcon>
         )}

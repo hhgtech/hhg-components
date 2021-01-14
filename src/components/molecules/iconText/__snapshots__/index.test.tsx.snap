@@ -20,6 +20,14 @@ exports[`it renders 1`] = `
 }
 
 .c0[data-icon-position='left'] > *:last-child {
+  width: calc(100% - 24px);
+}
+
+.c0[data-icon-position='right'] > *:first-child {
+  width: calc(100% - 24px);
+}
+
+.c0[data-icon-position='right'] > *:last-child {
   margin-left: 8px;
 }
 
