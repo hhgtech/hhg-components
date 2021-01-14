@@ -85,20 +85,14 @@ exports[`it renders 1`] = `
     class="c1"
   >
     <svg
-      data-name="Layer 1"
-      viewBox="0 0 5.5 9.5"
+      fill="none"
+      height="10"
+      viewBox="0 0 6 10"
+      width="6"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>
-        chevron-right
-      </title>
       <path
-        d="M4.75 8.75l-4-4 4-4"
-        fill="none"
-        stroke="#2d87f3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="1.5"
+        d="M5 9L1 5L5 1"
       />
     </svg>
   </div>
@@ -132,20 +126,14 @@ exports[`it renders 1`] = `
     class="c1"
   >
     <svg
-      data-name="Layer 1"
-      viewBox="0 0 5.5 9.5"
+      fill="none"
+      height="10"
+      viewBox="0 0 6 10"
+      width="6"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <title>
-        chevron-right
-      </title>
       <path
-        d="M.75 8.75l4-4-4-4"
-        fill="none"
-        stroke="#2d87f3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="1.5"
+        d="M1 1L5 5L1 9"
       />
     </svg>
   </div>

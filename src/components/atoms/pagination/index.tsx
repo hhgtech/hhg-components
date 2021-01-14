@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import { CSSProperties } from 'styled-components'
+
 import {
   StyledPageBlock,
   StyledPagination,
@@ -9,19 +11,17 @@ import {
 export type Props = {
   pagesAmount: number
   currentPage: number
-  arrowLeft?: JSX.Element
-  arrowRight?: JSX.Element
   onChange: (p: number) => void
   className?: string
+  style?: CSSProperties
 }
 
 const Pagination = ({
   className,
   pagesAmount,
   currentPage,
-  arrowLeft: ArrowLeft,
-  arrowRight: ArrowRight,
   onChange,
+  style,
 }: Props) => {
   const pages = [...Array(pagesAmount)].map((__v, i) => i + 1)
 
@@ -41,12 +41,20 @@ const Pagination = ({
   }, [currentPage])
 
   return (
-    <StyledPagination className={className}>
+    <StyledPagination className={className} style={style}>
       <StyledPageBlock
         onClick={() => handlePageChange(activePage - 1)}
         data-last-page={activePage === 1 || undefined}
       >
-        {ArrowLeft}
+        <svg
+          width="6"
+          height="10"
+          viewBox="0 0 6 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M5 9L1 5L5 1" />
+        </svg>
       </StyledPageBlock>
 
       {pages
@@ -68,7 +76,15 @@ const Pagination = ({
         onClick={() => handlePageChange(activePage + 1)}
         data-last-page={activePage === totalArray + 1 || undefined}
       >
-        {ArrowRight}
+        <svg
+          width="6"
+          height="10"
+          viewBox="0 0 6 10"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1L5 5L1 9" />
+        </svg>
       </StyledPageBlock>
     </StyledPagination>
   )
