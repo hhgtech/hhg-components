@@ -13,8 +13,15 @@ export const StyledIconText = styled.div`
     & > *:first-child {
       margin-right: 8px;
     }
+
+    & > *:last-child {
+      width: calc(100% - 24px);
+    }
   }
-  &[data-icon-position='left'] {
+  &[data-icon-position='right'] {
+    & > *:first-child {
+      width: calc(100% - 24px);
+    }
     & > *:last-child {
       margin-left: 8px;
     }
