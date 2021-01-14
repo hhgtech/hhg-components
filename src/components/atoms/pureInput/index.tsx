@@ -50,8 +50,12 @@ const PureInput = ({
   size,
   style,
 }: Props) => {
-  const deboucedOnChange = debounce(onChange, 300)
   const [localValue, setLocalValue] = useState(defaultValue)
+
+  const handleOnChange = (v: string) => {
+    setLocalValue(v)
+    onChange(v)
+  }
 
   const handleOnActionClick = () => {
     if (isDeleteAction) {
@@ -82,7 +86,7 @@ const PureInput = ({
           <input
             id={name}
             placeholder={placeholder}
-            onChange={(e) => deboucedOnChange(e.target.value)}
+            onChange={(e) => handleOnChange(e.target.value)}
             onKeyPress={(e) => onKeyPress && onKeyPress(e as KeyboardEvent)}
             type="text"
             disabled={isDisabled}
