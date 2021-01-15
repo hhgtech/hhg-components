@@ -13,18 +13,15 @@ export const StyledCategoryCard = styled.div`
   background-color: white;
   border-radius: 6px;
   box-shadow: 0px 5px 12px rgba(40, 74, 117, 0.08);
+  cursor: pointer;
 
-  div.banner {
+  & > .banner {
     width: 100%;
     height: 63px;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
+    text-align: center;
   }
 
-  div.content {
+  & > .content {
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
