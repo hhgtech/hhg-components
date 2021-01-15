@@ -24,7 +24,7 @@ export type Props = {
   label?: string
   placeholder?: string
   className?: string
-  onKeyPress?: (e: KeyboardEvent) => void
+  onKeyPress?: (e: KeyboardEvent<HTMLInputElement>) => void
   isDisabled?: boolean
   CustomInput?: JSX.Element
   style?: CSSProperties
