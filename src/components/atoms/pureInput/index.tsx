@@ -90,7 +90,7 @@ const PureInput = ({
             id={name}
             placeholder={placeholder}
             onChange={(e) => handleOnChange(e.target.value)}
-            onKeyPress={(e) => onKeyPress && onKeyPress(e as KeyboardEvent)}
+            onKeyPress={onKeyPress}
             type="text"
             disabled={isDisabled}
             value={localValue}
