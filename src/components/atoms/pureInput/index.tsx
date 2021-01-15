@@ -28,6 +28,7 @@ export type Props = {
   isDisabled?: boolean
   CustomInput?: JSX.Element
   style?: CSSProperties
+  autoFocus?: boolean
 }
 
 const PureInput = ({
@@ -48,8 +49,10 @@ const PureInput = ({
   CustomInput,
   size,
   style,
+  autoFocus = true,
 }: Props) => {
   const [localValue, setLocalValue] = useState(defaultValue)
+  const inputRef = React.useRef(null)
 
   const handleOnChange = (v: string) => {
     setLocalValue(v)
@@ -59,6 +62,7 @@ const PureInput = ({
   const handleOnActionClick = () => {
     if (isDeleteAction) {
       setLocalValue('')
+      inputRef.current.focus()
     }
 
     onActionClick && onActionClick()
@@ -91,6 +95,8 @@ const PureInput = ({
             disabled={isDisabled}
             value={localValue}
             autoComplete={autoComplete}
+            ref={inputRef}
+            autoFocus={autoFocus}
           />
         )}
         {DisplayIcon && (
