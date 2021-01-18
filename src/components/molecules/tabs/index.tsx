@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Text } from 'components/atoms'
 import { useId } from 'react-id-generator'
@@ -33,6 +33,10 @@ const Tabs = ({
 }: Props) => {
   const [activeTab, setActiveTab] = useState(initialTab || 0)
   const idList = useId(tabContent.length)
+
+  useEffect(() => {
+    setActiveTab(initialTab)
+  }, [initialTab])
 
   return (
     <StyledTabs style={style} className={className}>
