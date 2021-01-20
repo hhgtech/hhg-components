@@ -1,10 +1,4 @@
-import React, {
-  ReactElement,
-  ReactNode,
-  useRef,
-  useState,
-  useCallback,
-} from 'react'
+import React, { ReactElement, ReactNode, useRef, useState } from 'react'
 
 import { throttle } from 'lodash'
 

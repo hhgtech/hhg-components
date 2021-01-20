@@ -15,6 +15,7 @@ export type Props = {
   avatarImg: JSX.Element
   doctorName: string
   uploadTime: string
+  isBookmarkDisplayed?: boolean
   onBookmark?: () => void
   onArticleClick?: () => void
   isBookmark?: boolean
@@ -33,6 +34,7 @@ type CardAuthorProps = {
   avatarImg: JSX.Element
   doctorName: string
   uploadTime: string
+  isBookmarkDisplayed: boolean
   posterName?: string
   handleClick: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
   isBookmarked: boolean
@@ -45,6 +47,7 @@ const CardAuthor = ({
   posterName,
   uploadTime,
   handleClick,
+  isBookmarkDisplayed,
   isBookmarked,
 }: CardAuthorProps) => {
   return (
@@ -58,46 +61,46 @@ const CardAuthor = ({
           </p>
         </div>
       </div>
-      {type === 'group1' ? (
-        <div className="bookmark" onClick={handleClick}>
-          {!isBookmarked ? (
-            <svg
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 15L7 11.1111L1 15V2.55556C1 2.143 1.18061 1.74733 1.5021 1.45561C1.82359 1.16389 2.25963 1 2.71429 1H11.2857C11.7404 1 12.1764 1.16389 12.4979 1.45561C12.8194 1.74733 13 2.143 13 2.55556V15Z"
-                stroke="#404040"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              width="14"
-              height="16"
-              viewBox="0 0 14 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 15L7 11.1111L1 15V2.55556C1 2.143 1.18061 1.74733 1.5021 1.45561C1.82359 1.16389 2.25963 1 2.71429 1H11.2857C11.7404 1 12.1764 1.16389 12.4979 1.45561C12.8194 1.74733 13 2.143 13 2.55556V15Z"
-                fill="#2D87F3"
-                stroke="#2D87F3"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          )}
-        </div>
-      ) : (
-        []
-      )}
+      {type === 'group1'
+        ? isBookmarkDisplayed && (
+            <div className="bookmark" onClick={handleClick}>
+              {!isBookmarked ? (
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 15L7 11.1111L1 15V2.55556C1 2.143 1.18061 1.74733 1.5021 1.45561C1.82359 1.16389 2.25963 1 2.71429 1H11.2857C11.7404 1 12.1764 1.16389 12.4979 1.45561C12.8194 1.74733 13 2.143 13 2.55556V15Z"
+                    stroke="#404040"
+                    strokeWidth="1.75"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  width="14"
+                  height="16"
+                  viewBox="0 0 14 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 15L7 11.1111L1 15V2.55556C1 2.143 1.18061 1.74733 1.5021 1.45561C1.82359 1.16389 2.25963 1 2.71429 1H11.2857C11.7404 1 12.1764 1.16389 12.4979 1.45561C12.8194 1.74733 13 2.143 13 2.55556V15Z"
+                    fill="#2D87F3"
+                    stroke="#2D87F3"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )}
+            </div>
+          )
+        : []}
     </StyledAuthor>
   )
 }
@@ -105,6 +108,7 @@ const CardAuthor = ({
 const ArticleCard = ({
   type,
   banner,
+  isBookmarkDisplayed = true,
   onBookmark,
   onArticleClick,
   size = 'lg',
@@ -160,6 +164,7 @@ const ArticleCard = ({
               uploadTime={uploadTime}
               handleClick={(e) => handleClick(e)}
               isBookmarked={isBookmarked}
+              isBookmarkDisplayed={isBookmarkDisplayed}
             />
           ) : (
             []
@@ -177,6 +182,7 @@ const ArticleCard = ({
               posterName={posterName}
               uploadTime={uploadTime}
               handleClick={handleClick}
+              isBookmarkDisplayed={isBookmarkDisplayed}
               isBookmarked={isBookmarked}
             />
           )}
