@@ -4,8 +4,8 @@ import styled from 'styled-components'
 
 export const StyledInput = styled.div`
   position: relative;
-  min-height: 114px;
   min-width: 343px;
+  min-height: 114px;
 
   &[data-has-error] {
     input {
@@ -15,9 +15,9 @@ export const StyledInput = styled.div`
 
   input {
     width: 100%;
-    border-radius: 6px;
-    border: solid 1px ${(props: ThemeProps) => props.theme.colors.gray200};
     padding: 12px 16px;
+    border: solid 1px ${(props: ThemeProps) => props.theme.colors.gray200};
+    border-radius: 6px;
 
     &:active,
     &:focus {
@@ -49,37 +49,57 @@ export const StyledInput = styled.div`
     }
   }
 
-  ${spLayout()`
-    font-size: 14px;
-    line-height: 22px;
-  `}
-
-  ${pcLayout()`
-    font-size: 16px;
-    line-height: 24px;
-  `}
-
   &[data-size='lg'] {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
+    input {
+      font-size: 16px;
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      ${spLayout()`
+        font-size: 22px;
+        line-height: 1.2;
+      `}
+
+      ${pcLayout()`
+        font-size: 26px;
+        line-height: 1.2;
+      `}
+    }
   }
   &[data-size='md'] {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+    input {
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      line-height: 22px;
+      ${spLayout()`
+        font-size: 14px;
+        line-height: 1.2;
+      `}
+
+      ${pcLayout()`
+        font-size: 16px;
+        line-height: 1.2;
+      `}
+    }
   }
   &[data-size='sm'] {
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+    input {
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      line-height: 20px;
+      ${spLayout()`
+        font-size: 13px;
+        line-height: 1.5;
+      `}
+
+      ${pcLayout()`
+        font-size: 13px;
+        line-height: 1.5;
+      `}
+    }
   }
 `
 export const StyledInputLabel = styled.label`
   display: inline-block;
+  margin-bottom: 4px;
   color: ${(props: ThemeProps) => props.theme.colors.gray600};
   font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
-  margin-bottom: 4px;
 `
 
 export const StyledErrorLabel = styled.label`
@@ -89,16 +109,16 @@ export const StyledErrorLabel = styled.label`
 
 export const StyledActionIcon = styled.div`
   position: absolute;
-  right: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  right: 16px;
   cursor: pointer;
+  transform: translateY(-50%);
 `
 export const StyledDisplayIcon = styled.div`
   position: absolute;
-  left: 16px;
   top: 50%;
-  transform: translateY(-50%);
+  left: 16px;
   display: inline-flex;
   cursor: default;
+  transform: translateY(-50%);
 `

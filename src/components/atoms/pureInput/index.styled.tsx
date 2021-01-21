@@ -48,30 +48,48 @@ export const StyledInput = styled.div`
     }
   }
 
-  ${spLayout()`
-    font-size: 14px;
-    line-height: 22px;
-  `}
-
-  ${pcLayout()`
-    font-size: 16px;
-    line-height: 24px;
-  `}
-
   &[data-size='lg'] {
-    font-size: 16px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwBold};
-    line-height: 24px;
+    input {
+      font-size: 16px;
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      ${spLayout()`
+        font-size: 22px;
+        line-height: 1.2;
+      `}
+
+      ${pcLayout()`
+        font-size: 26px;
+        line-height: 1.2;
+      `}
+    }
   }
   &[data-size='md'] {
-    font-size: 14px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
-    line-height: 22px;
+    input {
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      ${spLayout()`
+        font-size: 14px;
+        line-height: 1.2;
+      `}
+
+      ${pcLayout()`
+        font-size: 16px;
+        line-height: 1.2;
+      `}
+    }
   }
   &[data-size='sm'] {
-    font-size: 13px;
-    font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
-    line-height: 20px;
+    input {
+      font-weight: ${(props: ThemeProps) => props.theme.sizes.fwRegular};
+      ${spLayout()`
+        font-size: 13px;
+        line-height: 1.5;
+      `}
+
+      ${pcLayout()`
+        font-size: 13px;
+        line-height: 1.5;
+      `}
+    }
   }
 `
 export const StyledInputLabel = styled.label`

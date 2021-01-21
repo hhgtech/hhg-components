@@ -40,22 +40,17 @@ exports[`it renders 1`] = `
   padding: 12px 48px;
 }
 
-.c0[data-size='lg'] {
+.c0[data-size='lg'] input {
   font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
+  font-weight: 400;
 }
 
-.c0[data-size='md'] {
-  font-size: 14px;
+.c0[data-size='md'] input {
   font-weight: 400;
-  line-height: 22px;
 }
 
-.c0[data-size='sm'] {
-  font-size: 13px;
+.c0[data-size='sm'] input {
   font-weight: 400;
-  line-height: 20px;
 }
 
 .c1 {
@@ -66,16 +61,44 @@ exports[`it renders 1`] = `
 }
 
 @media (max-width:767px) {
-  .c0 {
-    font-size: 14px;
-    line-height: 22px;
+  .c0[data-size='lg'] input {
+    font-size: 22px;
+    line-height: 1.2;
   }
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c0[data-size='lg'] input {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width:767px) {
+  .c0[data-size='md'] input {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width:768px) {
+  .c0[data-size='md'] input {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width:767px) {
+  .c0[data-size='sm'] input {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c0[data-size='sm'] input {
+    font-size: 13px;
+    line-height: 1.5;
   }
 }
 
