@@ -16,6 +16,7 @@ export type Props = {
   size?: 'small' | 'large'
   direction?: 'vertical' | 'horizontal'
   group?: 'group1' | 'group2'
+  onChange?: (v: string) => void
 }
 
 const RadioGroup = ({
@@ -28,12 +29,13 @@ const RadioGroup = ({
   size = 'small',
   direction = 'vertical',
   group = 'group1',
+  onChange,
 }: Props) => {
   const [check, setCheck] = useState(value)
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const onChange = (event?: any) => {
-    setCheck(event)
+  const handleOnChange = (v: string) => {
+    setCheck(v)
+    onChange && onChange(v)
   }
 
   return (
@@ -52,7 +54,7 @@ const RadioGroup = ({
           checked={check === option.value}
           value={option.value}
           isDisabled={isDisabled}
-          onChange={!isDisabled && onChange}
+          onChange={!isDisabled && handleOnChange}
         />
       ))}
     </StyledRadioGroup>
